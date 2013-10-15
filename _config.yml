@@ -1,5 +1,6 @@
 name: Your New Jekyll Site
 port: 4444
+permalink: pretty
 exclude: [sass, config.rb]
 site_version: 1.0.2
 facebook:
