@@ -1,0 +1,11 @@
+name: Your New Jekyll Site
+port: 4444
+exclude: [sass, config.rb]
+site_version: 1.0.2
+facebook:
+  app_id: 310676189002589
+api:
+  google:
+    webmaster: YGzYOK4E7esrLNKKnMyHdwQjFP7GHOTz-tZezsXt4Eo
+analytics:
+  account: UA-32545615-1

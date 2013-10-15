@@ -1,0 +1,92 @@
+<div class="plans-block">
+	<div id="free_plan1" class="free-plan-top">
+		<h2>{$free_plan.name|escape}</h2>
+		<p>{$free_plan.description}</p>
+		<div class="order-plan">
+			<a href="/sign-up">{$dictionary->getText('order_this_plan')}</a>
+		</div>
+	</div>
+	<div class="payment-info-top">
+		<h3>{$dictionary->getText('pay_with')}</h3>
+		<img src="/images/payment_cards.png" alt="">
+		<p>{$dictionary->getText('cc_charge_info_text')}</p>
+	</div>
+<!-- 	<div class="clear"></div> -->
+	<div class="plans-lists">
+		<ul>
+		{foreach from=$list item=plan name=plans}
+			<li>
+				<article>
+					<header>
+						<h2>{$dictionary->getText($plan.name)}</h2>
+						<div class="plan-price">
+							<p>
+								<span class="currency">$</span><span class="price">{$plan.price|format_price}</span><span class="month">/mo</span>
+							</p>
+						</div>
+					</header>
+
+					<div class="plan-description">
+						<p>{$plan.description}</p>
+					</div>
+
+					<div class="plan-details">
+						<dl class="def-list">
+							<dt>{$dictionary->getText('platforms')}</dt>
+							<dd class="platforms">
+								{foreach from=$plan.platforms item=platform}
+									<span class="{$platform.name}"></span>
+								{/foreach}
+							</dd>
+
+							<dt>{$dictionary->getText('users')}</dt>
+							<dd class="users">{$plan.users|format_number}</dd>
+
+							<dt>{$dictionary->getText('devices')}</dt>
+							<dd>{$dictionary->getText('unlimited')}</dd>
+
+							<dt>{$dictionary->getText('notifications')}</dt>
+							<dd>{$plan.notifications|escape}</dd>
+
+							<dt>{$dictionary->getText('api_access')}</dt>
+							<dd>
+								{if $plan.api_access}
+									{$dictionary->getText('yes')}
+								{else}
+									{$dictionary->getText('no')}
+								{/if}
+							</dd>
+
+							<dt>{$dictionary->getText('storage')}</dt>
+							<dd>{$plan.storage|escape} {$dictionary->getText('GB')}</dd>
+
+							<dt>{$dictionary->getText('websockets')}</dt>
+							<dd>{$plan.websockets|escape} {$dictionary->getText('concurrent_connections')}</dd>
+							
+							<dt>{$dictionary->getText('smartness')}</dt>
+							<dd class="smartness">
+								<ul class="feature-pushes">
+	{foreach from=$plan.smartness item=smartness}
+									<li class="active"><span class="{$smartness.icon}"></span>{$smartness.name}</li>
+	{/foreach}
+								</ul>
+							</dd>
+							<!-- <dd class="smartness">{$plan.smartness}</dd> -->
+						</dl>
+
+						<div class="order-plan">
+							<a href="/sign-up/{foreach from=$plans key=k item=v}{if $plan.planid eq $v}{$k}{/if}{/foreach}">{$dictionary->getText('order_this_plan')}</a>
+						</div>
+
+					</div>
+
+				</article>
+			</li>
+		{/foreach}
+		</ul>		
+	</div>
+
+	<div class="call-us">
+		<h2>{$dictionary->getText('questions')}</h2>
+	</div>
+</div>

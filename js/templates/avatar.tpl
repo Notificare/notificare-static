@@ -1,0 +1,1 @@
+<img src="{if avatar.picture}${avatar.picture}{else}/images/no-image.png{/if}" class="avatar" alt="">

@@ -1,0 +1,43 @@
+{% include header.html %}
+{% include javascript.html %}
+<script type="text/javascript" src="//assets.zendesk.com/external/zenbox/v2.6/zenbox.js"></script>
+<style type="text/css" media="screen, projection">
+  @import url(//assets.zendesk.com/external/zenbox/v2.6/zenbox.css);
+</style>
+</head>
+<body>
+	<header id="mainheader">
+		<div class="wrap">
+			<h1><a href="/">Notificare</a></h1>
+			{% include menu.html %}
+		</div>
+	</header>
+	<div class="wrap">
+		<div class="main-content">
+			<div class="aboutus">
+				<h2>{{ page.text_kop }}</h2>
+				<p>{{ content }}</p>
+			{% include about.html %}
+			</div>
+			<script type="text/javascript">
+			  if (typeof(Zenbox) !== "undefined") {
+			    Zenbox.init({
+			      dropboxID:   "20175868",
+			      url:         "https://notificare.zendesk.com",
+			      tabTooltip:  "Support",
+			      tabImageURL: "https://assets.zendesk.com/external/zenbox/images/tab_support_right.png",
+			      tabColor:    "#ad9b87",
+			      tabPosition: "Right"
+			    });
+			  }
+			</script>
+			<aside>
+				{% include contacts.html %}
+			</aside>
+		</div>
+		<div id="root-footer"></div>
+	</div>
+	{% include footer.html %}
+	{% include analytics.html %}
+</body>
+</html>
