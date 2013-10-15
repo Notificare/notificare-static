@@ -15,9 +15,9 @@
 	<div class="wrap">
 		<div class="main-content">
 			<div class="aboutus">
-				<h2>{{ page.text_kop }}</h2>
-				<p>{{ content }}</p>
-			{% include about.html %}
+				<h2>{{ page.text_kop | escape}}</h2>
+				{{ content }}
+				{% include about.html %}
 			</div>
 			<script type="text/javascript">
 			  if (typeof(Zenbox) !== "undefined") {
