@@ -1,0 +1,35 @@
+---
+layout: content
+show_menu: true
+path: /blog
+title: Blog | Notificare
+description: In our blog you will find the best of us! From our latest adventures to our epiphanies, we'll post about what makes us move forward.
+keywords: blog, articles, epiphanies, adventures
+text_kop: blog 
+---
+<section class="blogs">
+	{% for post in site.posts %}
+	<article>
+		<header>
+			<div class="author-info">
+				<div class="author-img">
+				{{ post.author | asset_url | image_tag }}
+				</div>
+				<p class="name">{{ post.author | escape }}
+				<p>
+					on
+					<time datetime="{$post.publish_date|date_format:"%Y %m %d"}">{$post.publish_date|date_format:"%B %e %Y"}</time>
+				</p>
+			</div>
+			<h3><a href="/blog/?itemID={$post.itemID}">{{ post.name | escape }}</a></h3>
+		</header>
+		<div class="article-text">
+			{{ post.excerpt }}
+		</div>
+		<div class="article-img">
+		{{ post.image | asset_url | image_tag }}
+		</div>
+		<a href="/blog/?itemID={$post.itemID}" class="readmore">{$dictionary->getText('read_more')}</a>
+	</article>
+	{% endfor %}
+</section>

@@ -14,6 +14,9 @@
 	<header id="mainheader">
 		<div class="wrap">
 		<h1><a href="/">Notificare</a></h1>
+		{% if page.show_menu == true %} 
+		{% include menu.html %}
+		{% endif %}
 		</div>
 	</header>
 	<div class="wrap">
