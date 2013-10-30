@@ -21,7 +21,7 @@ text_kop: blog
 					<time datetime="{$post.publish_date|date_format:"%Y %m %d"}">{$post.publish_date|date_format:"%B %e %Y"}</time>
 				</p>
 			</div>
-			<h3><a href="/blog/?itemID={$post.itemID}">{{ post.name | escape }}</a></h3>
+			<h3><a href="{{ post.url }}">{{ post.name | escape }}</a></h3>
 		</header>
 		<div class="article-text">
 			{{ post.excerpt }}
@@ -29,7 +29,7 @@ text_kop: blog
 		<div class="article-img">
 		{{ post.image | asset_url | image_tag }}
 		</div>
-		<a href="/blog/?itemID={$post.itemID}" class="readmore">{$dictionary->getText('read_more')}</a>
+		<a href="{{ post.url }}" class="readmore">Read more...</a>
 	</article>
 	{% endfor %}
 </section>

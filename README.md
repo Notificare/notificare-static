@@ -5,7 +5,13 @@
 gem install jekyll
 
 git clone git@github.com:Notificare/notificare-static.git
+
 cd notificare-static
+
+git submodule init
+
+git submodule update
+
 jekyll serve --watch
 
 ## SASS
