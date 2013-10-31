@@ -5,7 +5,7 @@ path: /blog
 title: Blog | Notificare
 description: In our blog you will find the best of us! From our latest adventures to our epiphanies, we'll post about what makes us move forward.
 keywords: blog, articles, epiphanies, adventures
-text_kop: blog 
+text_kop: Blog 
 ---
 <section class="blogs">
 	{% for post in site.posts %}
@@ -13,12 +13,10 @@ text_kop: blog
 		<header>
 			<div class="author-info">
 				<div class="author-img">
-				{{ post.author | asset_url | image_tag }}
+					<img src="/images/{{ post.author | append:'.jpg' | escape }}" alt="{{ post.author }}" />
 				</div>
-				<p class="name">{{ post.author | escape }}
-				<p>
-					on
-					<time datetime="{$post.publish_date|date_format:"%Y %m %d"}">{$post.publish_date|date_format:"%B %e %Y"}</time>
+				<p class="name">{{ post.author | escape }}</p>
+				<p>on <time datetime="{{ post.date | date: '%Y %m %d' }}">{{ post.date | date: "%B %e %Y" }}</time>
 				</p>
 			</div>
 			<h3><a href="{{ post.url }}">{{ post.name | escape }}</a></h3>
@@ -27,7 +25,9 @@ text_kop: blog
 			{{ post.excerpt }}
 		</div>
 		<div class="article-img">
-		{{ post.image | asset_url | image_tag }}
+		{% if post.image %}
+			<img src="{{ post.image | asset_path }}" alt="{{ post.name }}" />
+		{% endif %}
 		</div>
 		<a href="{{ post.url }}" class="readmore">Read more...</a>
 	</article>

@@ -2,17 +2,18 @@
 layout: content
 show_menu: true
 ---
+
 <section class="blog-post">
 	<article>
 		<header>
 			<div class="author-info">
 				<div class="author-img">
-					{{ page.author | asset_url | image_tag }}
+					<img src="/images/{{ page.author | append: '.jpg' | escape }}" alt="{{ page.author | escape }}" />
 				</div>
-				<p class="name">{{ page.author | escape }}
+				<p class="name">{{ page.author | escape }}</p>
 				<p>
 					on
-					<time datetime="{$post.publish_date|date_format:"%Y %m %d"}">{$post.publish_date|date_format:"%B %e %Y"}</time>
+					<time datetime="{{ page.date | date:'%Y %m %d' }}">{{ page.date | date:'%B %e %Y' }}</time>
 				</p>
 			</div>
 			<h3>{{ page.name | escape }}</h3>
@@ -21,7 +22,7 @@ show_menu: true
 			{{ content }}
 		</div>
 		<div class="article-img">
-			{{ page.image | asset_url | image_tag }}
+			{{ page.image }}
 		</div>
 		<div class="social-buttons">
 			<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://notifica.re/blog/?itemID={$post.itemID}">Tweet</a>

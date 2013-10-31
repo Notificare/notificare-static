@@ -4,19 +4,26 @@
 
 gem install jekyll
 
+npm install -g grunt-cli
+
+npm install -g bower
+
 git clone git@github.com:Notificare/notificare-static.git
 
 cd notificare-static
 
-git submodule init
+npm install
 
-git submodule update
+In one terminal, run: 
 
-jekyll serve --watch
+grunt
 
-## SASS
 
-Sass files should be compiled with compass
+In another terminal, run:
 
-compass --watch
+grunt server
+
+## Build a production build
+
+grunt build
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  Amsterdam | Blog | Notificare
+name: Amsterdam
 author: Robert Leefmans
 date:   2013-09-24 11:28:00
 categories: blog
