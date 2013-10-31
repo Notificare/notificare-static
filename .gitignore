@@ -4,3 +4,8 @@ _site/
 .project
 .DS_Store
 *.swp
+/.jekyll-assets-cache
+/build
+/debug
+/node_modules
+/Gemfile.lock

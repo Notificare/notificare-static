@@ -1,7 +1,7 @@
 name: Your New Jekyll Site
 port: 4444
 permalink: pretty
-exclude: [sass, config.rb]
+exclude: [sass, config.rb, node_modules, Gemfile, Gemfile.lock, Gruntfile.js, package.json, README.md]
 site_version: 1.0.3
 facebook:
   app_id: 310676189002589
