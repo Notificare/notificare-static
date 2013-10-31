@@ -1,0 +1,27 @@
+- name: Start Push
+  description: Get started with the power of smart push notifications. 
+  price: 19900
+  planid: Awesome
+  users: 10000
+  notifications: unlimited
+  api_access: yes
+  storage: 5
+  websockets: 20 
+- name: More Push
+  description: Get started with the power of smart push notifications. 
+  price: 19900
+  planid: Awesome
+  users: 10000
+  notifications: unlimited
+  api_access: yes
+  storage: 5
+  websockets: 20
+- name: Force Push
+  description: Get started with the power of smart push notifications. 
+  price: 19900
+  planid: Awesome
+  users: 10000
+  notifications: unlimited
+  api_access: yes
+  storage: 5
+  websockets: 20

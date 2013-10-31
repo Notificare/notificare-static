@@ -1,74 +1,62 @@
 <div class="plans-block">
 	<div id="free_plan1" class="free-plan-top">
-		<h2>{$free_plan.name|escape}</h2>
-		<p>{$free_plan.description}</p>
+		<h2>Free Push</h2>
+		<p>Our free plan can provide unlimited notifications to unlimited devices up to 5,000 users. Accelerate your development time with our easy to use libraries, scale whenever you want and attract more customers with our smart notifications.</p>
 		<div class="order-plan">
-			<a href="/sign-up">{$dictionary->getText('order_this_plan')}</a>
+			<a href="/sign-up">Get it now</a>
 		</div>
 	</div>
 	<div class="payment-info-top">
-		<h3>{$dictionary->getText('pay_with')}</h3>
+		<h3>We accept all major cards</h3>
 		<img src="/images/payment_cards.png" alt="">
-		<p>{$dictionary->getText('cc_charge_info_text')}</p>
+		<p>We won't ask your credit card until you've subscribed to a paid plan.</p>
 	</div>
 <!-- 	<div class="clear"></div> -->
 	<div class="plans-lists">
 		<ul>
-		{foreach from=$list item=plan name=plans}
+		{% for plan in site.plans %}
 			<li>
 				<article>
 					<header>
-						<h2>{$dictionary->getText($plan.name)}</h2>
+						<h2>{{ plan.name | escape }}</h2>
 						<div class="plan-price">
 							<p>
-								<span class="currency">$</span><span class="price">{$plan.price|format_price}</span><span class="month">/mo</span>
+								<span class="currency">$</span><span class="price">{{ plan.price }}</span><span class="month">/mo</span>
 							</p>
 						</div>
 					</header>
 
 					<div class="plan-description">
-						<p>{$plan.description}</p>
+						<p>{{ plan.description | escape }}</p>
 					</div>
 
 					<div class="plan-details">
 						<dl class="def-list">
-							<dt>{$dictionary->getText('platforms')}</dt>
+							<dt>Platforms</dt>
 							<dd class="platforms">
-								{foreach from=$plan.platforms item=platform}
-									<span class="{$platform.name}"></span>
-								{/foreach}
 							</dd>
 
-							<dt>{$dictionary->getText('users')}</dt>
-							<dd class="users">{$plan.users|format_number}</dd>
+							<dt>Users</dt>
+							<dd class="users">{{ plan.users }}</dd>
 
-							<dt>{$dictionary->getText('devices')}</dt>
-							<dd>{$dictionary->getText('unlimited')}</dd>
+							<dt>Devices</dt>
+							<dd>unlimited</dd>
 
-							<dt>{$dictionary->getText('notifications')}</dt>
-							<dd>{$plan.notifications|escape}</dd>
+							<dt>Notifications</dt>
+							<dd>{{ plan.notifications }}</dd>
 
-							<dt>{$dictionary->getText('api_access')}</dt>
-							<dd>
-								{if $plan.api_access}
-									{$dictionary->getText('yes')}
-								{else}
-									{$dictionary->getText('no')}
-								{/if}
-							</dd>
+							<dt>API access</dt>
+							<dd>{{ plan.api_access }}</dd>
 
-							<dt>{$dictionary->getText('storage')}</dt>
-							<dd>{$plan.storage|escape} {$dictionary->getText('GB')}</dd>
+							<dt>Storage</dt>
+							<dd>{{ plan.storage }} GB</dd>
 
-							<dt>{$dictionary->getText('websockets')}</dt>
-							<dd>{$plan.websockets|escape} {$dictionary->getText('concurrent_connections')}</dd>
+							<dt>Websockets</dt>
+							<dd>{{ plan.websockets }} concurrent connections</dd>
 							
-							<dt>{$dictionary->getText('smartness')}</dt>
+							<dt>Smartness</dt>
 							<dd class="smartness">
 								<ul class="feature-pushes">
-	{foreach from=$plan.smartness item=smartness}
-									<li class="active"><span class="{$smartness.icon}"></span>{$smartness.name}</li>
-	{/foreach}
 								</ul>
 							</dd>
 							<!-- <dd class="smartness">{$plan.smartness}</dd> -->
@@ -82,11 +70,11 @@
 
 				</article>
 			</li>
-		{/foreach}
+		{% endfor %}
 		</ul>		
 	</div>
 
 	<div class="call-us">
-		<h2>{$dictionary->getText('questions')}</h2>
+		<h2>Questions? Give us a call +1 (512) 774 61 27</h2>
 	</div>
 </div>
