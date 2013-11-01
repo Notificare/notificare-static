@@ -1,0 +1,27 @@
+<div class="testimonials">
+	<h2>Testimonials</h2>
+	<p></p>
+
+	<div class="carousel">
+		<ul class="carousel-content">
+		{% for testimonial in site.data.testimonials %} 
+			<li class="active">
+				<div class="author-img">
+					<img src="/images/testimonials/{{ testimonial.image }}" width="150" height="150" alt="{{ testimonial.name }}" />
+				</div>
+				<h3>{{ testimonial.name | escape }}</h3>
+				<div><p>{{ testimonial.text | escape }}</p></div>
+				<div>{{ testimonial.signature | escape }}</div>
+			</li>
+		{% endfor %}
+		</ul>
+
+		<ul class="carousel-loader">
+			<li class="active hidden">
+				<a href="/testimonials/{{ testimonial.name | escape }}" class="state-1">
+					<span></span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>

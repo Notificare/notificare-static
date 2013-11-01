@@ -13,7 +13,7 @@
 	 -->
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="google-site-verification" content="{{ site.api.google.webmaster }}" />
-	<title>{{ page.title | escape }}</title>
+	<title>{{ page.title | escape }}{% if page.categories %} | {{ page.categories | first | capitalize }}{% endif %} | Notificare</title>
 	<meta name="description" content="{{ page.description | escape }}" />
 	<meta name="keywords" content="{{ page.keywords | escape }}" />
 	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />

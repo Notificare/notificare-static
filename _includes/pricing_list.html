@@ -3,7 +3,7 @@
 		<h2>Free Push</h2>
 		<p>Our free plan can provide unlimited notifications to unlimited devices up to 5,000 users. Accelerate your development time with our easy to use libraries, scale whenever you want and attract more customers with our smart notifications.</p>
 		<div class="order-plan">
-			<a href="/sign-up">Get it now</a>
+			<a href="https://dashboard.notifica.re/#/sign-up">Get it now</a>
 		</div>
 	</div>
 	<div class="payment-info-top">
@@ -11,10 +11,9 @@
 		<img src="/images/payment_cards.png" alt="">
 		<p>We won't ask your credit card until you've subscribed to a paid plan.</p>
 	</div>
-<!-- 	<div class="clear"></div> -->
 	<div class="plans-lists">
 		<ul>
-		{% for plan in site.plans %}
+		{% for plan in site.data.plans %}
 			<li>
 				<article>
 					<header>
@@ -34,6 +33,9 @@
 						<dl class="def-list">
 							<dt>Platforms</dt>
 							<dd class="platforms">
+								{% for platform in plan.platforms %}
+									<span class="{{ platform }}"></span>
+								{% endfor %}
 							</dd>
 
 							<dt>Users</dt>
@@ -57,13 +59,15 @@
 							<dt>Smartness</dt>
 							<dd class="smartness">
 								<ul class="feature-pushes">
+	{% for smartness in plan.smartness %}
+									<li class="active"><span class="{{ smartness.icon }}"></span>{{ smartness.name | escape }}</li>
+	{% endfor %}
 								</ul>
 							</dd>
-							<!-- <dd class="smartness">{$plan.smartness}</dd> -->
 						</dl>
 
 						<div class="order-plan">
-							<a href="/sign-up/{foreach from=$plans key=k item=v}{if $plan.planid eq $v}{$k}{/if}{/foreach}">{$dictionary->getText('order_this_plan')}</a>
+							<a href="https://dashboard.notifica.re/#/sign-up/{{ plan.url }}">Get it now</a>
 						</div>
 
 					</div>

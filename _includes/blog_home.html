@@ -1,0 +1,14 @@
+{% assign post = site.posts | first %}
+<div class="blogbox">
+  <h1>{{ post.name | escape }}</h1>
+  {{ post.excerpt }}
+
+  <div class="author-info">
+    <div class="author-img">
+      <img src="/images/authors/{{ post.author }}.jpg" width="80" height="80" alt="{{ post.author | escape }}">
+    </div>
+    <p>by {{ post.author | escape }}</p>
+    <time datetime="{{ post.date | date:'%Y %m %d'}}">on {{ post.date | date:"%b %d, %Y"}}</time>
+  </div>
+  <a href="/blog" class="btn-blue">more on our blog</a>
+</div>

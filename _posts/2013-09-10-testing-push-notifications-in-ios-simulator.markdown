@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Testing Push Notifications in iOS simulator | Blog | Notificare
+title:  Testing Push Notifications in iOS simulator
 author: Joel Oliveira
 date:   2013-09-10 10:51:00
 categories: blog

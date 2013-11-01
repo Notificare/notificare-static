@@ -1,0 +1,8 @@
+{% assign testimonial = site.data.testimonials | first %}
+<div class="reviewbox">
+  <div class="avatar"><img src="/images/testimonials/{{ testimonial.image }}" alt="{{ testimonial.name }}"></div>
+  <blockquote>
+    <p>{{ testimonial.text | escape }}</p>
+  </blockquote>
+  <p>{{ testimonial.signature | escape }}</p>
+</div>

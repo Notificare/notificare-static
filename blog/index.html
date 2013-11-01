@@ -2,7 +2,7 @@
 layout: content
 show_menu: true
 path: /blog
-title: Blog | Notificare
+title: Blog
 description: In our blog you will find the best of us! From our latest adventures to our epiphanies, we'll post about what makes us move forward.
 keywords: blog, articles, epiphanies, adventures
 text_kop: Blog 
@@ -13,13 +13,13 @@ text_kop: Blog
 		<header>
 			<div class="author-info">
 				<div class="author-img">
-					<img src="/images/{{ post.author | append:'.jpg' | escape }}" alt="{{ post.author }}" />
+					<img src="/images/authors/{{ post.author | escape }}.jpg" alt="{{ post.author }}" />
 				</div>
 				<p class="name">{{ post.author | escape }}</p>
 				<p>on <time datetime="{{ post.date | date: '%Y %m %d' }}">{{ post.date | date: "%B %e %Y" }}</time>
 				</p>
 			</div>
-			<h3><a href="{{ post.url }}">{{ post.name | escape }}</a></h3>
+			<h3><a href="{{ post.url }}">{{ post.title | escape }}</a></h3>
 		</header>
 		<div class="article-text">
 			{{ post.excerpt }}

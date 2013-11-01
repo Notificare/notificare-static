@@ -8,7 +8,7 @@ show_menu: true
 		<header>
 			<div class="author-info">
 				<div class="author-img">
-					<img src="/images/{{ page.author | append: '.jpg' | escape }}" alt="{{ page.author | escape }}" />
+					<img src="/images/authors/{{ page.author | escape }}.jpg" alt="{{ page.author | escape }}" />
 				</div>
 				<p class="name">{{ page.author | escape }}</p>
 				<p>
@@ -16,7 +16,7 @@ show_menu: true
 					<time datetime="{{ page.date | date:'%Y %m %d' }}">{{ page.date | date:'%B %e %Y' }}</time>
 				</p>
 			</div>
-			<h3>{{ page.name | escape }}</h3>
+			<h3>{{ page.title | escape }}</h3>
 		</header>
 		<div class="article-text">
 			{{ content }}
@@ -25,10 +25,10 @@ show_menu: true
 			{{ page.image }}
 		</div>
 		<div class="social-buttons">
-			<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://notifica.re/blog/?itemID={$post.itemID}">Tweet</a>
+			<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://notifica.re{{ page.url }}">Tweet</a>
 			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-			<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fnotifica.re/blog/?itemID={$post.itemID}&amp;send=false&amp;layout=button_count&amp;width=200&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21&amp;appId=310676189002589" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:200px; height:21px;" allowTransparency="true"></iframe>
+			<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fnotifica.re{{ page.url }}&amp;send=false&amp;layout=button_count&amp;width=200&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21&amp;appId=310676189002589" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:200px; height:21px;" allowTransparency="true"></iframe>
 		</div>
-		<div class="fb-comments" data-href="http://notifica.re/blog/?itemID={$post.itemID}" data-num-posts="5" data-width="960"></div>
+		<div class="fb-comments" data-href="http://notifica.re{{ page.url }}" data-num-posts="5" data-width="960"></div>
 	</article>
 </section>
