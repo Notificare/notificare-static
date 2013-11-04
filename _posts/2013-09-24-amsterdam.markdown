@@ -4,6 +4,7 @@ title:  Amsterdam
 author: Robert Leefmans
 date:   2013-09-24 11:28:00
 categories: blog
+image: amsterdam.jpg
 ---
 We are excited to announce that our team has moved to a new location in Amsterdam. We spent the previous year working from our office at the Startup Campus Rotterdam, which was great. We've chosen for Amsterdam to be closer to our clients and because of the possibility to stay close to Central Station.
 
