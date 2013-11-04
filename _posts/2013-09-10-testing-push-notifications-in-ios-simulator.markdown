@@ -4,6 +4,7 @@ title:  Testing Push Notifications in iOS simulator
 author: Joel Oliveira
 date:   2013-09-10 10:51:00
 categories: blog
+image:  testing-push-notifications-in-ios-simulator.png
 ---
 Yeah you heard it right. I would like to highlight a feature of Notificare that comes in handy when developing apps for iOS. If you are familiar with implementing Apple's Push Notification Service then you know that you can only receive those notifications using a real device.
 

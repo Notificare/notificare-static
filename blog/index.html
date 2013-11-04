@@ -26,7 +26,7 @@ text_kop: Blog
 		</div>
 		<div class="article-img">
 		{% if post.image %}
-			<img src="{{ post.image | asset_path }}" alt="{{ post.name }}" />
+			<img src="/images/posts/{{ post.image }}" alt="{{ post.name }}" />
 		{% endif %}
 		</div>
 		<a href="{{ post.url }}" class="readmore">Read more...</a>
