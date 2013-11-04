@@ -16,9 +16,9 @@ show_menu: true
 					<time datetime="{{ page.date | date:'%Y %m %d' }}">{{ page.date | date:'%B %e %Y' }}</time>
 				</p>
 			</div>
-			<h3>{{ page.title | escape }}</h3>
 		</header>
 		<div class="article-text">
+      <h3>{{ page.title | escape }}</h3>
 			{{ content }}
 		</div>
 		<div class="article-img">
