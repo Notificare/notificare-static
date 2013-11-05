@@ -1,5 +1,3 @@
-var shim = require('browserify-shim');
-
 module.exports = function(grunt) {
 
   // Project configuration
@@ -15,29 +13,6 @@ module.exports = function(grunt) {
         'css/**/*.css'
       ]
     },
-
-    // Combine JS modules using Browserify
-//    browserify2: {
-//      options: {
-//        entry: './js/main.js',
-//        beforeHook: function(bundle) {
-//          // Shim 3rd party libraries not in `node_modules`
-//          shim(bundle, {
-//            'jquery': {path: 'components/jquery/jquery.js', exports: 'jQuery'},
-//            'fastclick': {path: 'components/fastclick/lib/fastclick.js', exports: 'jQuery'},
-//            'jquery-jail': {path: 'components/JAIL/src/jail.js', exports: 'jail'}
-//          });
-//        }
-//      },
-//      debug: {
-//        compile: 'debug/app.js',
-//        // For source maps
-//        debug: true
-//      },
-//      build: {
-//        compile: 'build/app.js'
-//      }
-//    },
 
     // Compile Sass files to CSS
     compass: {
@@ -134,7 +109,6 @@ module.exports = function(grunt) {
 
   // Load tasks from plugins
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-browserify2');
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
@@ -148,7 +122,6 @@ module.exports = function(grunt) {
     grunt.task.run([
       'clean:debug',
       'compass:debug',
-//      'browserify2:debug',
       'concat:debug'
     ]);
     // Watch for changes
@@ -169,7 +142,6 @@ module.exports = function(grunt) {
   grunt.registerTask('build', [
     'clean:all',
     'compass:build',
-//    'browserify2:build',
     'concat:build',
     'cssmin',
     'uglify',
