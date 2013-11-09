@@ -5,6 +5,7 @@ author: Joris Verbogt
 date:   2012-10-12 09:23:22
 categories: blog
 image:  notificare-joins-dublin-summit-startup-village.png
+image-detail:  notificare-joins-dublin-summit-startup-village-detail.png
 ---
 We are proud to be part of this year's [Web Summit](http://www.websummit.net/) in Dublin. With over 200 speakers and more than 3,000 attendees, it promises to be the biggest event of its kind in Europe.
 

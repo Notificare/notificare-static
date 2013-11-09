@@ -5,6 +5,7 @@ author: Joel Oliveira
 date:   2012-08-18 15:55:00
 categories: blog
 image:  a-vision-of-a-hassle-free-network.jpeg
+image-detail:  a-vision-of-a-hassle-free-network-detail.jpeg
 ---
 As we get more dependent of internet services, software or hardware in general, we also battle the machine to keep our work as easy as possible. After all it should be possible to make the machine work for you instead of the other way around.
 

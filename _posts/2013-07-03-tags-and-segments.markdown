@@ -5,6 +5,7 @@ author: Robert Leefmans
 date:   2013-07-03 13:13:25
 categories: blog
 image:  tags-and-segments.png
+image-detail:  tags-and-segments-detail.png  
 ---
 Today, we’re happy to introduce two new features on our Smarter Notification platform - Tags and Segments. With Tags and Segments, targeting the right audience becomes so much more advanced. 
 

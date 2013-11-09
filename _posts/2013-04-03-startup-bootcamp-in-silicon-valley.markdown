@@ -5,6 +5,7 @@ author: Robert Leefmans
 date:   2013-04-03 09:54:18
 categories: blog
 image:  startup-bootcamp-in-silicon-valley.jpg
+image-detail:  startup-bootcamp-in-silicon-valley-detail.jpg
 ---
 We are proud to be part of Netherlands’ Most Promising Start-ups that got invited to experience Silicon Valley first-hand.
 

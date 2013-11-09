@@ -5,6 +5,7 @@ author: Joris Verbogt
 date:   2013-03-01 09:00:00
 categories: blog
 image:  notificare-platform-launched.png
+image-detail:  notificare-platform-launched-detail.png
 ---
 Since the successful launch of our famous Notificare App last summer, we've been working hard on preparing our backend systems for the next steps. We envisioned a platform that would bridge the gap between the virtual world and physical, smart connected devices. And we're still working hard every day to make this happen. But because we already developed so much communication infrastructure and software, we decided we would not just keep it to ourselves. 
 

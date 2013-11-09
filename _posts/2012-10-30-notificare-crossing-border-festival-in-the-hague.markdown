@@ -5,6 +5,7 @@ author: Joel Oliveira
 date:   2012-10-30 13:00:00
 categories: blog
 image:  notificare-crossing-border-festival-in-the-hague.jpeg
+image-detail:  notificare-crossing-border-festival-in-the-hague-detail.jpeg
 ---
 It's been a busy month but we're not done yet. Me and Joris Verbogt will be speaking at the Crossing Border Festival.  The Border Sessions is a beta edition aiming to inspire people about the impact of technology on society.
 

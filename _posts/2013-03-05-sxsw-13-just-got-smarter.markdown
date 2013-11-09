@@ -5,6 +5,7 @@ author: Joel Oliveira
 date:   2013-03-05 11:57:00
 categories: blog
 image:  sxsw-13-just-got-smarter.jpg
+image-detail:  sxsw-13-just-got-smarter-detail.jpg
 ---
 We can't wait to present our product in what we think is the world's biggest interactive festival. For us, it has become kind of a tradition (for some of us it's the 6th year in a row); South by Southwest is a source of inspiration and the opportunity to check out the latests trends, emerging startups and all the good stuff that will change the web in the next couple of years.
 

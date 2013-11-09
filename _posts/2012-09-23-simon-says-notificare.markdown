@@ -5,6 +5,7 @@ author: Robert Leefmans
 date:   2012-09-23 12:22:26
 categories: blog
 image:  simon-says-notificare.png
+image-detail:  simon-says-notificare-detail.png
 ---
 For me the MB Pocket Simon was a real icon in the 80's. Every time I went over to my friend Jerry we played with the Simon. Turn it on and you see a lights flashing, you hear a sound and the game starts! You need to take action, repeat the sequence and the game continues.
 

@@ -5,6 +5,7 @@ author: Robert Leefmans
 date:   2013-04-24 21:35:49
 categories: blog
 image:  this-week-is-going-to-be-so-exciting.png
+image-detail:  this-week-is-going-to-be-so-exciting-detail.png
 ---
 Thursdays the Den Haag Telecom Conference and The Mobile Unconference and Fridays The Next Web Conference. 
 
