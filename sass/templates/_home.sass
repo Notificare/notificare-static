@@ -253,38 +253,44 @@
 			font-weight: 500
 
 // Button green for plan & pricing
-.btn-holder
-	text-align: center
-	padding-top: emCalc(30px)
-	clear: both
-	&.topright
-		font-size: emCalc(14px)
-		margin: 0
-		padding: 0
-.btn-plan-pricing
-	display: inline-block
-	padding: emCalc(25px, 20px) emCalc(50px, 20px)
-	text-align: center
-	background: $color-green
-	font-size: emCalc(20px)
-	line-height: emCalc(28px, 20px)
-	color: #fff
-	strong
-		display: block
-		font-size: emCalc(22px, 20px)
-		font-weight: 500
-	&:hover
-		background: $color-green-dark
 
 .press-box
 	border-top: solid 1px #ebeae8
 	background-image: none !important
+	margin-top: 40px
 	img
 		@extend %fleximage
 	h1
 		text-align: center
 		font-weight: 300
 		font-size: emCalc(34px)
+
+.call-for-action
+	width: 100%
+	text-align: center
+
+	.placeholder
+		display: inline-block
+		width: 450px
+		.btn-home-pricing
+			background: $color-green
+			width: 450px
+			height: 72px
+			display: block
+			color: #fff
+			line-height: emCalc(28px, 20px)
+			text-align: center
+			padding-top: 20px
+			.title				
+				font-size: 1.2em
+				font-weight: 500
+				display: block
+			.subtitle
+				font-size: 1.1em
+
+			&:hover
+				background: $color-green-dark
+
 
 
 
