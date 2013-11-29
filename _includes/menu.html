@@ -1,20 +1,26 @@
-<a href="" class="togglemenu">Show Menu</a>
-<nav class="menu" id="mainmenu">
-	<ul>
-		<li>
-			<a href="/"{% if page.path == '/' %}class="active"{% endif %}>Home</a>
-		</li>
-		<li>
-			<a href="/pricing"{% if page.path == '/pricing' %}class="active"{% endif %}>Plans &amp; Pricing</a>
-		</li>
-		<li>
-			<a href="/blog"{% if page.path == '/blog' || page.categories == 'blog' %}class="active"{% endif %}>Blog</a>
-		</li>
-		<li>
-			<a href="/contact"{% if page.path == '/contact' %}class="active"{% endif %}>Contact</a>
-		</li>
-		<li>
-			<a href="https://dashboard.notifica.re/">Sign in</a>
-		</li>
-	</ul>
-</nav>
+<div class="navbar-wrapper">
+	<div class="container">
+		<div class="navbar navbar-static-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="/"><img src="/images/notificare_dashboard_logo.png" alt="Notificare"></a>
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav pull-right">
+						<li class="active"><a href="/">Home</a></li>
+						<li><a href="/pricing">Plans & Pricing</a></li>
+						<li><a href="/blog">Blog</a></li>
+						<li><a href="/contact">Contact</a></li>
+						<li><a href="https://dashboard.notifica.re/#/auth">Sign in</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

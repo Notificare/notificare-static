@@ -1,300 +1,164 @@
-/* Introduction */
-.introduction
-	margin-bottom: 0
-	padding-top: emCalc(50px)
-	background: $color-blue
-	color: #fff
-	.wrap
-		position: relative
-		min-height: emCalc(445px)
-	.hand
-		right: 0
-		bottom: 0
-		position: absolute
-	h1
-		font-size: emCalc(58px)
-		line-height: emCalc(68px, 58px)
-	p
-		font-size: emCalc(22px)
-		line-height: emCalc(34px, 22px)
-	h1, p
-		margin-bottom: 25px
-	.text
-		width: 46% // 460px
-		line-height: 2em
-	.signup
-		@extend %btn-darkblue
-		padding: emCalc(13px, 22px) emCalc(40px, 22px)
-		margin-bottom: emCalc(15px, 22px)
-		font-size: emCalc(22px)
-		text-align: center
-		color: #fff
-		&:hover
-			background: $font-color
-.intro-rotator
-	width: 789px
-	height: 445px
-	overflow: hidden
+/* Home */
+
+/* CUSTOMIZE THE NAVBAR */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper 
 	position: absolute
-	right: 0
 	top: 0
-.intro-images-rotator
-	margin: 0
-	padding: 0
-	li
-		display: none
-		position: absolute
-		&.active
-			display: block
+	left: 0
+	right: 0
+	z-index: 20
 
-/* Home Features - rich content, two way communication, and blog-review */
-.home-features
-	article
-		@extend %clearfix
-		padding: emCalc(50px) 0
-		background: url("../images/line-shadow.png") no-repeat center bottom
-	h1
-		margin-bottom: emCalc(10px, 46px)
-		font-size: emCalc(46px)
-		font-weight: 600
-	h2
-		margin-bottom: emCalc(5px, 30px)
-		font-weight: 600
-	ul
-		@extend %clear-list
-		li
-			min-height: emCalc(115px)
-			padding-left: emCalc(50px)
-			margin-bottom: emCalc(50px)
-			&.active, &:hover // Replace with icon
-				background: url("../images/arrow-active-l.png") no-repeat left center
-		.img-icon
-			width: 137px
-			float: left
-			margin-right: emCalc(20px)
-			img
-				@extend %fleximage
-		p
-			font-size: emCalc(16px)
-			line-height: emCalc(24px, 16px)
-			margin-top: 0
 
-.img-dashboard-feat
-	width: emCalc(624px)
-	margin: 0 0 0 emCalc(20px)
-	float: left
-	text-align: center
-	img
-		@extend %fleximage
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper .container 
+	padding-left: 0
+	padding-right: 0
 
-// Toggle show hide button
-.hideshow
-	a
-		@extend %btn-green
-		position: relative
-		float: right
-		// &:after
-		// 	content: ""
-		// 	display: block
-		// 	width: 0
-		// 	height: 0
-		// 	position: absolute
-		// 	bottom: -5px
-		// 	left: 50%
-		// 	margin-left: -5px
-		// 	border-left: 7px solid transparent
-		// 	border-right: 7px solid transparent
-		// 	border-top: 7px solid $color-green
+.navbar-wrapper .navbar 
+	padding-left: 15px
+	padding-right: 15px
 
-// Generic iPhone image holder
-.iphone
-	width: 294px
-	margin-right: 20px
-	position: relative
-// iPhone screen that holds the content
-.iphone-screen
-	width: 254px
-	height: 451px
+.navbar-header
 	position: absolute
-	top: 87px
-	left: 19px
-	overflow: hidden
+	margin-top: -22px
+	
+.navbar-toggle
+	margin-top: 43px
+
+.navbar-nav
 	li
-		padding: 0 !important
-		position: absolute
-		top: 0
-		left: 0
-		z-index: 1
-		&.active
-			z-index: 10
-			display: block
-	img
-		@extend %fleximage
-
-.block-loader-rotator
-	position: relative
-
-.feature-lists
-	width: 675px
-.introtext
-	font-size: emCalc(20px)
-	line-height: emCalc(28px, 20px)
-	margin: 0 0 emCalc(40px, 20px)
-.rich-content
-	.iphone
-		float: left
-	.feature-lists
-		float: right
-
-.communication-content
-	ul li
-		padding: 0 emCalc(30px) 0 0
-		&:hover, &.active
-			background: url("../images/arrow-active-r.png") no-repeat right center
-	.iphone
-		float: right
-	.feature-lists
-		float: left
-
-.home-dashboard-features
-	h1
-		text-align: center
-		margin-bottom: emCalc(40px, 48px)
-	li
-		float: left
-	.menu-carousel
-		text-align: center
-		margin-bottom: emCalc(40px)
-		ul
-			+border-radius(3px)
-			overflow: hidden
-			display: inline-block
-		li
-			min-height: auto
-			padding: 0
-			margin: 0 0 0 10px
-			&:first-child
-				margin-left: 0
-			&.active a, &:hover a
-				background-image: none
-				background-color: $color-brown
-		a
-			+border-radius(50%)
-			+hide-text
-			width: emCalc(15px)
-			height: emCalc(15px)
-			display: block
-			background: $color-brown-light
-	.dashboard-carousel
-		min-height: 500px
-		position: relative
-		li
-			padding: 0
-			max-width: 1000px
-			min-height: 500px
-			margin-bottom: 0
-			position: absolute
-			background: #fff !important
-		img
-			width: auto
-			max-height: 400px
-		p
-			font-size: emCalc(20px)
-			line-height: emCalc(34px, 20px)
-			margin-top: emCalc(20px, 20px)
-
-// Basic avatar styling - circle image with 10px blue border
-.avatar
-	@extend %circle-shape
-	width: 150px
-	height: 150px
-	border: solid 10px $color-blue
-
-// Basic author-img styling - circle image(80x80) with 5px blue border
-.author-img
-	@extend %circle-shape
-	width: emCalc(80px)
-	height: emCalc(80px)
-	border: solid 5px $color-blue
-
-.blog-review
-	background-image: none !important
-	> div
-		width: 47%
-		float: left
-		border-left: solid 1px #ebeae8
-		&:first-child
-			border: 0
-			padding-right: 5%
-	h1
-		font-size: emCalc(34px)
-		font-weight: 300
-	p
-		font-size: emCalc(16px)
-		margin-bottom: 0
-	.author-info
-		text-transform: uppercase
-		font-size: emCalc(14px)
-		line-height: emCalc(22px, 14px)
-		color: #a18c76
-		overflow: hidden
-		margin: emCalc(10px, 14px) 0
-	.author-img
-		float: left
-		margin: 0 emCalc(20px, 14px) emCalc(20px, 14px) 0
-	.reviewbox
-		text-align: center
-		blockquote p
-			margin-top: 0
-			font-size: emCalc(20px)
-			font-style: italic
-			font-weight: 300
-		p
-			font-weight: 500
-
-// Button green for plan & pricing
-
-.press-box
-	border-top: solid 1px #ebeae8
-	background-image: none !important
-	margin-top: 40px
-	img
-		@extend %fleximage
-	h1
-		text-align: center
-		font-weight: 300
-		font-size: emCalc(34px)
-
-.call-for-action
-	width: 100%
-	text-align: center
-
-	.placeholder
-		display: inline-block
-		width: 450px
-		.btn-home-pricing
-			background: $color-green
-			width: 450px
-			height: 72px
-			display: block
-			color: #fff
-			line-height: emCalc(28px, 20px)
-			text-align: center
-			padding-top: 20px
-			.title				
-				font-size: 1.2em
-				font-weight: 500
-				display: block
-			.subtitle
-				font-size: 1.1em
-
+		a	
+			+border-radius(5px)
+			font-size: 18px
+			color: $color-blue-dark
 			&:hover
-				background: $color-green-dark
+				color: $color-blue-dark
+				font-size: 18px
+		&.active
+			a
+				+border-radius(5px)
+				font-size: 18px
+				background: $color-blue-dark
+				color: white
+				&:hover
+					background: $color-blue-dark
+					color: white
+					font-size: 18px
+					
+			
+/* CUSTOMIZE THE CAROUSEL  */
+
+/* Carousel base class */
+.carousel 
+	background: $color-blue-light
+	height: 500px
+	margin-bottom: 60px
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption 
+	z-index: 10
+
+
+
+/* Declare heights because of positioning of img element */
+.carousel .item 
+	height: 500px
+	background-color: #777
+
+.carousel-inner > .item > img 
+	position: absolute
+	top: 0
+	left: 0
+	min-width: 100%
+	height: 500px
 
 
 
 
+/* MARKETING CONTENT  */
+
+/* Pad the edges of the mobile views a bit */
+.marketing 
+	padding-left: 15px
+	padding-right: 15px
+
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 
+	text-align: center
+	margin-bottom: 20px
+
+.marketing h2 
+	font-weight: normal
+
+.marketing .col-lg-4 p 
+	margin-left: 10px
+	margin-right: 10px
 
 
 
+/* Featurettes  */
 
+.featurette-divider 
+	margin: 80px 0 /* Space out the Bootstrap <hr> more */
+
+
+/* Thin out the marketing headings */
+.featurette-heading 
+	font-family: $font-family
+	font-weight: 300
+	line-height: 1
+	letter-spacing: -1px
+
+/* RESPONSIVE CSS  */
+
+@media (min-width: 768px) 
+
+	/* Remove the edge padding needed for mobile */
+	.marketing 
+		padding-left: 0
+		padding-right: 0
+	
+
+	/* Navbar positioning foo */
+	.navbar-wrapper 
+		margin-top: 20px
+	
+	.navbar-wrapper .container 
+		padding-left:	15px
+		padding-right: 15px
+	
+	.navbar-wrapper .navbar 
+		padding-left:	0
+		padding-right: 0
+	
+
+	/* The navbar becomes detached from the top, so we round the corners */
+	.navbar-wrapper .navbar 
+		border-radius: 4px
+		
+	.navbar-toggle
+		margin-top: 43px
+		border-color: $color-brown-darkest
+		.icon-bar
+			color: $color-brown-darkest
+	
+
+	/* Bump up size of carousel content */
+	.carousel-caption p 
+		margin-bottom: 20px
+		font-size: 21px
+		line-height: 1.4
+	
+
+	.featurette-heading 
+		font-size: 50px
+
+	.featurette-divider
+		margin: 0
+		
+@media (min-width: 992px) 
+	.featurette-heading 
+		margin-top: 120px

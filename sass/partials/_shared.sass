@@ -1,0 +1,35 @@
+.social-networks
+	@extend %clear-list
+	clear: both
+	float: left
+	margin: emCalc(-73px) 0 emCalc(20px) emCalc(-10px) !important
+	li
+		float: left
+		margin-left: emCalc(10px)
+	a
+		@extend %circle-shape
+		width: emCalc(30px, 24px)
+		height: emCalc(30px, 24px)
+		background: $font-color
+		text-align: center
+		font-size: 24px
+		line-height: emCalc(30px, 24px)
+		color: #fff
+		text-decoration: none
+		+opacity(0.5)
+
+		&:hover
+			+opacity(0.7)
+	@each $social in vimeo, twitter, rss, facebook, linkedin, googleplus, youtube
+		.#{$social}
+			+icon("i-#{$social}")
+
+footer
+	margin-top: 40px
+	.footer-sitemap
+		list-style: none
+	.footer-support
+		list-style: none
+	.copyright
+		font-size: 12px
+		line-height: 14px

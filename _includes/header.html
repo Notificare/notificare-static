@@ -16,9 +16,9 @@
 	<title>{{ page.title | escape }}{% if page.categories %} | {{ page.categories | first | capitalize }}{% endif %} | Notificare</title>
 	<meta name="description" content="{{ page.description | escape }}" />
 	<meta name="keywords" content="{{ page.keywords | escape }}" />
-	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
-	<link rel="stylesheet" type="text/css" href="/css/chosen.css" media="screen" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.css" media="screen" />
 {% if site.env == 'production' %}
 	<link rel="stylesheet" type="text/css" href="/build/default.min.css" media="screen" />
 	<link rel="stylesheet" type="text/css" href="/build/print.min.css" media="print" />
@@ -26,8 +26,6 @@
 	<link rel="stylesheet" type="text/css" href="/debug/default.css" media="screen" />
 	<link rel="stylesheet" type="text/css" href="/debug/print.css" media="print" />
 {% endif %}
-	<link rel="stylesheet" type="text/css" href="/css/opentip.css" media="screen" />
-	<link rel="stylesheet" type="text/css" href="/css/nv.d3.css" media="screen" />
 	<link href="//fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic" rel="stylesheet" type="text/css">
 	<link rel="shortcut icon" href="/favicon.ico" type="image/ico" />
 	<link rel="apple-touch-icon" href="/apple-touch-icon.png" />

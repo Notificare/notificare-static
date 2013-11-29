@@ -28,21 +28,16 @@
 	color: #fff
 	text-shadow: none
 
-// Sticky footer
-+sticky-footer(250px, "#main-wrapper", "#root-footer", "#mainfooter")
-
 // Generic
 body
-	@extend %default-font-styling
+	font-family: $font-family
+	line-height: $default-line-height
+	font-size: $default-font-size
 	margin: 0
 	color: $font-color
 	background: $color-body
-	font-family: $font-family
-	// No extra padding on mainheader on homepage.
-	&.newhome
-		background: #fff
-		#mainheader
-			padding-bottom: 0
+	font-weight: 200
+
 a
 	color: $color-blue-dark
 	text-decoration: none
@@ -50,38 +45,24 @@ a
 	&:hover
 		color: $color-green
 
-input[type="submit"]
-	@extend %btn-styling
-	-webkit-appearance: none
-
-input[type="text"], input[type="password"], textarea
-	border: 0
-	padding: 10px 2%
-	outline: none
-
-input[type="submit"]
-	border: 0
-	padding: 10px 30px
-	cursor: pointer
-
 em
 	font-style: none
 	font-weight: bold
 
-.wrap, %wrap
-	max-width: 1000px
-	margin: 0 auto
-
 h1, h2, h3, h4
+	font-family: $font-family
 	margin-top: 0
 	font-weight: 200
 	line-height: 1.2em
 
 h1
-	font-size: emCalc(36px)
+	font-size: emCalc(50px)
 
 h2
-	font-size: emCalc(30px)
+	font-size: emCalc(36px)
 
 h3
 	font-size: emCalc(24px)
+	
+.main-content
+	margin-top: 140px

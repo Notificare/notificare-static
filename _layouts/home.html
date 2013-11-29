@@ -2,198 +2,132 @@
 {% include javascript.html %}
 </head>
 <body>
-<body class="newhome">
-	<header id="mainheader">
-		<div class="wrap">
-			<h1><a href="/">Notificare</a></h1>
-			{% include menu.html %}
-		</div><!-- wrap ends -->
-	</header>
 
-	<section class="introduction">
-		<div class="wrap">
-			<div class="text">
-				<h1>Notifications just got smarter!</h1>
-				<p>Truly rich and interactive push notifications. <br> Get to know your users. Build a relationship.</p>
-				<a class="signup" href="https://dashboard.notifica.re/#/sign-up">Sign up <strong>for free</strong></a>
-			</div>
+	{% include menu.html %}
 
-			<img src="/images/intro-iphone.png" alt="iPhone" class="hand">
 
-			<div class="intro-rotator">
-				<ul class="intro-images-rotator">
-					<li class="active"><img src="/images/intro-iphone1.png" alt="iPhone"></li>
-					<li><img src="/images/intro-iphone2.png" alt="iPhone"></li>
-<!-- 					<li><img src="/images/intro-iphone3.png" alt="iPhone"></li>
- -->		</ul>
-
-				<ul class="intro-loader-rotator" style="display: none;">
-					<li class="active"><a href="#" class="state-1"><span>1</span></a></li>
-					<li><a href="#" class="state-1"><span>1</span></a></li>
-<!-- 					<li><a href="#" class="state-1"><span>1</span></a></li>
- -->		</ul>
-			</div> <!-- intro-rotator ends -->
-		</div> <!-- Wrap ends -->
-	</section>
-
-	<section class="home-features">
-		<div class="wrap">
-			<div class="call-for-action">
-				<div class="placeholder">
-					<a class="btn-home-pricing" href="/pricing">
-						<div class="title">Wanna add Smartness to your app?</div>
-						<div class="subtitle">Check out our plans &amp; pricing here!</div>
-					</a>
-				</div>
-			</div>
-			<article class="rich-content">
-				<div class="feature-lists">
-					<h1>Engaging experiences</h1>
-					<p class="introtext">Use the power of push notifications to fuel your customers' experience in your app.</p>
-					<ul class="block-loader-rotator">
-						<li class="active">
-							<a href="#">
-								<div class="img-icon"><img src="/images/i-textpush.png" alt="Text push"></div>
-								<h2>Be relevant!</h2>
-								<p>Send messages to a group of users, a specific user or device, or even to users that are in a certain location.</p>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<div class="img-icon"><img src="/images/i-htmlpush.png" alt="HTML push"></div>
-								<h2>Compose rich messages</h2>
-								<p>Direct your users to an existing web page, or, even better, compose your own HTML messages. Include any media file, use images, maps, etc. Just be creative!</p>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<div class="img-icon"><img src="/images/i-mappush.png" alt="Map push"></div>
-								<h2>Location aware</h2>
-								<p>Need to give directions or just show your retail stores on a map? Use our location tracking feature to point your users to the right place.</p>
-							</a>
-						</li>
-					</ul>
-<!-- 					<div class="hideshow">
-						<a href="#" class="toggle-feature">See more features</a>
-					</div> -->
-				</div>
-
-				<div class="iphone">
-					<img src="/images/iphone-base.png" alt="">
-					<div class="iphone-screen">
-						<ul class="block-content-rotator">
-							<li class="active"><a href="#" class="state-1"><img src="/images/screen-textpush_2x.png"></a></li>
-							<li><a href="#" class="state-1"><img src="/images/screen-imagepush_2x.png"></a></li>
-							<li><a href="#" class="state-1"><img src="/images/screen-mappush_2x.png"></a></li>
-						</ul>
+	<!-- Carousel
+	================================================== -->
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="item active">
+				<img data-src="holder.js/900x500/auto/#92c4cf:#92c4cf/text:First slide" alt="First slide">
+				<div class="container">
+					<div class="carousel-caption">
+						<h1>Example headline.</h1>
+						<p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+						<p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
 					</div>
 				</div>
-			</article>
-
-			<article class="communication-content">
-				<div class="feature-lists">
-					<h1>Two way communication</h1>
-					<p class="introtext">Stop shouting, start interacting with your users! Get the most out of push notifications.</p>
-					<ul class="block-loader-rotator">
-						<li class="active">
-							<a href="#">
-								<div class="img-icon"><img src="/images/i-poll.png" alt="Poll push"></div>
-								<h2>Ask a question, get feedback!</h2>
-								<p>Measure your users' happiness level when you release new features. Trigger your biggest fans to rate your app. Or just ask them what they think of that awesome new product you just launched.</p>
-							</a>
-						</li>
-						<li>
-							<a href="">
-								<div class="img-icon"><img src="/images/i-corefuntions.png" alt="Access core functions"></div>
-								<h2>Get the most out of devices</h2>
-								<p>Through our SDK, you can access core functionality of your users' devices. Have them set up a call, send email or SMS, use the camera or simply ask them for input.</p>
-							</a>
-						</li>
-						<li>
-							<a href="">
-								<div class="img-icon"><img src="/images/i-thirdtparty.png" alt="Third party"></div>
-								<h2>Use your own code</h2>
-								<p>Ask for input, then trigger your app or even already installed apps for more advanced functionality. Our API will also happily talk to your backend or existing third-party systems.</p>
-							</a>
-						</li>
-
-					</ul>
-				</div>
-
-				<div class="iphone">
-					<img src="/images/iphone-base.png" alt="">
-					<div class="iphone-screen">
-						<ul class="block-content-rotator">
-							<li class="active"><a href="#" class="state-1"><img src="/images/screen-ratingpush_2x.png"></a></li>
-							<li><a href="#" class="state-1"><img src="/images/screen-corefunctions_2x.png"></a></li>
-							<li><a href="#" class="state-1"><img src="/images/screen-imagepush_2x.png"></a></li>
-						</ul>
+			</div>
+			<div class="item">
+				<img data-src="holder.js/900x500/auto/#92c4cf:#92c4cf/text:Second slide" alt="Second slide">
+				<div class="container">
+					<div class="carousel-caption">
+						<h1>Another example headline.</h1>
+						<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+						<p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+					</div>
+				 </div>
+			</div>
+			<div class="item">
+				<img data-src="holder.js/900x500/auto/#92c4cf:#92c4cf/text:Third slide" alt="Third slide">
+				<div class="container">
+					<div class="carousel-caption">
+						<h1>One more for good measure.</h1>
+						<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+						<p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
 					</div>
 				</div>
-			</article>
-
-			<article class="home-dashboard-features">
-				<div class="menu-carousel">
-					<ul class="block-loader-rotator" style="display: none;">
-						<li class="active"><a href="#" class="state-1">stats</a></li>
-						<li><a href="#" class="state-1">users</a></li>
-						<li><a href="#" class="state-1">composer</a></li>
-						<li><a href="#" class="state-1">sdk</a></li>
-					</ul>
-				</div>
-				<div class="dashboard-carousel">
-					<ul class="block-content-rotator">
-						<li class="active">
-							<h1>One push to rule them all</h1>
-							<div class="img-dashboard-feat">
-								<img src="/images/home-mac_2x.png" alt="">
-							</div>
-							<p>Send your messages to any mobile platform, straight from the dashboard. Pick your audience based on user name, specific device, geographic location or send a broadcast. Choose a notification type, add actions, and preview before you send. Easy peasy!</p>
-						</li>
-						<li>
-							<h1>Know thy users</h1>
-							<div class="img-dashboard-feat">
-								<img src="/images/home-ipad_2x.png" alt="">
-							</div>
-							<p>Look up users and get information about their devices. See what platforms, versions and languages are being used most for your app.</p>
-						</li>
-						<li>
-							<h1>See what's happening</h1>
-							<div class="img-dashboard-feat">
-								<img src="/images/home-imac_2x.png" alt="">
-							</div>
-							<p>Gain insight into the usage of your app in a glance. See statistics on registrations, active users and number of notifications sent. Analyze how fast users respond to notifications, the actions they take, the answers they give.</p>
-						</li>
-						<li>
-							<h1>Integration is easy</h1>
-							<div class="img-dashboard-feat">
-								<img src="/images/sdk_box_highlights.png" alt="">
-							</div>
-							<p>Our SDK lets you easily integrate Notificare into your app on iOS, Android or HTML5 apps. The straight forward implementation will have you up and running in no time. And if the dashboard doesn't satisfy your push needs, our REST API gives you the freedom to send notifications from your existing backend systems.</p>
-						</li>
-					</ul>
-				</div>
-			</article>
-
-			<article class="blog-review">
-        {% include blog_home.html %}
-        {% include testimonial_home.html %}
-			</article>
-			<div class="call-for-action">
-				<div class="placeholder">
-					<a class="btn-home-pricing" href="https://dashboard.notifica.re/#/sign-up">
-						<div class="title">Add smarter Notifications to your app</div>
-						<div class="subtitle">Sign up for free (no creditcard needed)</div>
-					</a>
-				</div>
 			</div>
-			<article class="press-box">
-				<h1>As seen on</h1>
-				<img src="/images/press-icons.png" alt="Press">
-			</article>
-		</div><!-- wrap ends -->
-	</section>
-	{% include footer.html %}	
+		</div>
+		<a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+		<a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+	</div><!-- /.carousel -->
+
+
+
+	<!-- Marketing messaging and featurettes
+	================================================== -->
+	<!-- Wrap the rest of the page in another container to center all the content. -->
+
+	<div class="container marketing home-content">
+
+		<!-- Three columns of text below the carousel -->
+		<div class="row">
+		<div class="col-lg-4">
+			<img class="img-circle" data-src="holder.js/140x140" alt="Generic placeholder image">
+			<h2>Heading</h2>
+			<p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+			<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+		</div><!-- /.col-lg-4 -->
+		<div class="col-lg-4">
+			<img class="img-circle" data-src="holder.js/140x140" alt="Generic placeholder image">
+			<h2>Heading</h2>
+			<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+			<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+		</div><!-- /.col-lg-4 -->
+		<div class="col-lg-4">
+			<img class="img-circle" data-src="holder.js/140x140" alt="Generic placeholder image">
+			<h2>Heading</h2>
+			<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+			<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+		</div><!-- /.col-lg-4 -->
+	</div><!-- /.row -->
+
+
+	<!-- START THE FEATURETTES -->
+
+	<hr class="featurette-divider">
+
+	<div class="row featurette">
+		<div class="col-md-7">
+			<h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+			<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+		</div>
+		<div class="col-md-5">
+			<img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+		</div>
+	</div>
+
+	<hr class="featurette-divider">
+
+	<div class="row featurette">
+		<div class="col-md-5">
+			<img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+		</div>
+		<div class="col-md-7">
+			<h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+			<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+		</div>
+	</div>
+
+	<hr class="featurette-divider">
+
+	<div class="row featurette">
+		<div class="col-md-7">
+			<h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+			<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+		</div>
+		<div class="col-md-5">
+			<img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+		</div>
+	</div>
+
+	<hr class="featurette-divider">
+
+	<!-- /END THE FEATURETTES -->
+
+		<!-- FOOTER -->
+	{% include footer.html %}
+
+	</div><!-- /.container -->
 	{% include analytics.html %}
 </body>
 </html>

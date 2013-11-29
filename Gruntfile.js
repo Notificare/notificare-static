@@ -38,14 +38,14 @@ module.exports = function(grunt) {
     concat: {
       debug: {
         files: {        	
-          'debug/lib.js': ['js/lib/modernizr.js', 'js/lib/swfobject.js', 'js/lib/prototype.js', 'js/lib/prototype-date-extensions.js', 'js/lib/lowpro.js', 'js/lib/chosen.proto.js', 'js/lib/trimpath-template.js', 'js/lib/scriptaculous.js', 'js/lib/effects.js', 'js/lib/foresight.js', 'js/lib/moment.js', 'js/lib/base64.js', 'js/lib/opentip-prototype.js', 'js/lib/opentip-prototype-excanvas.js'],
-          'debug/classes.js': ['js/classes/ph8/base.js' , 'js/classes/ph8/config.js' , 'js/classes/ph8/dictionary.js' , 'js/classes/ph8/storage.js' , 'js/classes/ph8/templates.js' , 'js/classes/ph8/pages.js' , 'js/classes/ph8/dialog.js' , 'js/classes/spotlight.js' , 'js/classes/ph8/loader.js' , 'js/classes/tabRotator.js' , 'js/classes/accordion.js' , 'js/classes/url.js' , 'js/classes/youtube.js' , 'js/classes/analytics.js' , 'js/classes/notificare.js' , 'js/classes/home.js' , 'js/classes/fileAPI.js' , 'js/classes/websockets.js' , 'js/classes/dashboard/audience.js' , 'js/classes/dashboard/map.js' , 'js/classes/dashboard/preview.js' , 'js/classes/dashboard/push.js' , 'js/classes/dashboard/users.js' , 'js/classes/dashboard/notifications.js' , 'js/classes/dashboard/charts.js' , 'js/style.js']    
+        	'debug/lib.js': ['js/libs/modernizr.js', 'js/libs/jquery.js', 'js/libs/bootstrap.js', 'js/libs/holder.js'],
+            'debug/classes.js': ['js/classes/app.js' ]    
         }
       },
       build: {
         files: {
-            'build/lib.js': ['js/lib/modernizr.js', 'js/lib/swfobject.js', 'js/lib/prototype.js', 'js/lib/prototype-date-extensions.js', 'js/lib/lowpro.js', 'js/lib/chosen.proto.js', 'js/lib/trimpath-template.js', 'js/lib/scriptaculous.js', 'js/lib/effects.js', 'js/lib/foresight.js', 'js/lib/moment.js', 'js/lib/base64.js', 'js/lib/opentip-prototype.js', 'js/lib/opentip-prototype-excanvas.js'],
-            'build/classes.js': ['js/classes/ph8/base.js' , 'js/classes/ph8/config.js' , 'js/classes/ph8/dictionary.js' , 'js/classes/ph8/storage.js' , 'js/classes/ph8/templates.js' , 'js/classes/ph8/pages.js' , 'js/classes/ph8/dialog.js' , 'js/classes/spotlight.js' , 'js/classes/ph8/loader.js' , 'js/classes/tabRotator.js' , 'js/classes/accordion.js' , 'js/classes/url.js' , 'js/classes/youtube.js' , 'js/classes/analytics.js' , 'js/classes/notificare.js' , 'js/classes/home.js' , 'js/classes/fileAPI.js' , 'js/classes/websockets.js' , 'js/classes/dashboard/audience.js' , 'js/classes/dashboard/map.js' , 'js/classes/dashboard/preview.js' , 'js/classes/dashboard/push.js' , 'js/classes/dashboard/users.js' , 'js/classes/dashboard/notifications.js' , 'js/classes/dashboard/charts.js' , 'js/style.js']    
+            'build/lib.js': ['js/libs/modernizr.js', 'js/libs/jquery.js', 'js/libs/bootstrap.js', 'js/libs/holder.js'],
+            'build/classes.js': ['js/classes/app.js' ]
         }
       }
     },
