@@ -1,0 +1,106 @@
+.plans
+	.payment-info
+		text-align: center
+		h4
+			font-size: 11px
+			text-transform: uppercase
+			color: $color-brown
+		img
+			margin: 26px 0 26px 0
+	.box
+		h2.plan-name
+			border-bottom: 1px solid $color-brown-light
+		.plan-price
+			text-align: center
+			color: $color-brown
+			
+			> p
+				position: relative
+				display: inline-block
+				padding:  0 emCalc(40px) 0 emCalc(25px)
+				margin: 0
+				line-height: 1
+			.currency, .month
+				position: absolute
+			.currency
+				top: 12px
+				left: 0
+				font-size: emCalc(36px)
+			.price
+				font-size: emCalc(100px)
+				font-weight: 500
+			.month
+				bottom: 8px
+				font-size: emCalc(24px)
+		.plan-description
+			text-align: center
+	.plan-overview
+		padding-top: 30px
+		margin-top: -10px
+		border-top: 1px solid $color-brown-lighter
+		
+		.plan-details
+			padding-bottom: 15px
+			label
+				line-height: 34px
+				color: $color-brown-darkest
+			.values
+				line-height: 34px
+				color: $color-brown-darkest
+				&.users
+					color: $color-green
+					font-weight: 500
+			.plan-smartness
+				width: emCalc(280px)
+				float: none
+				clear: left
+				.push-features
+					@extend %clear-list
+					li
+						margin: 0 0 emCalc(5px)
+							background: none
+			.platforms
+				span
+					@extend %icon-bg
+					line-height: 2.8em
+					font-size: 14px
+					margin: 0 10px 0 0
+				@each $platform in WP8, Websockets, BlackBerry, iOS, Android
+					.#{$platform}
+						+icon("i-#{$platform}")
+							color: $color-brown
+							font-size: emCalc(30px)
+			
+	.questions
+		text-align: center
+	.order-button
+		height: 45px
+		
+.testimonials-pricing
+
+	.testimonial-header
+		border-bottom: 1px solid $color-brown-light
+
+	.carousel-testimonials 
+		background: white
+		height: 188px
+		margin-bottom: 0px
+	
+	/* Since positioning the image, we need to help out the caption */
+	.carousel-caption 
+		height: 188px
+		z-index: 10
+	
+		
+	
+	/* Declare heights because of positioning of img element */
+	.carousel-testimonials .item 
+		height: 188px
+		background-color: white
+	
+	.carousel-inner > .item > img 
+		position: absolute
+		top: 0
+		left: 0
+		min-width: 100%
+		height: 188px

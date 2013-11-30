@@ -6,38 +6,26 @@
 </style>
 </head>
 <body>
-	<header id="mainheader">
-		<div class="wrap">
-			<h1><a href="/">Notificare</a></h1>
-			{% include menu.html %}
+	{% include menu.html %}
+	<div class="container main-content">
+		<div class="col-md-12">
+			<h1>{{ page.text_kop }}</h1>
+			{{ content }}
 		</div>
-	</header>
-	<div class="wrap">
-		<div class="main-content">
-			<div class="aboutus">
-				<h2>{{ page.text_kop | escape}}</h2>
-				{{ content }}
-				{% include about.html %}
-			</div>
-			<script type="text/javascript">
-			  if (typeof(Zenbox) !== "undefined") {
-			    Zenbox.init({
-			      dropboxID:   "20175868",
-			      url:         "https://notificare.zendesk.com",
-			      tabTooltip:  "Support",
-			      tabImageURL: "https://assets.zendesk.com/external/zenbox/images/tab_support_right.png",
-			      tabColor:    "#ad9b87",
-			      tabPosition: "Right"
-			    });
-			  }
-			</script>
-			<aside>
-				{% include contacts.html %}
-			</aside>
-		</div>
-		<div id="root-footer"></div>
+		{% include footer.html %}
 	</div>
-	{% include footer.html %}
 	{% include analytics.html %}
+	<script type="text/javascript">
+		if (typeof(Zenbox) !== "undefined") {
+			Zenbox.init({
+				dropboxID:   "20175868",
+				url:         "https://notificare.zendesk.com",
+				tabTooltip:  "Support",
+				tabImageURL: "https://assets.zendesk.com/external/zenbox/images/tab_support_right.png",
+				tabColor:    "#ad9b87",
+				tabPosition: "Right"
+			});
+		}
+	</script>
 </body>
 </html>

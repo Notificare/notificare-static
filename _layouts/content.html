@@ -3,34 +3,18 @@
 </head>
 <body>
 	<div id="fb-root"></div>
-	<script>(function(d, s, id) {
-	  var js, fjs = d.getElementsByTagName(s)[0];
-	  if (d.getElementById(id)) return;
-	  js = d.createElement(s); js.id = id;
-	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=310676189002589";
-	  fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));</script>
+	<script>(function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=310676189002589";fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script>
 	
-	<header id="mainheader">
-		<div class="wrap">
-		<h1><a href="/">Notificare</a></h1>
-		{% if page.show_menu == true %} 
-		{% include menu.html %}
-		{% endif %}
+	{% include menu.html %}
+
+	<div class="container main-content">
+		<div class="col-md-12">
+			<h1>{{ page.title }}</h1>
+			{{ content }}
 		</div>
-	</header>
-	<div class="wrap">
-		<section class="intro-page">
-			<h2>{{ page.text_kop | escape }}</h2>
-			<div class="text">
-			</div>
-		</section>
-		<div class="main-content">
-				{{ content }}
-		</div>
-		<div id="root-footer"></div>
+		{% include footer.html %}
 	</div>
-	{% include footer.html %}
 	{% include analytics.html %}
+	
 </body>
 </html>

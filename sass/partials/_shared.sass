@@ -1,8 +1,101 @@
+/* CUSTOMIZE THE NAVBAR */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper 
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	z-index: 20
+
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper .container 
+	padding-left: 0
+	padding-right: 0
+
+.navbar-wrapper .navbar 
+	padding-left: 15px
+	padding-right: 15px
+
+.navbar-header
+	position: absolute
+	margin-top: -22px
+	
+.navbar-toggle
+	margin-top: 43px
+
+.navbar-nav
+	li
+		margin: 5px
+		a	
+			+border-radius(5px)
+			font-size: 18px
+			color: $color-blue-dark
+			&:hover
+				color: $color-blue-dark
+				font-size: 18px
+		&.active
+			a
+				+border-radius(5px)
+				font-size: 18px
+				background: $color-blue-dark
+				color: white
+				&:hover
+					background: $color-blue-dark
+					color: white
+					font-size: 18px
+					
+.btn
+	border: none
+	&.btn-default
+		background: $color-brown
+		&:hover
+			background: $color-brown-dark
+	&.btn-primary
+		background: $color-blue
+		&:hover
+			background: $color-blue-dark
+	&.btn-success
+		background: $color-green
+		&:hover
+			background: $color-green-dark
+	&.btn-info
+		background: $color-blue-light
+		&:hover
+			background: $color-blue
+	&.btn-warning
+
+	&.btn-danger
+		background: $color-red
+		&:hover
+			background: $color-red-dark
+	&.btn-link
+	
+.box
+	padding: 15px
+	margin: 10px 0 10px 0
+	&.white
+		background: white
+	&.blue
+		background: $color-blue
+	&.red
+		background: $color-red
+	&.green
+		background: $color-green
+	&.brown-lighter
+		background: #f8f5f3
+	&.brown-light
+		background: $color-brown-light
+	&.brown
+		background: $color-brown
+
+
 .social-networks
 	@extend %clear-list
 	clear: both
 	float: left
-	margin: emCalc(-73px) 0 emCalc(20px) emCalc(-10px) !important
+	margin: emCalc(-73px) 0 emCalc(20px) emCalc(4px) !important
 	li
 		float: left
 		margin-left: emCalc(10px)
@@ -31,5 +124,6 @@ footer
 	.footer-support
 		list-style: none
 	.copyright
+		margin-left: 20px
 		font-size: 12px
 		line-height: 14px

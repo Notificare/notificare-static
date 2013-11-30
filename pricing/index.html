@@ -1,8 +1,190 @@
 ---
-layout: pricing
+layout: simple
 path: /pricing
 title: Plans & Pricing
 keywords: pricing, service, platform
 text_kop: Plans & Pricing
 ---
 <p>Discover how you can save development time and unleash the power of Smarter Push Notifications. Upgrade, downgrade, cancel at anytime. Manage your cloud of connected devices and start communicating with your users.</p>
+<div class="plans">
+	<div class="row">
+		<div class="col-md-8">
+			<div class="box white">
+				<h2 class="plan-name">Free Push</h2>
+				<p>Our free plan can provide unlimited notifications to unlimited devices up to 5,000 users. Accelerate your development time with our easy to use libraries, scale whenever you want and attract more customers with our smart notifications.</p>
+				<div class="order-button">
+					<a class="btn btn-lg btn-primary pull-right" href="//dashboard/notifica.re/#/sign-up" role="button">Get it now</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="box payment-info white">
+				<h4>We accept all major cards</h4>
+				<img src="/images/payment_cards.png" alt="">
+				<p>We won't ask your credit card until you've subscribed to a paid plan.</p>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		{% for plan in site.data.plans %}
+		<div class="col-md-4">
+			<div class="box white">
+				<h2 class="plan-name">{{ plan.name | escape }}</h2>
+				<div class="plan-price">
+					<p>
+						<span class="currency">$</span><span class="price">{{ plan.price }}</span><span class="month">/mo</span>
+					</p>
+				</div>
+				<div class="plan-description">
+					<p>{{ plan.description | escape }}</p>
+				</div>
+			</div>
+			<div class="box plan-overview brown-lighter">
+				<div class="plan-details">
+					<div class="row">
+						<div class="col-md-6">
+							<label>Platforms</label>
+						</div>
+						<div class="col-md-6">
+							<div class="platforms">
+								{% for platform in plan.platforms %}
+									<span class="{{ platform }}"></span>
+								{% endfor %}
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<label>Users</label>
+						</div>
+						<div class="col-md-6">
+							<div class="values users">{{ plan.users }}</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<label>Devices</label>
+						</div>
+						<div class="col-md-6">
+							<div class="values">unlimited</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<label>Notifications</label>
+						</div>
+						<div class="col-md-6">
+							<div class="values">{{ plan.notifications }}</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<label>API access</label>
+						</div>
+						<div class="col-md-6">
+							<div class="values">{{ plan.api_access }}</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<label>Storage</label>
+						</div>
+						<div class="col-md-6">
+							<div class="values">{{ plan.storage }} GB</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<label>Websockets</label>
+						</div>
+						<div class="col-md-8">
+							<div class="values">{{ plan.websockets }} concurrent connections</div>
+						</div>
+					</div>
+				</div>
+				<div class="order-button">
+					<a class="btn btn-lg btn-primary pull-right" href="//dashboard/notifica.re/#/sign-up" role="button">Get it now</a>
+				</div>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="box white">
+				<h2 class="plan-name">Enterprise & High Volume</h2>
+				<p>For those companies who expect high volume, massive demand, priority support or just an enterprise level infrastructure. <br />Please feel free to contact our sales department and we will be happy to hear your requirements and offer you the best quote for your specific case.</p>
+				<div class="order-button">
+					<a class="btn btn-lg btn-primary pull-right" href="mailto:sales@notifica.re" role="button">Contact Sales</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="box questions">
+				<h2>Questions? Give us a call +1 (512) 774 61 27</h2>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="testimonials-pricing">
+	<div class="row">
+		<div class="col-md-8">
+			<div class="box white">
+				<h2 class="testimonial-header">Testimonials</h2>
+								<!-- Carousel
+				================================================== -->
+				<div id="testimonialsCarousel" class="carousel carousel-testimonials slide" data-ride="carousel">
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#testimonialsCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#testimonialsCarousel" data-slide-to="1"></li>
+						<li data-target="#testimonialsCarousel" data-slide-to="2"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="item active">
+							<img data-src="holder.js/900x500/auto/#92c4cf:#92c4cf/text:First slide" alt="First slide">
+							<div class="container">
+								<div class="carousel-caption">
+									<h1>Example headline.</h1>
+									<p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+									<p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<img data-src="holder.js/900x500/auto/#92c4cf:#92c4cf/text:Second slide" alt="Second slide">
+							<div class="container">
+								<div class="carousel-caption">
+									<h1>Another example headline.</h1>
+									<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+									<p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+								</div>
+							 </div>
+						</div>
+						<div class="item">
+							<img data-src="holder.js/900x500/auto/#92c4cf:#92c4cf/text:Third slide" alt="Third slide">
+							<div class="container">
+								<div class="carousel-caption">
+									<h1>One more for good measure.</h1>
+									<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+									<p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div><!-- /.carousel -->
+			
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="box white">
+				<h2 class="testimonial-header">Support</h2>
+				<p>
+					Our staff can help you implement the best mobile messaging strategy, advise on technical issues or just listen to any feedback you might have.</p><p>So if you have any questions don't hesitate and contact us  at <a href="mailto:support@notifica.re">support@notifica.re</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
