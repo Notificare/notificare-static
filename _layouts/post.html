@@ -1,34 +1,37 @@
 ---
-layout: content
+layout: blog
 show_menu: true
 ---
 
-<section class="blog-post">
-	<article>
-		<header>
-			<div class="author-info">
-				<div class="author-img">
-					<img src="/images/authors/{{ page.author | escape }}.jpg" alt="{{ page.author | escape }}" />
+<div class="blog-post">
+	<div class="post box white">
+		<div class="row">
+			<div class="post-author">
+				<div class="post-author-avatar">
+					<img src="/images/authors/{{ page.author | escape }}.jpg" alt="{{ page.author }}" />
 				</div>
-				<p class="name">{{ page.author | escape }}</p>
-				<p>
-					on
-					<time datetime="{{ page.date | date:'%Y %m %d' }}">{{ page.date | date:'%B %e %Y' }}</time>
-				</p>
+				<p class="post-author-name">{{ page.author | escape }}</p>
+				<p class="post-date">on <time datetime="{{ post.date | date: '%Y %m %d' }}">{{ page.date | date: "%B %e %Y" }}</time></p>
 			</div>
-		</header>
-		<div class="article-text">
-      <h3>{{ page.title | escape }}</h3>
-			{{ content }}
+			<div class="post-img">
+			{% if page.image %}
+				<img src="/images/posts/{{ page.image }}" alt="{{ page.name }}" />
+			{% endif %}
+			</div>	
 		</div>
-		<div class="article-img">
-			<img src="/images/posts/{{ page.image-detail }}" alt="{{ page.title | escape }}" />
+		<div class="row">
+			<div class="col-md-12">
+				<h2>{{ page.title | escape }}</h2>
+				<div class="post-text">
+					{{ content }}
+				</div>
+			</div>
 		</div>
 		<div class="social-buttons">
 			<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://notifica.re{{ page.url }}">Tweet</a>
 			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 			<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fnotifica.re{{ page.url }}&amp;send=false&amp;layout=button_count&amp;width=200&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21&amp;appId=310676189002589" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:200px; height:21px;" allowTransparency="true"></iframe>
 		</div>
-		<div class="fb-comments" data-href="http://notifica.re{{ page.url }}" data-num-posts="5" data-width="960"></div>
-	</article>
-</section>
+		<div class="fb-comments" data-href="http://notifica.re{{ page.url }}" data-num-posts="5" data-width="1080"></div>
+	</div>
+</div>

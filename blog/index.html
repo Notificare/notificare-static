@@ -1,5 +1,5 @@
 ---
-layout: content
+layout: blog
 show_menu: true
 path: /blog
 title: Blog
@@ -7,29 +7,32 @@ description: In our blog you will find the best of us! From our latest adventure
 keywords: blog, articles, epiphanies, adventures
 text_kop: Blog 
 ---
-<section class="blogs">
+<div class="blog">
 	{% for post in site.posts %}
-	<article>
-		<header>
-			<div class="author-info">
-				<div class="author-img">
-					<img src="/images/authors/{{ post.author | escape }}.jpg" alt="{{ post.author }}" />
+	<div class="post box white">
+		<div class="row">
+			<div class="col-md-7">
+				<div class="post-author">
+					<div class="post-author-avatar">
+						<img src="/images/authors/{{ post.author | escape }}.jpg" alt="{{ post.author }}" />
+					</div>
+					<p class="post-author-name">{{ post.author | escape }}</p>
+					<p class="post-date">on <time datetime="{{ post.date | date: '%Y %m %d' }}">{{ post.date | date: "%B %e %Y" }}</time></p>
 				</div>
-				<p class="name">{{ post.author | escape }}</p>
-				<p>on <time datetime="{{ post.date | date: '%Y %m %d' }}">{{ post.date | date: "%B %e %Y" }}</time>
-				</p>
+				<div class="post-img">
+				{% if post.image %}
+					<img src="/images/posts/{{ post.image }}" alt="{{ post.name }}" />
+				{% endif %}
+				</div>
 			</div>
-			<h3><a href="{{ post.url }}">{{ post.title | escape }}</a></h3>
-		</header>
-		<div class="article-text">
-			{{ post.excerpt }}
+			<div class="col-md-5">
+				<h3><a href="{{ post.url }}">{{ post.title | escape }}</a></h3>
+				<div class="post-text">
+					{{ post.excerpt }}
+					<a href="{{ post.url }}" class="btn btn-primary pull-right">Read more...</a>
+				</div>
+			</div>
 		</div>
-		<div class="article-img">
-		{% if post.image %}
-			<img src="/images/posts/{{ post.image }}" alt="{{ post.name }}" />
-		{% endif %}
-		</div>
-		<a href="{{ post.url }}" class="readmore">Read more...</a>
-	</article>
+	</div>
 	{% endfor %}
-</section>
+</div>

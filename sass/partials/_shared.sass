@@ -33,6 +33,7 @@
 			font-size: 18px
 			color: $color-blue-dark
 			&:hover
+				background: white
 				color: $color-blue-dark
 				font-size: 18px
 		&.active
@@ -45,7 +46,8 @@
 					background: $color-blue-dark
 					color: white
 					font-size: 18px
-					
+		&:hover
+			background: transparent
 .btn
 	border: none
 	&.btn-default
@@ -64,13 +66,11 @@
 		background: $color-blue-light
 		&:hover
 			background: $color-blue
-	&.btn-warning
 
 	&.btn-danger
 		background: $color-red
 		&:hover
 			background: $color-red-dark
-	&.btn-link
 	
 .box
 	padding: 15px
@@ -124,6 +124,6 @@ footer
 	.footer-support
 		list-style: none
 	.copyright
-		margin-left: 20px
+		margin-left: 15px
 		font-size: 12px
 		line-height: 14px
