@@ -1,5 +1,6 @@
-/* CUSTOMIZE THE NAVBAR */
-
+.icon
+	margin-right: 5px
+	
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper 
 	position: absolute
@@ -71,7 +72,42 @@
 		background: $color-red
 		&:hover
 			background: $color-red-dark
+			
+	&.btn-red
+		background: $color-red
+		&:hover
+			background: $color-red-dark
 	
+	&.btn-red-dark
+		background: $color-red-dark
+		&:hover
+			background: $color-red
+			
+	&.btn-blue-light
+		background: $color-blue-light
+		&:hover
+			background: $color-blue
+		
+	&.btn-blue
+		background: $color-blue
+		&:hover
+			background: $color-blue-dark
+			
+	&.btn-blue-dark
+		background: $color-blue-dark
+		&:hover
+			background: $color-blue		
+			
+	&.btn-green
+		background: $color-green
+		&:hover
+			background: $color-green-dark	
+			
+	&.btn-green-dark
+		background: $color-green-dark
+		&:hover
+			background: $color-green
+			
 .box
 	padding: 15px
 	margin: 10px 0 10px 0
@@ -117,6 +153,7 @@
 		.#{$social}
 			+icon("i-#{$social}")
 
+	
 footer
 	margin-top: 40px
 	.footer-sitemap
