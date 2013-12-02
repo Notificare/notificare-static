@@ -1,0 +1,63 @@
+- name: Start Push
+  url: startpush
+  description: Get started with the power of smart push notifications. 
+  price: 199
+  users: 10,000
+  notifications: unlimited
+  smartness: 
+    - name: HTML Push
+      icon: compass
+    - name: Image Push
+      icon: images
+    - name: Map Push
+      icon: map
+    - name: Rating Push
+      icon: star
+    - name: Text Push
+      icon: alert
+  platforms: [Android, iOS, Websockets]
+  api_access: yes
+  storage: 5
+  websockets: 20
+- name: More Push
+  url: morepush
+  description: Suitable for small/medium applications. More push, more functionality. 
+  price: 399
+  users: 50,000
+  notifications: unlimited
+  smartness: 
+    - name: HTML Push
+      icon: compass
+    - name: Image Push
+      icon: images
+    - name: Map Push
+      icon: map
+    - name: Rating Push
+      icon: star
+    - name: Text Push
+      icon: alert
+  platforms: [Android, iOS, Websockets]
+  api_access: yes
+  storage: 20
+  websockets: 100
+- name: Force Push
+  url: forcepush
+  description: Our full featured plan. May the force of push be with you! 
+  price: 599
+  users: 100,000
+  notifications: unlimited
+  smartness: 
+    - name: HTML Push
+      icon: compass
+    - name: Image Push
+      icon: images
+    - name: Map Push
+      icon: map
+    - name: Rating Push
+      icon: star
+    - name: Text Push
+      icon: alert
+  platforms: [Android, iOS, Websockets]
+  api_access: yes
+  storage: 50
+  websockets: 500
