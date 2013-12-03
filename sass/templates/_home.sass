@@ -11,8 +11,12 @@
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption 
 	z-index: 10
-
-
+	&.left
+		.carousel-caption-content
+			float: left
+	&.right
+		.carousel-caption-content
+			float: right
 
 /* Declare heights because of positioning of img element */
 .carousel .item 
@@ -43,8 +47,20 @@
 	text-align: center
 	margin-bottom: 20px
 
+.marketing .whos-using
+	text-align: center
+	margin: 20px 0 20px 0
+
+.marketing .whos-using h3 
+	font-size: 26px
+	font-weight: 500
+	color: $color-brown
+	
+	
 .marketing h2 
+	margin-top: 10px
 	font-weight: normal
+	font-size: 24px
 
 .marketing .col-lg-4 p 
 	margin-left: 10px

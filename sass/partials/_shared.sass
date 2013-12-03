@@ -54,6 +54,7 @@
 	&.btn-default
 		background: $color-brown
 		&:hover
+			color: white
 			background: $color-brown-dark
 	&.btn-primary
 		background: $color-blue
@@ -96,7 +97,8 @@
 	&.btn-blue-dark
 		background: $color-blue-dark
 		&:hover
-			background: $color-blue		
+			color: $color-blue-dark
+			background: $color-blue-light		
 			
 	&.btn-green
 		background: $color-green
@@ -153,13 +155,36 @@
 		.#{$social}
 			+icon("i-#{$social}")
 
+.img-float-left
+	float: left
+.img-float-right
+	float: right
+
+.margin-left-5
+	margin-left: 5px
+.margin-left-10
+	margin-left: 10px
+.margin-left-15
+	margin-left: 15px
+
+.margin-right-5
+	margin-right: 5px
+.margin-right-10
+	margin-right: 10px
+.margin-right-15
+	margin-right: 15px
+	
 	
 footer
 	margin-top: 40px
 	.footer-sitemap
 		list-style: none
+		li
+			margin-left: -40px
 	.footer-support
 		list-style: none
+		li
+			margin-left: -40px
 	.copyright
 		margin-left: 15px
 		font-size: 12px
