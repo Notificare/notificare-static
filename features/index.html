@@ -6,53 +6,32 @@ description: Overview of Notificare's main features. Browse our highlighted feat
 keywords: Overview of Notificare's main features. 
 text_kop: Features
 ---
-
+{% for item in site.data.features %}
+{% if forloop.first %}
 <div class="jumbotron">
-	<h1>Notifications just got smarter</h1>
-	<p class="lead">Find out why Notificare is the solution you need to build a strong relationship with your users.<br />Go beyond rich push notifications, start communicating with your users.</p>
-	<p><a class="btn btn-lg btn-success" href="//dashboard.notifica.re/#/sign-up" role="button">Get started today</a></p>
+	<h1>{{ item.title }}</h1>
+	<p class="lead">{{ item.description | newline_to_br }}</p>
+	<p><a class="btn btn-lg btn-success" href="{{ item.link.url }}" role="button">{{ item.link.text }}</a></p>
 </div>
+{% else %}
+{% if forloop.index == 2 or forloop.index == 5 or forloop.index == 8 %}<div class="row feature-row">{% endif %}
+	<div class="col-lg-4">
+		<img class="img-float-left margin-right-15 img-responsive margin-bottom-5" data-src="holder.js/358x150/auto" alt="Generic placeholder image">
+		<h3>{{ item.title }}</h3>
+		<p>{{ item.description | newline_to_br }}</p>
+		<p><a class="btn btn-primary" href="{{ item.link.url }}" role="button">{{ item.link.text | escape }}</a></p>
+	</div>
+{% if forloop.index == 4 or forloop.index == 7 or forloop.index == 10 %}</div>{% endif %}
+{% endif %}
+{% endfor %}
 
-<div class="row feature-row">
+{% for item in site.data.featurettes %}
+{% if forloop.index == 1 or forloop.index == 4 or forloop.index == 7 %}<div class="row feature-row">{% endif %}
 	<div class="col-lg-4">
 		<img class="img-float-left margin-right-15 img-responsive margin-bottom-5" data-src="holder.js/358x150/auto" alt="Generic placeholder image">
-		<h3>Unified Push Messaging</h3>
-		<p>Deliver engaging cross platform push notifications. Available for iOS, Android and Web apps. <br />One push for all.</p>
-		<p><a class="btn btn-primary" href="/features/unified-push-messaging" role="button">show me how</a></p>
+		<h3>{{ item.title }} {{ item.subtitle }}</h3>
+		<p>{{ item.description | newline_to_br }}</p>
+		<p><a class="btn btn-primary" href="{{ item.link.url }}" role="button">{{ item.link.text }}</a></p>
 	</div>
-	<div class="col-lg-4">
-		<img class="img-float-left margin-right-15 img-responsive margin-bottom-5" data-src="holder.js/358x150/auto" alt="Generic placeholder image">
-		<h3>Discover your audience</h3>
-		<p>Categorize your users by location, devices they use or just by quickly adding them to segments. Get to know your users. Build a relationship.</p>
-		<p><a class="btn btn-primary" href="/features/discover-your-audience" role="button">learn more</a></p>
-	</div>
-	<div class="col-lg-4">
-		<img class="img-float-left margin-right-15 img-responsive margin-bottom-5" data-src="holder.js/358x150/auto" alt="Generic placeholder image">
-		<h3>Create an engaging experience</h3>
-		<p>From simple messages to rich actionable content. Extend your apps with a powerful way of reaching your users.</p>
-		<p><a class="btn btn-primary" href="/features/create-an-engaging-experience" role="button">browse examples</a></p>
-	</div>
-</div>
-
-<div class="row feature-row">
-	<div class="col-lg-4">
-		<img class="img-float-left margin-right-15 img-responsive margin-bottom-5" data-src="holder.js/358x150/auto" alt="Generic placeholder image">
-		<h3>Free SDK inside. Release faster.</h3>
-		<p>Check out how you can have smart push notifications accross all the channels you use now, in no time. Download our Software Development Kit now and let us do the heavy lifiting of queueing, delivering, and displaying your notifications.</p>
-		<p><a class="btn btn-primary" href="/features/sdks" role="button">find out more</a></p>
-	</div>
-	<div class="col-lg-4">
-		<img class="img-float-left margin-right-15 img-responsive margin-bottom-5" data-src="holder.js/358x150/auto" alt="Generic placeholder image">
-		<h3>One simple and powerful dashboard. See for yourself.</h3>
-		<p>Be delighted by all the insights you can gather and how fast you can discover and categorise your audience. Take advantage of a web interface that works nearly in any device.</p>
-		<p><a class="btn btn-primary" href="/features/dashboard" role="button">see all the features</a></p>
-	</div>
-	<div class="col-lg-4">
-		<img class="img-float-left margin-right-15 img-responsive margin-bottom-5" data-src="holder.js/358x150/auto" alt="Generic placeholder image">
-		<h3>We have an API. Do you?</h3>
-		<p>Use our APIs to integrate our platform in your own backend. Automate how you categorise your users, send notifications or gather insights. Extend your application with push notifications effortlessly.</p>
-		<p><a class="btn btn-primary" href="features/api" role="button">learn more about integration</a></p>
-	</div>
-</div>
-
-
+{% if forloop.index == 3 or forloop.index == 6 or forloop.index == 9 %}</div>{% endif %}
+{% endfor %}

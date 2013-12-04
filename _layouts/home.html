@@ -11,69 +11,27 @@
 	<div id="mainFeatures" class="carousel slide" data-ride="carousel">
 		<!-- Indicators -->
 		<ol class="carousel-indicators">
-			<li data-target="#mainFeatures" data-slide-to="0" class="active"></li>
-			<li data-target="#mainFeatures" data-slide-to="1"></li>
-			<li data-target="#mainFeatures" data-slide-to="2"></li>
-			<li data-target="#mainFeatures" data-slide-to="3"></li>
+		{% for item in site.data.features %}
+			<li data-target="#mainFeatures" data-slide-to="{{ forloop.index0 }}"{%if forloop.first %} class="active"{% endif %}></li>
+		{% endfor %}
 		</ol>
 		<div class="carousel-inner">
-			<div class="item active">
+		{% for item in site.data.features %}
+			<div class="item{% if forloop.first %} active{% endif %}">
 				<img data-src="holder.js/900x500/auto/#92c4cf:#92c4cf/text:First slide" alt="First slide">
 				<div class="container">
-					<div class="carousel-caption">
+					<div class="carousel-caption{% if item.carouselAlign %} {{ item.carouselAlign }}{% endif %}">
 						<div class="carousel-caption-content">
-							<h1>Notifications just got smarter</h1>
-							<p>Rich and interactive push notifications for iOS, Android and Web apps.</p>
+							<h1>{{ item.title | escape }}</h1>
+							<p>{{ item.carouselDescription | newline_to_br }}</p>
 							<p>
-								<a class="btn btn-lg btn-primary btn-blue-dark" href="//dashboard.notifica.re/#/sign-up" role="button">Sign up for free now</a>
+								<a class="btn btn-lg btn-primary btn-blue-dark" href="{{ item.carouselLink.url }}" role="button">{{ item.carouselLink.text }}</a>
 							</p>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="item">
-				<img data-src="holder.js/900x500/auto/#92c4cf:#92c4cf/text:First slide" alt="First slide">
-				<div class="container">
-					<div class="carousel-caption">
-						<div class="carousel-caption-content">
-							<h1>Unified Push Messaging</h1>
-							<p>Deliver engaging cross platform push notifications. One push for all.</p>
-							<p>
-								<a class="btn btn-lg btn-primary btn-blue-dark" href="/features/unified-push-messaging" role="button">Show me how</a>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="item">
-				<img data-src="holder.js/900x500/auto/#92c4cf:#92c4cf/text:Second slide" alt="Second slide">
-				<div class="container">
-					<div class="carousel-caption right">
-						<div class="carousel-caption-content">
-							<h1>Discover your audience</h1>
-							<p>
-								Get to know your users. Build a relationship.
-							</p>
-							<p><a class="btn btn-lg btn-primary btn-blue-dark" href="/features/discover-your-audience" role="button">Learn more</a></p>
-						</div>
-					</div>
-				 </div>
-			</div>
-			<div class="item">
-				<img data-src="holder.js/900x500/auto/#92c4cf:#92c4cf/text:Third slide" alt="Third slide">
-				<div class="container">
-					<div class="carousel-caption">
-						<div class="carousel-caption-content">
-							<h1>Create an engaging experience</h1>
-							<p>From simple messages to rich actionable content.
-							<br />
-								Extend your apps with a powerful way of reaching your users.
-							</p>
-							<p><a class="btn btn-lg btn-primary btn-blue-dark" href="/features/create-an-engaging-experience" role="button">Browse examples</a></p>
-						</div>
-					</div>
-				</div>
-			</div>
+		{% endfor %}
 		</div>
 		<a class="left carousel-control" href="#mainFeatures" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
 		<a class="right carousel-control" href="#mainFeatures" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
@@ -88,53 +46,30 @@
 	<div class="container home-content">
 	
 	<!-- START THE FEATURETTES -->
-
+	{% for item in site.data.featurettes %}
+	
 	<hr class="featurette-divider">
 
 	<div class="row featurette">
-		<div class="col-md-7">
-			<h2 class="featurette-heading">Free SDK inside. <span class="text-muted">Release faster.</span></h2>
-			<p class="lead">Check out how you can have smart push notifications accross all the channels you use now, in no time. Download our Software Development Kit now and let us do the heavy lifiting of queueing, delivering, and displaying your notifications.</p>
-			<div class="find-out-more">
-				<a href="/features/sdks" class="btn btn-primary btn-blue btn-lg"><i class="icon glyphicon glyphicon-chevron-right"></i>Find out more</a>
-			</div>
-		</div>
+	{% if forloop.index == 2 or forloop.index == 4 or forloop == 6 %}
 		<div class="col-md-5">
 			<img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
 		</div>
-	</div>
-
-	<hr class="featurette-divider">
-
-	<div class="row featurette">
+	{% endif %}
+		<div class="col-md-7">
+			<h2 class="featurette-heading">{{ item.title }} <span class="text-muted">{{ item.subtitle }}</span></h2>
+			<p class="lead">{{ item.description | newline_to_br }}</p>
+			<div class="find-out-more">
+				<a href="{{ item.link.url }}" class="btn btn-primary btn-blue btn-lg"><i class="icon glyphicon glyphicon-chevron-right"></i>{{ item.link.text }}</a>
+			</div>
+		</div>
+	{% if forloop.index == 1 or forloop.index == 3 or forloop == 5 %}
 		<div class="col-md-5">
 			<img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
 		</div>
-		<div class="col-md-7">
-			<h2 class="featurette-heading">One simple and powerful dashboard. <span class="text-muted">See for yourself.</span></h2>
-			<p class="lead">Be delighted by all the insights you can gather and how fast you can discover and categorise your audience. Take advantage of a web interface that works nearly in any device.</p>
-			<div class="find-out-more">
-				<a href="/features/dashboard" class="btn btn-primary btn-blue btn-lg"><i class="icon glyphicon glyphicon-chevron-right"></i>See all the features</a>
-			</div>
-		</div>
-		
+	{% endif %}
 	</div>
-
-	<hr class="featurette-divider">
-
-	<div class="row featurette">
-		<div class="col-md-7">
-			<h2 class="featurette-heading">We have an API. <span class="text-muted">Do you?</span></h2>
-			<p class="lead">Use our APIs to integrate our platform in your own backend. Automate how you categorise your users, send notifications or gather insights. Extend your application with push notifications effortlessly.</p>
-			<div class="find-out-more">
-				<a href="/features/api" class="btn btn-primary btn-blue btn-lg"><i class="icon glyphicon glyphicon-chevron-right"></i>Learn more about integration</a>
-			</div>
-		</div>
-		<div class="col-md-5">
-			<img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-		</div>
-
-	</div>
+	{% endfor %}
 
 	<hr class="featurette-divider">
 
@@ -155,13 +90,13 @@
 			<div class="col-lg-4">
 				<img class="img-circle" data-src="holder.js/140x140" alt="Generic placeholder image">
 				<h2>Cookoo Watch</h2>
-				<p>This smart watch maker is changing the shape of time as we know it. Cookoo Watch uses Notificare to deliver millions of notifications in your wrist.</p>
+				<p>This smart watch maker is changing the shape of time as we know it. Cookoo Watch uses Notificare to deliver millions of notifications to your wrist.</p>
 				<p><a class="btn btn-default " href="#" role="button"><i class="icon glyphicon glyphicon-chevron-right"></i>see the case</a></p>
 			</div><!-- /.col-lg-4 -->
 			<div class="col-lg-4">
 				<img class="img-circle" data-src="holder.js/140x140" alt="Generic placeholder image">
 				<h2>Hema</h2>
-				<p>This major retail shop in the Benelux uses Notificare to engage and increase consumers loyalty for the brand.</p>
+				<p>This major retail shop in the Benelux uses Notificare to engage their users and increase brand loyalty.</p>
 				<p><a class="btn btn-default " href="#" role="button"><i class="icon glyphicon glyphicon-chevron-right"></i>see the case</a></p>
 			</div><!-- /.col-lg-4 -->
 		</div>

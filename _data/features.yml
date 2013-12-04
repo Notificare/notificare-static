@@ -1,0 +1,45 @@
+- title: Notifications just got smarter
+  description: |
+    Find out why Notificare is the best solution for building a strong relationship with your users.
+    Go beyond rich push notifications, start communicating with your users.
+  link: 
+    text: Get started today
+    url: https://dashboard.notifica.re/#/sign-up
+  carouselDescription: Rich and interactive push notifications for iOS, Android and Web apps.
+  carouselLink: 
+    text: Sign up for free now
+    url: https://dashboard.notifica.re/#/sign-up
+- title: Unified Push Messaging
+  description: |
+    Deliver engaging cross platform push notifications. Available for iOS, Android and Web apps.
+    One push for all.
+  link:
+    text: Show me how
+    url: /features/unified-push-messaging
+  carouselDescription: Deliver engaging cross platform push notifications. One push for all.
+  carouselLink:
+    text: Show me how
+    url: /features/unified-push-messaging
+- title: Discover your audience
+  description: Categorize your users by their location, the devices they use or just by quickly adding them to segments. Get to know your users. Build a relationship.
+  link:
+    text: Learn more
+    url: /features/discover-your-audience
+  carouselAlign: right
+  carouselDescription: Get to know your users. Build a relationship.
+  carouselLink:
+    text: Learn more
+    url: /features/discover-your-audience
+- title: Create an engaging experience
+  description: |
+    From simple messages to rich, actionable content.
+    Extend your apps with a powerful way of reaching your users.
+  link:
+    text: Browse examples
+    url: /features/create-an-engaging-experience
+  carouselDescription: |
+    From simple messages to rich, actionable content.
+    Extend your apps with a powerful way of reaching your users.
+  carouselLink:
+    text: Browse examples
+    url: /features/create-an-engaging-experience
