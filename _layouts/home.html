@@ -81,24 +81,16 @@
 			<h3>Who's using it</h3>
 		</div>
 		<div class="row">
+		{% for item in site.data.testimonials %}
+		{% if item.showOnHome %}
 			<div class="col-lg-4">
 				<img class="img-circle" data-src="holder.js/140x140" alt="Generic placeholder image">
-				<h2>Netherlands Red Cross</h2>
-				<p>This first aid guide app teaches you what to do in case of an accident. Notificare transforms their user's location into a relevant push notification. </p>
-				<p><a class="btn btn-default " href="#" role="button"><i class="icon glyphicon glyphicon-chevron-right"></i>see the case</a></p>
+				<h2>{{ item.name }}</h2>
+				<p>{{ item.text }}</p>
+				<p><a class="btn btn-default " href="{{ item.case }}" role="button"><i class="icon glyphicon glyphicon-chevron-right"></i>see the case</a></p>
 			</div><!-- /.col-lg-4 -->
-			<div class="col-lg-4">
-				<img class="img-circle" data-src="holder.js/140x140" alt="Generic placeholder image">
-				<h2>Cookoo Watch</h2>
-				<p>This smart watch maker is changing the shape of time as we know it. Cookoo Watch uses Notificare to deliver millions of notifications to your wrist.</p>
-				<p><a class="btn btn-default " href="#" role="button"><i class="icon glyphicon glyphicon-chevron-right"></i>see the case</a></p>
-			</div><!-- /.col-lg-4 -->
-			<div class="col-lg-4">
-				<img class="img-circle" data-src="holder.js/140x140" alt="Generic placeholder image">
-				<h2>Hema</h2>
-				<p>This major retail shop in the Benelux uses Notificare to engage their users and increase brand loyalty.</p>
-				<p><a class="btn btn-default " href="#" role="button"><i class="icon glyphicon glyphicon-chevron-right"></i>see the case</a></p>
-			</div><!-- /.col-lg-4 -->
+		{% endif %}
+		{% endfor %}
 		</div>
 	</div><!-- /row marketing -->
 	

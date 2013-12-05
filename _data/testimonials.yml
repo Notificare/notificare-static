@@ -2,3 +2,23 @@
   text: We have been using Notificare in all our apps and the result is just amazing. We almost forgot what is needed to integrate thanks to the incredibly easy drag and drop libraries.
   signature: Ruben Bos - Creative Director at Mangrove
   image: mangrove.png
+  showOnHome: no
+- name: Netherlands Red Cross
+  text: This first aid guide app teaches you what to do in case of an accident. Notificare transforms their user's location into a relevant push notification.
+  signature: 
+  image: redcross.png
+  showOnHome: yes
+  case: /cases/redcross
+- name: Cookoo Watch
+  text: This smart watch maker is changing the shape of time as we know it. Cookoo Watch uses Notificare to deliver millions of notifications to your wrist.
+  signature: 
+  image: cookoo.png
+  showOnHome: yes
+  case: /cases/cookoo
+- name: Hema
+  text: This major retail shop in the Benelux uses Notificare to engage their users and increase brand loyalty.
+  signature: 
+  image: hema.png
+  showOnHome: yes
+  case: /cases/hema
+  
