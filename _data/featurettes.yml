@@ -11,6 +11,7 @@
   link:
     text: see all the features
     url: /features/dashboard
+
 - title: We have an API.
   subtitle: Do you?
   description: Use our APIs to integrate our platform in your own backend. Automate how you categorise your users, send notifications or gather insights. Extend your application with push notifications effortlessly.
