@@ -80,10 +80,18 @@
 %i-Mac { content: "\e00e"; }
 %i-Android { content: "\e00f"; }
 %i-alert { content: "\e010"; }
-%i-arrow, %i-next{ content: "\e011"; }  // Arrow right
-%i-arrow-down { content: "\e012"; }
-%i-arrow-left, %i-prev { content: "\e013"; }
-%i-arrow-up { content: "\e014"; }
+%i-arrow-right, %i-next{ content: "\e01b"; }  // Arrow right
+%i-arrow-down { content: "\e020"; }
+%i-arrow-left, %i-prev { content: "\e01f"; }
+%i-arrow-up { content: "\e021"; }
+%i-big-arrow-right, %i-big-next{ content: "\e017"; }  // Arrow right
+%i-big-arrow-down { content: "\e023"; }
+%i-big-arrow-left, %i-big-prev { content: "\e022"; }
+%i-big-arrow-up { content: "\e024"; }
+%i-bold-arrow-right, %i-big-next{ content: "\e01a"; }  // Arrow right
+%i-bold-arrow-down { content: "\e01d"; }
+%i-bold-arrow-left, %i-big-prev { content: "\e01c"; }
+%i-bold-arrow-up { content: "\e01e"; }
 
 %i-p-broadcast { content: "\f0c0"; }
 %i-p-users { content: "\f007"; }

@@ -30,25 +30,28 @@
 	li
 		margin: 5px
 		a	
-			+border-radius(5px)
+			+border-radius(3px)
 			font-size: 18px
-			color: $color-blue-dark
+			font-weight: 400
+			color: $color-brown-darkest
 			&:hover
-				background: white
-				color: $color-blue-dark
+				background: $color-brown
+				color: white
 				font-size: 18px
 		&.active
 			a
-				+border-radius(5px)
+				+border-radius(3px)
 				font-size: 18px
-				background: $color-blue-dark
+				background: $color-brown
 				color: white
 				&:hover
-					background: $color-blue-dark
+					background: $color-brown
 					color: white
 					font-size: 18px
 		&:hover
 			background: transparent
+
+		
 .btn
 	border: none
 	&.btn-default
@@ -155,6 +158,12 @@
 		.#{$social}
 			+icon("i-#{$social}")
 
+.icon
+	@each $icons in big-arrow-left, big-arrow-right, big-arrow-up, big-arrow-down
+		&.#{$icons}
+			+icon("i-#{$icons}")
+			
+			
 .img-float-left
 	float: left
 .img-float-right

@@ -59,7 +59,7 @@ h1
 	font-size: emCalc(50px)
 
 h2
-	font-size: emCalc(36px)
+	font-size: emCalc(30px)
 
 h3
 	font-size: emCalc(24px)
@@ -69,3 +69,35 @@ h3
 	
 .main-text
 	font-size: 18px
+
+#header.headroom
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	transition: all .2s ease-in-out
+
+#header.headroom--unpinned
+	top: -100px
+
+
+#header.headroom--pinned
+	top: 0
+	background: $color-brown-darkest
+	
+	.navbar-nav
+		li
+			a	
+				color: white
+				&:hover
+					background: $color-brown-dark
+					color: white
+			&.active
+				a
+					background: $color-brown-dark
+					color: white
+					&:hover
+						background: $color-brown-dark
+						color: white
+			&:hover
+				background: transparent

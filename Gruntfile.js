@@ -38,13 +38,13 @@ module.exports = function(grunt) {
     concat: {
       debug: {
         files: {        	
-        	'debug/lib.js': ['js/libs/modernizr.js', 'js/libs/jquery.js', 'js/libs/bootstrap.js', 'js/libs/holder.js'],
+        	'debug/lib.js': ['js/libs/modernizr.js', 'js/libs/jquery.js', 'js/libs/bootstrap.js', 'js/libs/holder.js', 'js/libs/headroom.js'],
             'debug/classes.js': ['js/classes/app.js' ]    
         }
       },
       build: {
         files: {
-            'build/lib.js': ['js/libs/modernizr.js', 'js/libs/jquery.js', 'js/libs/bootstrap.js', 'js/libs/holder.js'],
+            'build/lib.js': ['js/libs/modernizr.js', 'js/libs/jquery.js', 'js/libs/bootstrap.js', 'js/libs/holder.js', 'js/libs/headroom.js'],
             'build/classes.js': ['js/classes/app.js' ]
         }
       }
@@ -74,7 +74,7 @@ module.exports = function(grunt) {
     watch: {
       scripts: {
         files: ['<%= meta.scripts %>'],
-        tasks: ['browserify2:debug']
+        tasks: []
       },
       styles: {
         files: ['<%= meta.styles %>'],
