@@ -1,92 +1,114 @@
 /* Home */
+.home
+	/* CUSTOMIZE THE CAROUSEL  */
 	
-/* CUSTOMIZE THE CAROUSEL  */
-
-/* Carousel base class */
-.carousel 
-	background: $color-blue-light
-	height: 500px
-	margin-bottom: 60px
-
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption 
-	z-index: 10
-	text-shadow: none
-	&.left
+	/* Carousel base class */
+	.carousel 
+		background: $color-blue-light
+		height: 500px
+		margin-bottom: 60px
+	
+	.carousel-inner
+		overflow: visible
+	
+	
+	/* Since positioning the image, we need to help out the caption */
+	.carousel-caption 
+		z-index: 10
+		text-shadow: none
+		.animation
+			position: absolute
+			margin: -250px 0 0 -150px
 		.carousel-caption-content
-			float: left
-	&.right
-		.carousel-caption-content
-			float: right
-
-/* Declare heights because of positioning of img element */
-.carousel .item 
-	height: 500px
-	background-color: #777
-
-.carousel-inner > .item > img 
-	position: absolute
-	top: 0
-	left: 0
-	min-width: 100%
-	height: 500px
-
-.carousel-control
-	&.right
-		background-image: none
-	&.left
-		background-image: none
-
-
-
-/* MARKETING CONTENT  */
-
-/* Pad the edges of the mobile views a bit */
-.marketing 
-	margin-top: 40px
-	padding-left: 15px
-	padding-right: 15px
-
-
-/* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 
-	text-align: center
-	margin-bottom: 20px
-
-.marketing .whos-using
-	text-align: center
-	margin: 20px 0 20px 0
-
-.marketing .whos-using h3 
-	font-size: 26px
-	font-weight: 500
-	color: $color-brown
+			z-index: 2
+			position: relative
+		&.left
+			.carousel-caption-content
+				float: left
+			.animation
+				position: absolute
+				margin: -250px 0 0 -150px
+		&.right
+			.carousel-caption-content
+				float: right
+			.animation
+				position: absolute
+				margin: -250px 0 0 -150px
+		
+		
+	
+	/* Declare heights because of positioning of img element */
+	.carousel .item 
+		height: 500px
+		background-color: #777
+	
+	.carousel-inner > .item > img 
+		position: absolute
+		top: 0
+		left: 0
+		min-width: 100%
+		height: 500px
+	
+	.carousel-control
+		&.right
+			background-image: none
+		&.left
+			background-image: none
+		span
+			position: absolute
+			margin: 280px 0 0 0
+			text-shadow: none
 	
 	
-.marketing h2 
-	margin-top: 10px
-	font-weight: normal
-	font-size: 24px
-
-.marketing .col-lg-4 p 
-	margin-left: 10px
-	margin-right: 10px
-
-
-
-/* Featurettes  */
-
-.featurette-divider 
-	margin: 80px 0
-	border-top: 1px solid $color-body
-
-/* Thin out the marketing headings */
-.featurette-heading 
-	font-family: $font-family
-	font-weight: 300
-	line-height: 1
-	letter-spacing: -1px
-
+	
+	/* MARKETING CONTENT  */
+	
+	/* Pad the edges of the mobile views a bit */
+	.marketing 
+		margin-top: 40px
+		padding-left: 15px
+		padding-right: 15px
+	
+	
+	/* Center align the text within the three columns below the carousel */
+	.marketing .col-lg-4 
+		text-align: center
+		margin-bottom: 20px
+	
+	.marketing .whos-using
+		text-align: center
+		margin: 20px 0 20px 0
+	
+	.marketing .whos-using h3 
+		font-size: 26px
+		font-weight: 500
+		color: $color-brown
+		
+		
+	.marketing h2 
+		margin-top: 10px
+		font-weight: normal
+		font-size: 24px
+	
+	.marketing .col-lg-4 p 
+		margin-left: 10px
+		margin-right: 10px
+	
+	
+	
+	/* Featurettes  */
+	
+	.featurette-divider 
+		margin: 80px 0
+		border-top: 1px solid $color-body
+	
+	/* Thin out the marketing headings */
+	.featurette-heading 
+		font-family: $font-family
+		font-weight: 300
+		line-height: 1
+		letter-spacing: -1px
+	
 /* RESPONSIVE CSS  */
 
 @media (min-width: 768px) 
@@ -141,5 +163,6 @@
 		margin: 0
 		
 @media (min-width: 992px) 
+.home
 	.featurette-heading 
 		margin-top: 120px

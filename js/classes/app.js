@@ -22,14 +22,14 @@ $( document ).ready(function() {
 	});
 	
 	$('body').on('touchmove', function(e) {
-		if($('body').scrollTop() < 5){
+		if($('body').scrollTop() < 80){
 			$('#header').removeClass('headroom--pinned');
 		}
 	});
 	
 	
 	$(window).on('scroll', function(e) {
-		if($('body').scrollTop() < 5){
+		if($('body').scrollTop() < 80){
 			
 			$('#header').removeClass('headroom--pinned');
 		}

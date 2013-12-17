@@ -1,7 +1,7 @@
 {% include header.html %}
 {% include javascript.html %}
 </head>
-<body>
+<body class="home">
 
 	{% include menu.html %}
 
@@ -18,9 +18,12 @@
 		<div class="carousel-inner">
 		{% for item in site.data.features %}
 			<div class="item{% if forloop.first %} active{% endif %}">
-				<img data-src="holder.js/900x500/auto/#92c4cf:#92c4cf/text:First slide" alt="First slide">
+				<img src="/images/banners/banner_bg_blue.gif" alt="{{ item.title | escape }}">
 				<div class="container">
 					<div class="carousel-caption{% if item.carouselAlign %} {{ item.carouselAlign }}{% endif %}">
+						<div class="animation">
+							<img src="{{ item.carouselImage}}" alt="{{ item.title | escape }}">
+						</div>
 						<div class="carousel-caption-content">
 							<h1>{{ item.title | escape }}</h1>
 							<p>{{ item.carouselDescription | newline_to_br }}</p>
@@ -53,19 +56,19 @@
 	<div class="row featurette">
 	{% if forloop.index == 2 or forloop.index == 4 or forloop == 6 %}
 		<div class="col-md-5">
-			<img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+			<img class="featurette-image img-responsive" src="{{ item.image }}" alt="{{ item.title }}">
 		</div>
 	{% endif %}
 		<div class="col-md-7">
 			<h2 class="featurette-heading">{{ item.title }} <span class="text-muted">{{ item.subtitle }}</span></h2>
 			<p class="lead">{{ item.description | newline_to_br }}</p>
 			<div class="find-out-more">
-				<a href="{{ item.link.url }}" class="btn btn-primary btn-blue btn-lg"><i class="icon glyphicon glyphicon-chevron-right"></i>{{ item.link.text }}</a>
+				<a href="{{ item.link.url }}" class="btn btn-primary btn-blue btn-lg"><i class="icon bold-arrow-right"></i>{{ item.link.text }}</a>
 			</div>
 		</div>
 	{% if forloop.index == 1 or forloop.index == 3 or forloop == 5 %}
 		<div class="col-md-5">
-			<img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+			<img class="featurette-image img-responsive" src="{{ item.image }}" alt="{{ item.title }}">
 		</div>
 	{% endif %}
 	</div>
@@ -87,7 +90,7 @@
 				<img class="img-circle" data-src="holder.js/140x140" alt="Generic placeholder image">
 				<h2>{{ item.name }}</h2>
 				<p>{{ item.text }}</p>
-				<p><a class="btn btn-default " href="{{ item.case }}" role="button"><i class="icon glyphicon glyphicon-chevron-right"></i>see the case</a></p>
+				<p><a class="btn btn-default " href="{{ item.case }}" role="button"><i class="icon bold-arrow-right"></i>see the case</a></p>
 			</div><!-- /.col-lg-4 -->
 		{% endif %}
 		{% endfor %}

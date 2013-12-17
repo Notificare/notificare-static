@@ -5,6 +5,8 @@
   link: 
     text: Get started today
     url: https://dashboard.notifica.re/#/sign-up
+  carouselAlign: right
+  carouselImage: /images/banners/banner_home_intro.png
   carouselDescription: Rich and interactive push notifications for iOS, Android and Web apps.
   carouselLink: 
     text: Sign up for free now
@@ -16,6 +18,8 @@
   link:
     text: Show me how
     url: /features/unified-push-messaging
+  carouselAlign: right
+  carouselImage: /images/banners/banner_home_unified_push.png
   carouselDescription: Deliver engaging cross platform push notifications. One push for all.
   carouselLink:
     text: Show me how
@@ -26,6 +30,7 @@
     text: Learn more
     url: /features/discover-your-audience
   carouselAlign: right
+  carouselImage: /images/banners/banner_home_unified_push.png
   carouselDescription: Get to know your users. Build a relationship.
   carouselLink:
     text: Learn more
@@ -37,6 +42,7 @@
   link:
     text: Browse examples
     url: /features/create-an-engaging-experience
+  carouselImage: /images/banners/banner_home_unified_push.png
   carouselDescription: |
     From simple messages to rich, actionable content.
     Extend your apps with a powerful way of reaching your users.
