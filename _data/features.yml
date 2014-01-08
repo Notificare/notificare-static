@@ -42,6 +42,7 @@
   link:
     text: Browse examples
     url: /features/create-an-engaging-experience
+  carouselAlign: right
   carouselImage: /images/banners/banner_home_unified_push.png
   carouselDescription: |
     From simple messages to rich, actionable content.
