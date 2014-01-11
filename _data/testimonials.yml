@@ -6,19 +6,19 @@
 - name: Netherlands Red Cross
   text: This first aid guide app teaches you what to do in case of an accident. Notificare transforms their user's location into a relevant push notification.
   signature: 
-  image: redcross.png
+  image: /images/logos/logo_redcross.png
   showOnHome: yes
   case: /cases/redcross
 - name: Cookoo Watch
   text: This smart watch maker is changing the shape of time as we know it. Cookoo Watch uses Notificare to deliver millions of notifications to your wrist.
   signature: 
-  image: cookoo.png
+  image: /images/logos/logo_cookoo.png
   showOnHome: yes
   case: /cases/cookoo
 - name: Hema
   text: This major retail shop in the Benelux uses Notificare to engage their users and increase brand loyalty.
   signature: 
-  image: hema.png
+  image: /images/logos/logo_hema.png
   showOnHome: yes
   case: /cases/hema
   
