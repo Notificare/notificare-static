@@ -30,7 +30,7 @@
     text: Learn more
     url: /features/discover-your-audience
   carouselAlign: right
-  carouselImage: /images/banners/banner_home_unified_push.png
+  carouselImage: /images/banners/banner_home_users.png
   carouselDescription: Get to know your users. Build a relationship.
   carouselLink:
     text: Learn more
@@ -43,7 +43,7 @@
     text: Browse examples
     url: /features/create-an-engaging-experience
   carouselAlign: right
-  carouselImage: /images/banners/banner_home_unified_push.png
+  carouselImage: /images/banners/banner_home_composer.png
   carouselDescription: |
     From simple messages to rich, actionable content.
     Extend your apps with a powerful way of reaching your users.

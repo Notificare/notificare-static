@@ -2,23 +2,23 @@
   subtitle: Release faster.
   image: /images/features/feature_sdk.png
   description:
-    Check out how you can have smart push notifications in no time, across all your channels. Download our Software Development Kit now and let us do the heavy lifting of queueing, delivering, and displaying your notifications.
+    Check out how you can have smart push notifications in no time, across all channels. Download our Software Development Kit now and let us do the heavy lifting of queueing, delivering, and displaying your notifications.
   link: 
     text: find out more
     url: /features/sdks
 - title: One simple and powerful dashboard.
   subtitle: See for yourself.
   image: /images/features/feature_dashboard.png
-  description: Marvel at all the insights you can gather and at how fast you can discover and categorize your audience. Take advantage of a web interface that works in nearly any device.
+  description: 
+    Marvel at all the insights you can gather and at how fast you can discover and categorize your audience. Take advantage of a web interface that works on any device.
   link:
     text: see all the features
     url: /features/dashboard
-
 - title: We have an API.
   subtitle: Do you?
   image: /images/features/feature_api.png
-  description: Use our APIs to integrate our platform in your own backend. Automate how you categorise your users, send notifications or gather insights. Extend your application with push notifications effortlessly.
-
+  description: 
+    Use our APIs to integrate our platform in your own backend. Automate how to categorize users, send notifications or gather insights. Extend your application with push notifications effortlessly.
   link:
     text: learn more about integration
     url: /features/api
