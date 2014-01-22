@@ -144,13 +144,12 @@
 		@extend %circle-shape
 		width: emCalc(30px, 24px)
 		height: emCalc(30px, 24px)
-		background: $font-color
+		background: white
 		text-align: center
 		font-size: 24px
 		line-height: emCalc(30px, 24px)
-		color: #fff
+		color: $color-blue-dark
 		text-decoration: none
-		+opacity(0.5)
 
 		&:hover
 			+opacity(0.7)
@@ -197,18 +196,29 @@
 .margin-top-15
 	margin-top: 15px
 	
-	
 footer
+	background: $color-brown-darkest
+	padding-top: 1px
 	margin-top: 40px
-	.footer-sitemap
-		list-style: none
-		li
-			margin-left: -40px
-	.footer-support
-		list-style: none
-		li
-			margin-left: -40px
-	.copyright
-		margin-left: 15px
-		font-size: 12px
-		line-height: 14px
+	color: white
+	
+	.line
+		border-left: 1px solid $color-brown
+	a
+		text-decoration: none
+		color: white
+	.container
+		margin-top: 40px
+
+		.footer-sitemap
+			list-style: none
+			li
+				margin-left: -40px
+		.footer-support
+			list-style: none
+			li
+				margin-left: -40px
+		.copyright
+			margin-left: 15px
+			font-size: 12px
+			line-height: 14px
