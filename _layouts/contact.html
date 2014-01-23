@@ -12,9 +12,12 @@
 			<h1>{{ page.text_kop }}</h1>
 			{{ content }}
 		</div>
-		{% include footer.html %}
 	</div>
-	{% include analytics.html %}
+	<!-- FOOTER -->
+	<footer>
+		{% include footer.html %}
+		{% include analytics.html %}
+	</footer>
 	<script type="text/javascript">
 		if (typeof(Zenbox) !== "undefined") {
 			Zenbox.init({
