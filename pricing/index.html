@@ -145,7 +145,7 @@ text_kop: Plans & Pricing
 					<div class="carousel-inner">
 					
 						{% for item in site.data.testimonials %}
-
+						{% if item.showOnHome %}
 							<div class="item {% if forloop.first %}active{% endif %}">
 								<img class="img-circle" src="{{ item.image }}" alt="{{ item.name }}">
 								<div class="container">
@@ -155,7 +155,7 @@ text_kop: Plans & Pricing
 									</div>
 								</div>
 							</div>
-
+						{% endif %}
 						{% endfor %}
 						
 					</div>
