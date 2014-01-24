@@ -138,40 +138,26 @@ text_kop: Plans & Pricing
 				<div id="testimonialsCarousel" class="carousel carousel-testimonials slide" data-ride="carousel">
 					<!-- Indicators -->
 					<ol class="carousel-indicators">
-						<li data-target="#testimonialsCarousel" data-slide-to="0" class="active"></li>
-						<li data-target="#testimonialsCarousel" data-slide-to="1"></li>
-						<li data-target="#testimonialsCarousel" data-slide-to="2"></li>
+						{% for item in site.data.testimonials %}
+						<li data-target="#testimonialsCarousel" data-slide-to="{{forloop.index0}}" {% if forloop.first %}class="active"{% endif %}></li>
+						{% endfor %}
 					</ol>
 					<div class="carousel-inner">
-						<div class="item active">
-							<img data-src="holder.js/900x500/auto/#92c4cf:#92c4cf/text:First slide" alt="First slide">
-							<div class="container">
-								<div class="carousel-caption">
-									<p>Thanks to the guys from @notificare for helping with @xamarinhq integration! #Finished and now time to test - @gjadmiraal Web-mobile developer at Macaw</p>
-									<p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+					
+						{% for item in site.data.testimonials %}
+
+							<div class="item {% if forloop.first %}active{% endif %}">
+								<img class="img-circle" src="{{ item.image }}" alt="{{ item.name }}">
+								<div class="container">
+									<div class="carousel-caption">
+										<h3>{{item.name}}</h3>
+										<p>{{ item.text }}</p>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="item">
-							<img data-src="holder.js/900x500/auto/#92c4cf:#92c4cf/text:Second slide" alt="Second slide">
-							<div class="container">
-								<div class="carousel-caption">
-									<h1>Another example headline.</h1>
-									<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-									<p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-								</div>
-							 </div>
-						</div>
-						<div class="item">
-							<img data-src="holder.js/900x500/auto/#92c4cf:#92c4cf/text:Third slide" alt="Third slide">
-							<div class="container">
-								<div class="carousel-caption">
-									<h1>One more for good measure.</h1>
-									<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-									<p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-								</div>
-							</div>
-						</div>
+
+						{% endfor %}
+						
 					</div>
 				</div><!-- /.carousel -->
 			
