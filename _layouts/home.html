@@ -81,7 +81,7 @@
 	
 	<div class="row marketing">
 		<div class="row whos-using">
-			<h3>Who's using it</h3>
+			<h3>Our customers</h3>
 		</div>
 		<div class="row">
 		{% for item in site.data.testimonials %}
@@ -89,7 +89,7 @@
 			<div class="col-lg-4">
 				<img class="img-circle" src="{{ item.image }}" alt="{{ item.name }}">
 				<h2>{{ item.name }}</h2>
-				<p>{{ item.text }}</p>
+				<p>"{{ item.text }}" <br>{{ item.signature }}</p>
 			<!-- 	<p><a class="btn btn-default " href="{{ item.case }}" role="button"><i class="icon bold-arrow-right"></i>see the case</a></p> -->
 			</div><!-- /.col-lg-4 -->
 		{% endif %}
