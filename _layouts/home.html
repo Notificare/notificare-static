@@ -22,7 +22,7 @@
 				<div class="container">
 					<div class="carousel-caption{% if item.carouselAlign %} {{ item.carouselAlign }}{% endif %}">
 						<div class="animation">
-							<img src="{{ item.carouselImage}}" alt="{{ item.title | escape }}">
+							<img class="img-responsive" src="{{ item.carouselImage}}" alt="{{ item.title | escape }}">
 						</div>
 						<div class="carousel-caption-content">
 							<h1>{{ item.title | escape }}</h1>
@@ -55,11 +55,11 @@
 
 	<div class="row featurette">
 	{% if forloop.index == 2 or forloop.index == 4 or forloop == 6 %}
-		<div class="col-md-5">
+		<div class="col-sm-5">
 			<img class="featurette-image img-responsive" src="{{ item.image }}" alt="{{ item.title }}">
 		</div>
 	{% endif %}
-		<div class="col-md-7">
+		<div class="col-sm-7">
 			<h2 class="featurette-heading">{{ item.title }} <span class="text-muted">{{ item.subtitle }}</span></h2>
 			<p class="lead">{{ item.description | newline_to_br }}</p>
 			<div class="find-out-more">
@@ -67,7 +67,7 @@
 			</div>
 		</div>
 	{% if forloop.index == 1 or forloop.index == 3 or forloop == 5 %}
-		<div class="col-md-5">
+		<div class="col-sm-5">
 			<img class="featurette-image img-responsive" src="{{ item.image }}" alt="{{ item.title }}">
 		</div>
 	{% endif %}
@@ -86,7 +86,7 @@
 		<div class="row">
 		{% for item in site.data.testimonials %}
 		{% if item.showOnHome %}
-			<div class="col-lg-4">
+			<div class="col-sm-4 blocks">
 				<img class="img-circle" src="{{ item.image }}" alt="{{ item.name }}">
 				<h2>{{ item.name }}</h2>
 				<p>{{ item.text }}</p>

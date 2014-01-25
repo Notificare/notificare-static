@@ -1,8 +1,3 @@
-- name: Mangrove
-  text: We have been using Notificare in all our apps and the result is just amazing. We almost forgot what is needed to integrate thanks to the incredibly easy drag and drop libraries.
-  signature: Ruben Bos - Creative Director at Mangrove
-  image: mangrove.png
-  showOnHome: no
 - name: Red Cross
   text: The reason we have decided to choose Notificare is the flexibility of the system and speed of sending out different sorts of Push Notifications. But most of all possibility to use the geo-location of the user to gather insights and send out specific messages. 
   signature: Jeroen Beelen Manager online marketing (Red Cross the Netherlands)

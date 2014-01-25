@@ -8,7 +8,7 @@ text_kop: Plans & Pricing
 <p class="main-text">Discover how you can save development time and unleash the power of Smart Push Notifications. <br />Start for free, upgrade, downgrade or cancel at anytime.</p>
 <div class="plans">
 	<div class="row">
-		<div class="col-md-8">
+		<div class="col-sm-8">
 			<div class="box white">
 				<h2 class="plan-name">Free Push</h2>
 				<p>Our free plan can provide unlimited notifications to unlimited devices up to 5,000 users. Accelerate your development time with the easy to use libraries, scale whenever you want and attract more customers with Smart Notifications.</p>
@@ -17,17 +17,17 @@ text_kop: Plans & Pricing
 				</div>
 			</div>
 		</div>
-		<div class="col-md-4">
+		<div class="col-sm-4">
 			<div class="box payment-info white">
 				<h4>We accept all major cards</h4>
-				<img src="/images/payment_cards.png" alt="">
+				<img class="img-responsive" src="/images/payment_cards.png" alt="">
 				<p>We won't ask your credit card until you've subscribed to a paid plan.</p>
 			</div>
 		</div>
 	</div>
 	<div class="row">
 		{% for plan in site.data.plans %}
-		<div class="col-md-4">
+		<div class="col-sm-4">
 			<div class="box white">
 				<h2 class="plan-name">{{ plan.name | escape }}</h2>
 				<div class="plan-price">
@@ -42,10 +42,10 @@ text_kop: Plans & Pricing
 			<div class="box plan-overview brown-lighter">
 				<div class="plan-details">
 					<div class="row">
-						<div class="col-md-6">
+						<div class="col-sm-6">
 							<label>Platforms</label>
 						</div>
-						<div class="col-md-6">
+						<div class="col-sm-6">
 							<div class="platforms">
 								{% for platform in plan.platforms %}
 									<span class="{{ platform }}"></span>
@@ -54,50 +54,50 @@ text_kop: Plans & Pricing
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-6">
+						<div class="col-sm-6">
 							<label>Users</label>
 						</div>
-						<div class="col-md-6">
+						<div class="col-sm-6">
 							<div class="values users">{{ plan.users }}</div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-6">
+						<div class="col-sm-6">
 							<label>Devices</label>
 						</div>
-						<div class="col-md-6">
+						<div class="col-sm-6">
 							<div class="values">unlimited</div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-6">
+						<div class="col-sm-6">
 							<label>Notifications</label>
 						</div>
-						<div class="col-md-6">
+						<div class="col-sm-6">
 							<div class="values">{{ plan.notifications }}</div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-6">
+						<div class="col-sm-6">
 							<label>API access</label>
 						</div>
-						<div class="col-md-6">
+						<div class="col-sm-6">
 							<div class="values">{{ plan.api_access }}</div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-6">
+						<div class="col-sm-6">
 							<label>Storage</label>
 						</div>
-						<div class="col-md-6">
+						<div class="col-sm-6">
 							<div class="values">{{ plan.storage }} GB</div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-4">
+						<div class="col-sm-4">
 							<label>Websockets</label>
 						</div>
-						<div class="col-md-8">
+						<div class="col-sm-8">
 							<div class="values">{{ plan.websockets }} concurrent connections</div>
 						</div>
 					</div>
@@ -130,7 +130,7 @@ text_kop: Plans & Pricing
 </div>
 <div class="testimonials-pricing">
 	<div class="row">
-		<div class="col-md-8">
+		<div class="col-sm-8">
 			<div class="box white">
 				<h2 class="testimonial-header">Testimonials</h2>
 								<!-- Carousel
@@ -145,7 +145,6 @@ text_kop: Plans & Pricing
 					<div class="carousel-inner">
 					
 						{% for item in site.data.testimonials %}
-						{% if item.showOnHome %}
 							<div class="item {% if forloop.first %}active{% endif %}">
 								<img class="img-circle" src="{{ item.image }}" alt="{{ item.name }}">
 								<div class="container">
@@ -155,7 +154,6 @@ text_kop: Plans & Pricing
 									</div>
 								</div>
 							</div>
-						{% endif %}
 						{% endfor %}
 						
 					</div>
@@ -163,7 +161,7 @@ text_kop: Plans & Pricing
 			
 			</div>
 		</div>
-		<div class="col-md-4">
+		<div class="col-sm-4">
 			<div class="box white">
 				<h2 class="testimonial-header">Support</h2>
 				<p>

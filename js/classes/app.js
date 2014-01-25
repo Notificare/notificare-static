@@ -1,5 +1,7 @@
 $( document ).ready(function() {
 	
+	var isHandheld = (/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase()));
+	
 	//Menu Active
 	$(function(){
 		function stripTrailingSlash(str) {
@@ -21,18 +23,29 @@ $( document ).ready(function() {
 		});
 	});
 	
-	$('body').on('touchmove', function(e) {
-		if($('body').scrollTop() < 80){
-			$('#header').removeClass('headroom--pinned');
-		}
-	});
+	if(isHandheld){
+		$('body').on('touchmove', function(e) {
+			if($('body').scrollTop() < 80){
+				$('#header').removeClass('headroom--pinned');
+			}else{
+				$('#header').addClass('headroom--pinned');
+			}
+		});
+	
+	} else {
+		$(window).on('scroll', function(e) {
+			if($('body').scrollTop() < 80){
+				$('#header').removeClass('headroom--pinned');
+			}else{
+				$('#header').addClass('headroom--pinned');
+			}
+		});
+	}
 	
 	
-	$(window).on('scroll', function(e) {
-		if($('body').scrollTop() < 80){
-			
-			$('#header').removeClass('headroom--pinned');
-		}
-	});
 	
+//	if(isHandheld){
+//		console.log('HERE');
+//		$('#header').removeClass('headroom');
+//	}
 });

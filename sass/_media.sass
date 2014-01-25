@@ -2,3 +2,71 @@
 
 //breakpoiint for ipad
 @media (max-width: 979px)
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation: landscape)
+	.home
+		
+		.carousel
+			height: 400px
+			
+			.item
+				height: 400px
+				
+			.carousel-inner > .item > img
+				height: 400px
+				
+			.carousel-control
+				height: 400px
+				
+				span
+					display: block
+					margin-top: 220px
+
+				&.right
+					span
+						right: 3px
+					
+				
+			.carousel-caption 
+				&.right
+					.carousel-caption-content
+						width: 70%
+						text-align: left
+						margin: -200px 50%
+						
+						h1
+							font-size: 28px
+						p
+							font-size: 16px
+						
+					.animation
+						position: absolute
+						margin: -310px -280px
+						
+						img
+							max-width: 75%
+						
+	.home-content
+		.featurette
+			.featurette-heading
+				font-size: 34px
+			.lead
+				font-size: 16px
+				line-height: 22px
+	
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation: portrait)
+	.home
+		
+		.carousel-caption 
+			&.right
+				.carousel-caption-content
+					width: 70%
+					text-align: left
+					margin: -300px 50%
+					
+				.animation
+					position: absolute
+					margin: -310px -280px
+					
+					img
+						max-width: 65%

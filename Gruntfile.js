@@ -38,13 +38,13 @@ module.exports = function(grunt) {
     concat: {
       debug: {
         files: {        	
-        	'debug/lib.js': ['js/libs/modernizr.js', 'js/libs/jquery.js', 'js/libs/bootstrap.js', 'js/libs/holder.js', 'js/libs/headroom.js'],
+        	'debug/lib.js': ['js/libs/modernizr.js', 'js/libs/jquery.js', 'js/libs/bootstrap.js', 'js/libs/holder.js'],
             'debug/classes.js': ['js/classes/app.js' ]    
         }
       },
       build: {
         files: {
-            'build/lib.js': ['js/libs/modernizr.js', 'js/libs/jquery.js', 'js/libs/bootstrap.js', 'js/libs/holder.js', 'js/libs/headroom.js'],
+            'build/lib.js': ['js/libs/modernizr.js', 'js/libs/jquery.js', 'js/libs/bootstrap.js', 'js/libs/holder.js'],
             'build/classes.js': ['js/classes/app.js' ]
         }
       }
