@@ -42,10 +42,10 @@ text_kop: Plans & Pricing
 			<div class="box plan-overview brown-lighter">
 				<div class="plan-details">
 					<div class="row">
-						<div class="col-sm-6">
+						<div class="col-sm-4">
 							<label>Platforms</label>
 						</div>
-						<div class="col-sm-6">
+						<div class="col-sm-8">
 							<div class="platforms">
 								{% for platform in plan.platforms %}
 									<span class="{{ platform }}"></span>
@@ -101,6 +101,22 @@ text_kop: Plans & Pricing
 							<div class="values">{{ plan.websockets }} concurrent connections</div>
 						</div>
 					</div>
+					<div class="row">
+						<div class="col-sm-6">
+							<label>Geo-Triggers</label>
+						</div>
+						<div class="col-sm-6">
+							<div class="values">{{ plan.geotriggers }} triggers</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6">
+							<label>Smart Beacons</label>
+						</div>
+						<div class="col-sm-6">
+							<div class="values">{{ plan.beacons }}</div>
+						</div>
+					</div>
 				</div>
 				<div class="order-button">
 					<a class="btn btn-lg btn-primary btn-order" href="//dashboard.notifica.re/#/sign-up" role="button">Get it now</a>
@@ -113,7 +129,7 @@ text_kop: Plans & Pricing
 		<div class="col-md-12">
 			<div class="box white">
 				<h2 class="plan-name">Enterprise & High Volume</h2>
-				<p>For those companies who expect high volume, massive demand, priority support or an enterprise level infrastructure, we can offer custom Service Level Agreements, in-house hosted solutions or consultancy for enterprise grade implementations of push notifications systems.<br />Please feel free to contact our sales department and we will be happy to hear your requirements and offer you the best quote for your specific case.</p>
+				<p>For those companies who expect high volume, massive demand, priority support or an enterprise level infrastructure, we can offer custom Service Level Agreements, in-house hosted solutions or consultancy for enterprise grade implementations of push notifications systems. Please feel free to contact our sales department and we will be happy to hear your requirements and offer you the best quote for your specific case.</p>
 				<div class="order-button">
 					<a class="btn btn-lg btn-primary pull-right" href="mailto:sales@notifica.re" role="button">Contact Sales</a>
 				</div>
@@ -162,7 +178,7 @@ text_kop: Plans & Pricing
 			</div>
 		</div>
 		<div class="col-sm-4">
-			<div class="box white">
+			<div class="box white support">
 				<h2 class="testimonial-header">Support</h2>
 				<p>
 					Our staff can help you implement the best mobile messaging strategy, advise on technical issues or just listen to any feedback you might have.</p><p>So if you have any questions don't hesitate and contact us  at <a href="mailto:support@notifica.re">support@notifica.re</a>

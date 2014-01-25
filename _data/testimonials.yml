@@ -1,19 +1,21 @@
 - name: Red Cross
   text: The reason we have decided to choose Notificare is the flexibility of the system and speed of sending out different sorts of Push Notifications. But most of all possibility to use the geo-location of the user to gather insights and send out specific messages. 
-  signature: Jeroen Beelen Manager online marketing (Red Cross the Netherlands)
   image: /images/logos/logo_redcross.png
-  signature: Jeroen Beelen, Manager online marketing (Red Cross the Netherlands)
+  signature: Jeroen Beelen
+  job: Manager Online Marketing
   showOnHome: yes
   case: /cases/redcross
 - name: Cookoo Watch
   text: Working with Notificare has been very positive. The team is capable, professional, and each team-member brings a unique and complimentary skillset to the table.  I look forward to accomplishing great things together through our collaboration.
-  signature: Peter Hauser, CTO (ConnecteDevice) 
+  signature: Peter Hauser
+  job: Chief Technology Officer
   image: /images/logos/logo_cookoo.png
   showOnHome: yes
   case: /cases/cookoo
 - name: Target McConnells
-  text: The Notificare team knows exactly what our agency needs. By offering direct contact with our development team, they understand our needs and best practices for our clients leading to great results. The user friendly dashboard is quick and easy for our clients to work with and also allows us to delve into comprehensive and manageable statistic reports.
-  signature: Alicia Coyle (Target McConnells)
+  text: The Notificare team knows exactly what our agency needs. By offering direct contact with our development team, they quickly understood our needs and best practices leading to great results. The dashboard is both easy for our clients to work with and still allows us to delve into comprehensive and manageable reports.
+  signature: Alicia Coyle
+  job: Account Manager
   image: /images/logos/logo_tmcc.png
   showOnHome: yes
   case: /cases/hema

@@ -3,6 +3,8 @@
   description: Get started with the power of smart push notifications. 
   price: 199
   users: 10,000
+  geotriggers: 10
+  beacons: 1 beacon
   notifications: unlimited
   smartness: 
     - name: HTML Push
@@ -24,6 +26,8 @@
   description: Suitable for small/medium applications. More push, more functionality. 
   price: 399
   users: 50,000
+  geotriggers: 20
+  beacons: 2 beacons
   notifications: unlimited
   smartness: 
     - name: HTML Push
@@ -45,6 +49,8 @@
   description: Our full featured plan. May the force of push be with you! 
   price: 599
   users: 100,000
+  geotriggers: unlimited
+  beacons: 3 beacons
   notifications: unlimited
   smartness: 
     - name: HTML Push
