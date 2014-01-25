@@ -1,7 +1,67 @@
 /* Media Queries */
 
 //breakpoiint for ipad
-@media (max-width: 979px)
+@media (min-width: 768px) 
+
+	/* Remove the edge padding needed for mobile */
+	.marketing 
+		padding-left: 0
+		padding-right: 0
+	
+
+	/* Navbar positioning foo */
+	.navbar-wrapper
+		background: $color-body
+		margin: 0
+		padding: 20px 0 0 0
+		height: 68px
+		position: fixed
+		.navbar-collapse
+			margin-top: -17px
+	
+	.navbar-wrapper .container 
+		padding-left:	15px
+		padding-right: 15px
+	
+	.navbar-wrapper .navbar 
+		padding-left:	0
+		padding-right: 0
+	
+
+	/* The navbar becomes detached from the top, so we round the corners */
+	.navbar-wrapper .navbar 
+		border-radius: 4px
+		
+	.navbar-toggle
+		margin-top: 43px
+		border-color: $color-brown-darkest
+		.icon-bar
+			color: $color-brown-darkest
+	
+
+	/* Bump up size of carousel content */
+	.carousel-caption p 
+		margin-bottom: 20px
+		font-size: 21px
+		line-height: 1.4
+	
+
+	.featurette-heading 
+		font-size: 50px
+
+	.featurette-divider
+		margin: 0
+		
+	.featurette-divider-footer
+		margin: 0
+		border-top: 1px solid $color-brown-lighter
+		
+		
+@media (min-width: 992px) 
+	.home
+		.featurette-heading 
+			margin-top: 120px
+
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation: landscape)
 	.home
@@ -82,19 +142,167 @@
 		p
 			font-size: 14px		
 	
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation: portrait)
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait)
+	
+	.navbar-nav
+		margin-top: 10px
+		li
+			
+			a
+				font-size: 14px
+				padding: 5px 5px 5px 5px
+				&:hover
+					font-size: 14px
+					padding: 5px 5px 5px 5px
+			&.active
+				a
+					font-size: 14px
+					padding: 5px 5px 5px 5px
+					&:hover
+						font-size: 14px
+						padding: 5px 5px 5px 5px
+	footer
+		min-width: 780px
+		p
+			font-size: 14px
 	.home
 		
+		.carousel
+			height: 400px
+			
+			.item
+				height: 400px
+				
+			.carousel-inner > .item > img
+				min-width: 780px
+				height: 400px
+				
+			.carousel-control
+				height: 400px
+				
+				span
+					display: block
+					margin-top: 220px
+
+				&.right
+					span
+						right: -5px
+					
+				
+			.carousel-caption 
+				&.right
+					.carousel-caption-content
+						width: 70%
+						text-align: left
+						margin: -200px 60%
+						
+						h1
+							font-size: 24px
+						p
+							font-size: 16px
+						
+					.animation
+						position: absolute
+						margin: -260px -280px
+						
+						img
+							max-width: 65%
+						
+	.home-content
+		.featurette
+			.featurette-heading
+				margin-top: 60px
+				font-size: 30px
+			.lead
+				font-size: 14px
+				line-height: 20px
+			.find-out-more
+				a
+					font-size: 16px
+
+	.plans
+		.payment-info
+			img
+				margin: 38px 0 38px 0
+		.plan-description
+			font-size: 12px
+		.box
+			.plan-price
+				.currency
+					font-size: 16px
+				.price
+					font-size: 60px
+				.month
+					font-size: 14px
+					
+		.plan-overview
+			.plan-details
+				font-size: 12px
+				
+				label
+					font-size: 11px
+				.values
+					font-size: 10px
+				.platforms
+					margin: 0 0 0 20px
+					span
+						width: 20px
+						height: 20px
+						font-size: 10px
+						line-height: 12px
+						margin-right: 5px
+			
+		
+	.testimonials-pricing
+	
+		.carousel-inner
+			.item
+				img
+					max-width: 120px
+					max-height: 120px
 		.carousel-caption 
-			&.right
-				.carousel-caption-content
-					width: 70%
-					text-align: left
-					margin: -300px 50%
+			h3
+				margin: 25px 0 0 60px
+				line-height: 24px
+				font-size: 16px
+			p
+				margin: 0 0 0 60px
+				line-height: 16px
+				font-size: 12px
+	.support
+		p
+			margin-top: 5px
+			font-size: 13px	
+			line-height: 21px	
+			
+	.blog
+		.post
+			h3
+				margin-top: 10px
+				
+	.features
+		.jumbotron
+			padding-right: 40px
+			padding-left: 40px
+			.feature-image
+				max-width: 50%
+				margin: -50px -50px 0 0
+			.feature-content
+				h1
+					font-size: 24px
+				.lead
+					font-size: 13px
 					
-				.animation
-					position: absolute
-					margin: -310px -280px
-					
-					img
-						max-width: 65%
+				a.btn
+					font-size: 16px
+		.features-row
+			h2
+				font-size: 26px
+			p
+				font-size: 14px
+				
+			img
+				max-width: 40%
+				
+			.logos
+				max-width: 90%

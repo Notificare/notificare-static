@@ -4,7 +4,7 @@
   price: 199
   users: 10,000
   geotriggers: 10
-  beacons: 1 beacon
+  beacons: 1
   notifications: unlimited
   smartness: 
     - name: HTML Push
@@ -23,11 +23,11 @@
   websockets: 20
 - name: More Push
   url: morepush
-  description: Suitable for small/medium applications. More push, more functionality. 
+  description: Suitable for small/medium apps. More push, more functionality. 
   price: 399
   users: 50,000
   geotriggers: 20
-  beacons: 2 beacons
+  beacons: 2
   notifications: unlimited
   smartness: 
     - name: HTML Push
@@ -50,7 +50,7 @@
   price: 599
   users: 100,000
   geotriggers: unlimited
-  beacons: 3 beacons
+  beacons: 3
   notifications: unlimited
   smartness: 
     - name: HTML Push
