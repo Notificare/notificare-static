@@ -19,6 +19,7 @@
     url: /features/unified-push-messaging
   carouselAlign: right
   carouselImage: /images/banners/banner_home_unified_push.png
+  featurepageImage: /images/features/features01.png
   carouselDescription: Deliver engaging cross platform push notifications. Make the most out of the channels you are already using right now. One push for all.
   carouselLink:
     text: Show me how
@@ -30,6 +31,7 @@
     url: /features/discover-your-audience
   carouselAlign: right
   carouselImage: /images/banners/banner_home_users.png
+  featurepageImage: /images/features/features02.png
   carouselDescription: Categorize your users by location, interests, purchases, language or even the devices they use. Get to really know your users. Start building a relationship.
   carouselLink:
     text: Learn more
@@ -43,6 +45,7 @@
     url: /features/create-an-engaging-experience
   carouselAlign: right
   carouselImage: /images/banners/banner_home_composer.png
+  featurepageImage: /images/features/features03.png
   carouselDescription: |
    From simple messages to rich and actionable notifications. Create experiences that increase your brand's awareness and your customers' loyalty.
   carouselLink:
