@@ -394,6 +394,14 @@
 			@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) 
 				background: url('/images/notificare_dashboard_logo2x.png') center no-repeat
 				background-size: 160px 71px
+		
+	.main-content
+		margin-top: 100px
+		h1
+			font-size: 28px
+		p.main-text
+			font-size: 16px	
+			line-height: 20px
 			
 	.navbar-wrapper
 		
@@ -543,6 +551,8 @@
 		.payment-info
 			img
 				margin: 38px 0 38px 0
+		.plan-name
+			font-size: 22px
 		.plan-description
 			font-size: 12px
 		.box
@@ -598,22 +608,57 @@
 		.post
 			h3
 				margin-top: 10px
-				
+			.post-author
+				margin-left: 10px
+				padding: 10px
+				.post-author-avatar
+					img 
+						max-width: 50px
+				.post-author-name
+					font-size: 12px
+					
+				.post-date
+					font-size: 10px
+					
+			.post-text
+				font-size: 14px
+				line-height: 18px
+	.blog-post
+		.post
+			h2
+				font-size: 20px
+				margin-top: 0px
+			.post-author
+				margin-left: 25px
+				padding: 10px
+				.post-author-avatar
+					img 
+						max-width: 50px
+				.post-author-name
+					font-size: 12px
+					
+				.post-date
+					font-size: 10px
+			.post-text
+				font-size: 14px
+				line-height: 20px
 	.features
 		.jumbotron
 			padding-right: 20px
 			padding-left: 20px
 			.feature-image
-				max-width: 50%
-				margin: -50px -50px 0 0
+				max-width: 100%
+				display: block
+				float: none
+				margin: -80px 0 0 0
 			.feature-content
 				h1
-					font-size: 24px
+					font-size: 22px
 				.lead
-					font-size: 13px
+					font-size: 14px
 					
 				a.btn
-					font-size: 16px
+					font-size: 14px
 		.features-row
 			h2
 				font-size: 26px
@@ -622,7 +667,9 @@
 				line-height: 20px
 				
 			img
-				max-width: 40%
+				max-width: 100%
+				display: block
+				float: none
 				
 			.logos
 				max-width: 90%
@@ -633,3 +680,306 @@
 			p
 				font-size: 14px
 				line-height: 18px
+
+				
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape)
+
+	#header
+		.navbar-brand
+			width: 160px
+			height: 71px
+			display: block
+			margin: 35px 0 0 10px
+			overflow: hidden
+			text-indent: -999em
+			background: url('/images/notificare_dashboard_logo.png') center no-repeat
+			@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) 
+				background: url('/images/notificare_dashboard_logo2x.png') center no-repeat
+				background-size: 160px 71px
+		
+	.main-content
+		margin-top: 100px
+		h1
+			font-size: 28px
+		p.main-text
+			font-size: 16px	
+			line-height: 20px
+			
+	.navbar-wrapper
+		
+		.navbar
+			position: fixed
+			background: $color-brown-darkest
+			width: 100%
+			height: 60px
+			margin: 0
+			
+			.navbar-header
+				z-index: 2	
+				button
+					position: absolute
+					margin: 33px 0 0 520px
+					.icon-bar
+						background: white
+						height: 3px
+						
+			.navbar-collapse
+				background: $color-brown-darkest
+				+box-shadow(none)
+				width: 125px
+				padding: 0 0 5px 0
+				margin: 59px 0 0 428px
+				z-index: 1
+				.navbar-nav
+					
+					margin: 0 5px 0 0
+					
+					li
+						
+						a
+							font-size: 14px
+							padding: 5px 5px 5px 5px
+							background: $color-brown-darkest
+							color: white
+							&:hover
+								font-size: 14px
+								padding: 5px 5px 5px 5px
+								background: $color-brown-darkest
+								color: white
+						&.active
+							a
+								font-size: 14px
+								padding: 5px 5px 5px 5px
+								background: $color-brown-dark
+								color: white
+								&:hover
+									font-size: 14px
+									padding: 5px 5px 5px 5px
+									background: $color-brown-dark
+									color: white
+	footer
+
+		p
+			font-size: 14px
+		.footer-accessories
+			.social-networks
+				padding-top: 20px
+				
+		.margin-on-xs
+			margin-bottom: 70px
+	.home
+
+		.marketing .blocks 
+			text-align: center
+			margin-bottom: 20px
+			
+			h2
+				font-size: 16px
+			.quote
+				font-size: 12px
+				line-height: 16px
+				display: block
+				
+			.signature
+				display: block
+				font-size: 14px
+				font-weight: 500
+				line-height: 18px
+			.job
+				display: block
+				font-size: 12px
+				font-weight: 500
+				line-height: 16px
+				margin-bottom: 40px
+
+			
+
+						
+		.carousel
+			height: 400px
+			.item
+				height: 400px
+				max-width: 100%
+			.carousel-inner > .item > img
+				max-width: 100%
+				height: 400px
+				
+			.carousel-control
+				height: 400px
+				span
+					display: block
+					margin-top: 220px
+
+				&.right
+					span
+						right: 0px
+					
+				
+			.carousel-caption 
+				&.right
+					.carousel-caption-content
+						width: 110%
+						text-align: left
+						margin: -245px 0px
+						
+						h1
+							font-size: 18px
+							line-height: 14px
+						p
+							font-size: 15px
+							line-height: 18px
+							a.btn
+								font-size: 14px
+					.animation
+						position: absolute
+						margin: -145px 0 0 75px
+						
+						img
+							max-width: 110%
+						
+	.home-content
+		.featurette
+			.featurette-heading
+				margin-top: 60px
+				font-size: 30px
+			.lead
+				font-size: 14px
+				line-height: 20px
+			.find-out-more
+				a
+					font-size: 16px
+
+	.plans
+		.payment-info
+			img
+				margin: 38px 0 38px 0
+		.plan-name
+			font-size: 22px
+		.plan-description
+			font-size: 12px
+		.box
+			.plan-price
+				.currency
+					font-size: 16px
+				.price
+					font-size: 60px
+				.month
+					font-size: 14px
+					
+		.plan-overview
+			.plan-details
+				font-size: 12px
+				
+				label
+					font-size: 11px
+				.values
+					font-size: 10px
+				.platforms
+					margin: 0 0 0 20px
+					span
+						width: 20px
+						height: 20px
+						font-size: 10px
+						line-height: 12px
+						margin-right: 5px
+			
+		
+	.testimonials-pricing
+	
+		.carousel-inner
+			.item
+				img
+					max-width: 120px
+					max-height: 120px
+		.carousel-caption 
+			h3
+				margin: 25px 0 0 60px
+				line-height: 24px
+				font-size: 16px
+			p
+				margin: 0 0 0 60px
+				line-height: 16px
+				font-size: 12px
+	.support
+		p
+			margin-top: 5px
+			font-size: 13px	
+			line-height: 21px	
+			
+	.blog
+		.post
+			h3
+				margin-top: 10px
+			.post-author
+				margin-left: 10px
+				padding: 10px
+				.post-author-avatar
+					img 
+						max-width: 50px
+				.post-author-name
+					font-size: 12px
+					
+				.post-date
+					font-size: 10px
+					
+			.post-text
+				font-size: 14px
+				line-height: 18px
+	.blog-post
+		.post
+			h2
+				font-size: 20px
+				margin-top: 0px
+			.post-author
+				margin-left: 25px
+				padding: 10px
+				.post-author-avatar
+					img 
+						max-width: 50px
+				.post-author-name
+					font-size: 12px
+					
+				.post-date
+					font-size: 10px
+			.post-text
+				font-size: 14px
+				line-height: 20px
+	.features
+		.jumbotron
+			padding-right: 20px
+			padding-left: 20px
+			.feature-image
+				max-width: 100%
+				display: block
+				float: none
+				margin: -160px 0 0 0
+			.feature-content
+				h1
+					font-size: 22px
+				.lead
+					font-size: 14px
+					
+				a.btn
+					font-size: 14px
+		.features-row
+			h2
+				font-size: 26px
+			p
+				font-size: 14px
+				line-height: 20px
+				
+			img
+				max-width: 100%
+				display: block
+				float: none
+				
+			.logos
+				max-width: 90%
+				
+		.feature-row
+			h3
+				font-size: 18px
+			p
+				font-size: 14px
+				line-height: 18px
+				

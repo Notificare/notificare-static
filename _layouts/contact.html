@@ -19,7 +19,10 @@
 		{% include analytics.html %}
 	</footer>
 	<script type="text/javascript">
-		if (typeof(Zenbox) !== "undefined") {
+		
+	var isPhone = (/iphone|ipod/i.test(navigator.userAgent.toLowerCase()));
+	
+		if (typeof(Zenbox) !== "undefined" && !isPhone) {
 			Zenbox.init({
 				dropboxID:   "20175868",
 				url:         "https://notificare.zendesk.com",
