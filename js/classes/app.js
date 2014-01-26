@@ -2,6 +2,8 @@ $( document ).ready(function() {
 	
 	var isHandheld = (/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase()));
 	
+	var isPhone = (/iphone|ipod/i.test(navigator.userAgent.toLowerCase()));
+	
 	//Menu Active
 	$(function(){
 		function stripTrailingSlash(str) {
@@ -44,8 +46,21 @@ $( document ).ready(function() {
 	
 	
 	
-//	if(isHandheld){
-//		console.log('HERE');
-//		$('#header').removeClass('headroom');
-//	}
+	if(isPhone){
+		var featurettes = $('.home').find('.featurette');
+		
+		$.each( featurettes, function( index, featurette ) {
+			if(index == 1){
+				var content = $(featurette).children();
+				$.each( content, function( index, block ) {
+					console.log(block);
+					if(index == 1){
+						var before = $(block).prev();
+						console.log(before);
+						$(block).insertBefore($(before[0]));
+					}
+				});
+			}
+		});
+	}
 });
