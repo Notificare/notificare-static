@@ -22,6 +22,6 @@ With user segments you can create target groups. Segmentation by gender, age or 
 
 Combining Tags and Segments with Geo-targeting will enable marketers to take push notifications to the next level. Tags and Segments are new features of our powerful API, which can be integrated in the backend of your app.
 
-If you want to know more about Tags and Segments don’t hesitate to contact sales [sales@notifica.re](sales@notifica.re) or support [support@notifica.re](mailto:support@notifica.re) for any questions.
+If you want to know more about Tags and Segments don’t hesitate to contact sales [sales@notifica.re](mailto:sales@notifica.re) or support [support@notifica.re](mailto:support@notifica.re) for any questions.
 
 Notificare, Notifications just got smarter.
