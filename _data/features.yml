@@ -3,14 +3,14 @@
     Rich and interactive push notifications for iOS, Android and Web. 
     Enhance your apps with location based messages that really work.
   link: 
-    text: Get started today
+    text: Learn more
     url: https://dashboard.notifica.re/#/sign-up
   carouselAlign: right
-  carouselImage: /images/banners/banner_home_intro.png
+  carouselImage: /images/banners/banner_home_locationbased.png
   carouselDescription: Rich and interactive push notifications for iOS, Android and Web. Enhance your apps with location based messages that really work. 
   carouselLink: 
-    text: Sign up for free now
-    url: https://dashboard.notifica.re/#/sign-up
+    text: Learn more
+    url: /location-based-messaging
 - title: Unified Push Messaging
   description: |
     Deliver engaging cross platform push notifications. Make the most out of the channels you are already using right now. One push for all.
