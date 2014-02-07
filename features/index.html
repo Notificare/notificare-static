@@ -9,23 +9,14 @@ text_kop: Features
 {% for item in site.data.features %}
 {% if forloop.first %}
 <div class="jumbotron features-list">
-	<img class="feature-image img-float-right margin-left-15 img-responsive" src="/images/features/main_header_locationbased.png" alt="Notifications just got smarter">
+	<img class="feature-image img-float-right margin-left-15 img-responsive" src="/images/features/banner_home_intro.png" alt="Notifications just got smarter">
 	<div class="feature-content">
 		<h1>{{ item.title }}</h1>
 		<p class="lead">{{ item.description | newline_to_br }}</p>
 		<p><a class="btn btn-lg btn-success" href="{{ item.link.url }}" role="button">{{ item.link.text }}</a></p>
 	</div>
 </div>
-<div class="row features-row">
-	<div class="col-sm-12">
-		<h3>Smart push with context</h3>
-		<p>
-			A complete solution to acquire more customers, increase brand loyalty, maximize and up-sell. Deliver what your users what to hear, when they want to hear. Measure your users' in-app behaviour and how they interact with your physical products. 
-		</p>
-		<p><a class="btn btn-primary" href="/location-based-messaging" role="button">Learn more about location based messaging</a></p>
-	</div>
-</div>
-<hr class="features-divider">
+
 {% else %}
 {% if forloop.index == 2 or forloop.index == 5 or forloop.index == 8 %}<div class="row feature-row">{% endif %}
 	<div class="col-sm-4">
