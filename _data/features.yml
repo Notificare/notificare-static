@@ -3,13 +3,13 @@
     Rich and interactive push notifications for iOS, Android and Web. 
     Enhance your apps with location based messages that really work.
   link: 
-    text: Start today with location based messaging
+    text: Learn more 
     url: /location-based-messaging
   carouselAlign: right
   carouselImage: /images/banners/banner_home_locationbased.png
   carouselDescription: Rich and interactive push notifications for iOS, Android and Web. Enhance your apps with location based messages that really work. 
   carouselLink: 
-    text: Learn more about it
+    text: Learn more
     url: /location-based-messaging
 - title: Unified Push Messaging
   description: |
