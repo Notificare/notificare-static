@@ -19,15 +19,15 @@
   image: /images/logos/logo_tmcc.png
   showOnHome: yes
   case: /cases/tmcc
-  - name: aFrogleap
+- name: aFrogleap
   text: As a mobile agency we deliver high quality mobile platforms that need a reliable and innovative push platform. The Notificare platform has a lot to offer, we love the product and what it can do for our clients.
   signature: Bart Fussel
   job: CEO
   image: /images/logos/logo_afrogleap.png
   showOnHome: yes
   case: /cases/afrogleap
-  - name: HEMA
-  text: HEMA is an international retail organization with stores in the Netherlands, Belgium, Luxemburg, France and Germany. Customer-friendly and with a unique profile, HEMA distinguishes itself from other retailers by selling its own brand.
+- name: HEMA
+  text: HEMA is an international retail organization with stores in the Netherlands, Belgium, Luxemburg, France and Germany. Customer-friendly and with a unique profile, HEMA distinguishes itself from other retailers by selling its own brand. Hema uses Notificare to create a personal and relevant messaging experience.
   signature: 
   job: 
   image: /images/logos/logo_hema.png

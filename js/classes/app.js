@@ -48,19 +48,67 @@ $( document ).ready(function() {
 	
 	if(isPhone){
 		var featurettes = $('.home').find('.featurette');
-		
 		$.each( featurettes, function( index, featurette ) {
 			if(index == 1){
 				var content = $(featurette).children();
 				$.each( content, function( index, block ) {
-					console.log(block);
 					if(index == 1){
 						var before = $(block).prev();
-						console.log(before);
 						$(block).insertBefore($(before[0]));
 					}
 				});
 			}
 		});
 	}
+
+	if($('body').hasClass('home')){
+		var blocks = $('.marketing .row').find('.blocks');
+		var objs = [];
+		$.each( blocks, function(k , v){
+			objs.push(k);
+		});
+		
+		var rands = array_rand(objs, (blocks.length - 3));
+		
+		$.each( rands, function(k , v){
+			blocks[v].remove();
+		});
+	}
+	
+
+	
+	function array_rand( input, num_req ) {	// Pick one or more random entries out of an array
+		// 
+		// +   original by: _argos
+
+		var Indexes = [];
+		var Ticks = num_req || 1;
+		var Check = {
+			Duplicate	: function ( input, value ) {
+				var Exist = false, Index = 0;
+				while ( Index < input.length ) {
+					if ( input [ Index ] === value ) {
+						Exist = true;
+						break;
+					}
+					Index++;
+				}
+				return Exist;
+			}
+		};
+
+		if ( input instanceof Array && Ticks <= input.length ) {
+			while ( true ) {
+				var Rand = Math.floor ( ( Math.random ( ) * input.length ) );
+				if ( Indexes.length === Ticks ) { break; }
+				if ( !Check.Duplicate ( Indexes, Rand ) ) { Indexes.push ( Rand ); }
+			}
+		} else {
+			Indexes = null;
+		}
+
+		return ( ( Ticks == 1 ) ? Indexes.join ( ) : Indexes );
+	}
+
+	
 });
