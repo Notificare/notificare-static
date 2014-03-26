@@ -122,4 +122,9 @@ $( document ).ready(function() {
 		$('.SG_widget_form').append($(button));
 	}, 500);
 	
+	
+	$('.carousel').carousel({
+		interval: false
+	});
+	
 });
