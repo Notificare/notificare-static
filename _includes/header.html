@@ -25,21 +25,21 @@
 	<!-- Schema.org markup for Google+ -->
 	<meta itemprop="name" content="{{ page.title | escape }}">
 	<meta itemprop="description" content="{{ page.description | escape }}">
-	<meta itemprop="image" content="/images/notificare_dashboard_logo2x.png">
+	<meta itemprop="image" content="{{ site.url }}/images/notificare_dashboard_logo2x.png">
 	
 	<!-- Twitter Card data -->
-	<meta name="twitter:card" content="/images/notificare_dashboard_logo2x.png">
+	<meta name="twitter:card" content="{{ site.url }}/images/notificare_dashboard_logo2x.png">
 	<meta name="twitter:site" content="@notificare">
 	<meta name="twitter:title" content="{{ page.title | escape }}">
 	<meta name="twitter:description" content="{{ page.description | escape }}">
 	<meta name="twitter:creator" content="@notificare">
 	<!-- Twitter summary card with large image must be at least 280x150px -->
-	<meta name="twitter:image:src" content="/images/notificare_dashboard_logo2x.png">
+	<meta name="twitter:image:src" content="{{ site.url }}/images/notificare_dashboard_logo2x.png">
 	
 	<!-- Open Graph data -->
 	<meta property="og:title" content="{{ page.title | escape }}" />
 	<meta property="og:type" content="article" />
-	<meta property="og:url" content="{{ page.title | escape }}" />
+	<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
 	<meta property="og:image" content="/images/notificare_dashboard_logo2x.png" />
 	<meta property="og:description" content="{{ page.description | escape }}" />
 	<meta property="og:site_name" content="Notificare" />
