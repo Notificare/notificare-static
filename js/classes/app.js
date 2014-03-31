@@ -111,16 +111,16 @@ $( document ).ready(function() {
 	}
 
 	
-	window.setTimeout(function(){
-		var form = $('.SG_widget_form');
-		var field = $('.SG_widget_form').find('.SG_widget_form_input');
-		var button = $('.SG_widget_form').find('.SG_widget_form_submit');
-		button.addClass('btn');
-		button.addClass('btn-blue');
-		$('.SG_widget_form').find('table').remove();
-		$('.SG_widget_form').append($(field));
-		$('.SG_widget_form').append($(button));
-	}, 500);
+//	window.setTimeout(function(){
+//		var form = $('.SG_widget_form');
+//		var field = $('.SG_widget_form').find('.SG_widget_form_input');
+//		var button = $('.SG_widget_form').find('.SG_widget_form_submit');
+//		button.addClass('btn');
+//		button.addClass('btn-blue');
+//		$('.SG_widget_form').find('table').remove();
+//		$('.SG_widget_form').append($(field));
+//		$('.SG_widget_form').append($(button));
+//	}, 500);
 	
 	
 	$('.carousel').carousel({
