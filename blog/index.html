@@ -21,7 +21,7 @@ text_kop: Blog
 				</div>
 				<div class="post-img">
 				{% if post.image %}
-					<img src="/images/posts/{{ post.image }}" alt="{{ post.name }}" />
+					<a href="{{ post.url }}"><img src="/images/posts/{{ post.image }}" alt="{{ post.name }}" /></a>
 				{% endif %}
 				</div>
 			</div>
