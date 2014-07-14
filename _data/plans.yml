@@ -1,6 +1,6 @@
 - name: Start Push
   url: startpush
-  description: Get started with the power of smart push notifications. 
+  description: An entry plan with premium support. Get started with smarter notifications. 
   price: 199
   users: 10,000
   geotriggers: 10
@@ -21,6 +21,7 @@
   api_access: yes
   storage: 5
   websockets: 20
+  support: yes
 - name: More Push
   url: morepush
   description: Suitable for small/medium apps. More push, more functionality. 
@@ -44,6 +45,7 @@
   api_access: yes
   storage: 20
   websockets: 100
+  support: yes
 - name: Force Push
   url: forcepush
   description: Our full featured plan. May the force of push be with you! 
@@ -67,3 +69,4 @@
   api_access: yes
   storage: 50
   websockets: 500
+  support: yes
