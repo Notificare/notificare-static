@@ -27,8 +27,74 @@ text_kop: Plans & Pricing
 		</div>
 	</div>
 	<div class="row">
+        <div class="col-sm-2 hidden-xs">
+
+            <div class="plan-details big-pricing-legend">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <label>Platforms</label>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <label>Active users</label>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <label>Devices</label>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <label>Notifications</label>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <label>API access</label>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <label>Storage</label>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <label>HTML 5 websocket</label>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <label>Geo-fences</label>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <label>Premium support</label>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <label>iBeacon hardware</label>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
 		{% for plan in site.data.plans %}
-		<div class="col-sm-4">
+		<div class="col-sm-2">
 			<div class="box white">
 				<h2 class="plan-name">{{ plan.name | escape }}</h2>
 				<div class="plan-price">
@@ -43,10 +109,10 @@ text_kop: Plans & Pricing
 			<div class="box plan-overview brown-lighter">
 				<div class="plan-details">
 					<div class="row">
-						<div class="col-xs-4">
+						<div class="col-xs-4 visible-xs">
 							<label>Platforms</label>
 						</div>
-						<div class="col-xs-8">
+						<div class="col-xs-8 col-md-12">
 							<div class="platforms">
 								{% for platform in plan.platforms %}
 									<span class="{{ platform }}"></span>
@@ -55,74 +121,74 @@ text_kop: Plans & Pricing
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-xs-6">
+						<div class="col-xs-6 visible-xs">
 							<label>Active users</label>
 						</div>
-						<div class="col-xs-6">
+						<div class="col-xs-6 col-md-12">
 							<div class="values users">{{ plan.users }}</div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-xs-6">
+						<div class="col-xs-6 visible-xs">
 							<label>Devices</label>
 						</div>
-						<div class="col-xs-6">
+						<div class="col-xs-6 col-md-12">
 							<div class="values">unlimited</div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-xs-6">
+						<div class="col-xs-6 visible-xs">
 							<label>Notifications</label>
 						</div>
-						<div class="col-xs-6">
+						<div class="col-xs-6 col-md-12">
 							<div class="values">{{ plan.notifications }}</div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-xs-6">
+						<div class="col-xs-6 visible-xs">
 							<label>API access</label>
 						</div>
-						<div class="col-xs-6">
+						<div class="col-xs-6 col-md-12">
 							<div class="values">{{ plan.api_access }}</div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-xs-6">
+						<div class="col-xs-6 visible-xs">
 							<label>Storage</label>
 						</div>
-						<div class="col-xs-6">
+						<div class="col-xs-6 col-md-12">
 							<div class="values">{{ plan.storage }} GB</div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-xs-6">
+						<div class="col-xs-6 visible-xs">
 							<label>HTML 5 websocket</label>
 						</div>
-						<div class="col-xs-6">
+						<div class="col-xs-6 col-md-12">
 							<div class="values">{{ plan.websockets }} concurrent</div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-xs-6">
+						<div class="col-xs-6 visible-xs">
 							<label>Geo-fences</label>
 						</div>
-						<div class="col-xs-6">
+						<div class="col-xs-6 col-md-12">
 							<div class="values">{{ plan.geotriggers }}</div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-xs-6">
+						<div class="col-xs-6 visible-xs">
 							<label>Premium support</label>
 						</div>
-						<div class="col-xs-6">
+						<div class="col-xs-6 col-md-12">
 							<div class="values">{{ plan.support }}</div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-xs-6">
+						<div class="col-xs-6 visible-xs">
 							<label>iBeacon hardware</label>
 						</div>
-						<div class="col-xs-6">
+						<div class="col-xs-6 col-md-12">
 							<div class="values">{{ plan.beacons }}</div>
 						</div>
 					</div>
