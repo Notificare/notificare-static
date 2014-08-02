@@ -6,26 +6,9 @@ description: Discover how you can save development time and unleash the power of
 keywords: pricing, service, platform
 text_kop: Plans & Pricing
 ---
-<p class="main-text">Start for free, upgrade, downgrade or cancel at anytime.</p>
+<p class="main-text">Try Notificare for free for 30 days, upgrade, downgrade or cancel at anytime.</p>
 <div class="plans">
-	<div class="row">
-		<div class="col-sm-8">
-			<div class="box white">
-				<h2 class="plan-name">Free Push $0</h2>
-				<p>Our free plan provides unlimited notifications to unlimited devices up to 5,000 active users. API access, storage of 5 GB, 20 concurrent websockets, 10 Geo-fences and basic email support. This plan is perfect for pilots, testing and a startup business.</p>
-				<div class="order-button">
-					<a class="btn btn-lg btn-primary pull-right" href="//dashboard.notifica.re/#/sign-up" role="button">Try it now</a>
-				</div>
-			</div>
-		</div>
-		<div class="col-sm-4">
-			<div class="box payment-info white">
-				<h4>We accept all major cards</h4>
-				<img class="img-responsive" src="/images/payment_cards.png" alt="">
-				<p>We won't ask your credit card until you've subscribed to a paid plan.</p>
-			</div>
-		</div>
-	</div>
+
 	<div class="row">
         <div class="col-sm-2 hidden-xs">
 
@@ -95,7 +78,7 @@ text_kop: Plans & Pricing
         </div>
 		{% for plan in site.data.plans %}
 		<div class="col-sm-2">
-			<div class="box white">
+			<div class="box white pricing-table-headers">
 				<h2 class="plan-name">{{ plan.name | escape }}</h2>
 				<div class="plan-price">
 					<p>
@@ -149,7 +132,7 @@ text_kop: Plans & Pricing
 							<label>API access</label>
 						</div>
 						<div class="col-xs-6 col-md-12">
-							<div class="values">{{ plan.api_access }}</div>
+							<div class="values">{% if plan.api_access %}yes{% else %}no{% endif %}</div>
 						</div>
 					</div>
 					<div class="row">
@@ -181,7 +164,7 @@ text_kop: Plans & Pricing
 							<label>Premium support</label>
 						</div>
 						<div class="col-xs-6 col-md-12">
-							<div class="values">{{ plan.support }}</div>
+							<div class="values">{% if plan.support %}yes{% else %}no{% endif %}</div>
 						</div>
 					</div>
 					<div class="row">
@@ -201,13 +184,20 @@ text_kop: Plans & Pricing
 		{% endfor %}
 	</div>
 	<div class="row">
-		<div class="col-md-12">
+		<div class="col-md-8">
 			<div class="box white">
 				<h2 class="plan-name">Enterprise & High Volume</h2>
-				<p>For high volume, more than 100,000 active users, massive demand, priority support or an enterprise level infrastructure, we can offer custom Service Level Agreements, in-house hosted solutions or consultancy for enterprise grade implementations of push notifications systems. <br /><br />Please feel free to contact our sales department and we will be happy to hear your requirements and offer you the best quote for your specific case.</p>
+				<p>If the plans above can not satisfy your needs, if you have more than 100,000 active users, massive demand, priority support or an enterprise level infrastructure, we can offer custom Service Level Agreements, in-house hosted solutions or consultancy for implementations of push notifications systems. <br /><br />Please feel free to contact our sales department and we will be happy to hear your requirements and offer you the best quote for your specific case.</p>
 				<div class="order-button">
 					<a class="btn btn-lg btn-primary pull-right" href="mailto:sales@notifica.re" role="button">Contact Sales</a>
 				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="box payment-info white">
+				<h4>We accept all major cards</h4>
+				<img class="img-responsive" src="/images/payment_cards.png" alt="">
+				<p>We won't ask your credit card until you've subscribed to a paid plan.</p>
 			</div>
 		</div>
 	</div>

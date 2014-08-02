@@ -1,4 +1,5 @@
 .plans
+	margin-top: 20px
 	.payment-info
 		text-align: center
 		h4
@@ -11,6 +12,7 @@
 		h2.plan-name
 			border-bottom: 1px solid $color-brown-light
 			padding-bottom: 15px
+			font-size: 22px
 		.plan-price
 			text-align: center
 			color: $color-brown
@@ -24,17 +26,18 @@
 			.currency, .month
 				position: absolute
 			.currency
-				top: 12px
-				left: 0
-				font-size: emCalc(36px)
+				top: 6px
+				left: 10px
+				font-size: emCalc(17px)
 			.price
-				font-size: emCalc(100px)
+				font-size: emCalc(43px)
 				font-weight: 500
 			.month
 				bottom: 8px
-				font-size: emCalc(24px)
+				font-size: emCalc(13px)
 		.plan-description
 			text-align: center
+			font-size: 14px
 	.plan-overview
 		padding-top: 30px
 		margin-top: -10px
@@ -61,7 +64,7 @@
 						margin: 0 0 emCalc(5px)
 							background: none
 			.platforms
-				margin: 0 0 0 40px
+				margin: 0 0 0 0
 				span
 					@extend %icon-bg
 					line-height: 2.8em
@@ -82,7 +85,12 @@
 			width: 100%
 
 	.big-pricing-legend
-		margin-top: 400px
+		margin-top: 294px
+		label
+			height: 29px
+
+	.pricing-table-headers
+		height: 245px
 
 .testimonials-pricing
 
