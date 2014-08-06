@@ -1,0 +1,31 @@
+---
+layout: features
+path: /industries
+title: Industries
+description: Work with the best. Join the increasing number of businesses that already joined the mobile revolution. Create mobile experiences
+keywords: Overview of Notificare's main features.
+text_kop: Industries
+---
+
+<div class="jumbotron features-list">
+    <img class="feature-image img-float-right margin-left-15 img-responsive" src="/images/industries/header_industries_intro.png" alt="Notifications just got smarter">
+    <div class="feature-content">
+        <h1>Working with the best</h1>
+        <p class="lead">Many industries already joined the mobile revolution.<br />Let our team of experts bring any of your mobile projects to life.</p>
+        <p><a class="btn btn-lg btn-success" href="//notifica.re/sign-up" role="button">Start a 30 day trial</a></p>
+    </div>
+</div>
+
+{% for item in site.data.industries %}
+
+
+    <div class="col-sm-4">
+        <img class="img-float-left margin-right-15 img-responsive margin-bottom-5" src="{{ item.featurepageImage }}" alt="{{ item.title | escape }}">
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.description }}</p>
+        <p><a class="btn btn-primary" href="{{ item.link.url }}" role="button">{{ item.link.text | escape }}</a></p>
+    </div>
+    <div class="row feature-row"></div>
+
+{% endfor %}
+

@@ -6,28 +6,15 @@ description: Overview of Notificare's main features. Browse our highlighted feat
 keywords: Overview of Notificare's main features. 
 text_kop: Features
 ---
-{% for item in site.data.features %}
-{% if forloop.first %}
 <div class="jumbotron features-list">
-	<img class="feature-image img-float-right margin-left-15 img-responsive" src="/images/features/banner_home_intro.png" alt="Notifications just got smarter">
-	<div class="feature-content">
-		<h1>{{ item.title }}</h1>
-		<p class="lead">{{ item.description | newline_to_br }}</p>
-		<p><a class="btn btn-lg btn-success" href="{{ item.link.url }}" role="button">{{ item.link.text }}</a></p>
-	</div>
+    <img class="feature-image img-float-right margin-left-15 img-responsive" src="/images/features/header_features_intro.png" alt="Notifications just got smarter">
+    <div class="feature-content">
+        <h1>Mobile Marketing Platform</h1>
+        <p class="lead">Send out Rich and Interactive Push Notifications for iOS, Android and Web. Enhance your apps with location based messages.</p>
+        <p><a class="btn btn-lg btn-success" href="//notifica.re/sign-up" role="button">Start a 30 day trial</a></p>
+    </div>
 </div>
 
-{% else %}
-{% if forloop.index == 2 or forloop.index == 5 or forloop.index == 8 %}<div class="row feature-row">{% endif %}
-	<div class="col-sm-4">
-		<img class="img-float-left margin-right-15 img-responsive margin-bottom-5" src="{{ item.featurepageImage }}" alt="{{ item.title | escape }}">
-		<h3>{{ item.title }}</h3>
-		<p>{{ item.description }}</p>
-		<p><a class="btn btn-primary" href="{{ item.link.url }}" role="button">{{ item.link.text | escape }}</a></p>
-	</div>
-{% if forloop.index == 4 or forloop.index == 7 or forloop.index == 10 %}</div>{% endif %}
-{% endif %}
-{% endfor %}
 
 {% for item in site.data.featurettes %}
 {% if forloop.index == 1 or forloop.index == 4 or forloop.index == 7 %}<div class="row feature-row">{% endif %}

@@ -11,14 +11,14 @@
 	<div id="mainFeatures" class="carousel slide" data-ride="carousel">
 		<!-- Indicators -->
 		<ol class="carousel-indicators">
-		{% for item in site.data.features %}
+		{% for item in site.data.industries %}
 			<li data-target="#mainFeatures" data-slide-to="{{ forloop.index0 }}"{%if forloop.first %} class="active"{% endif %}></li>
 		{% endfor %}
 		</ol>
 		<div class="carousel-inner">
-		{% for item in site.data.features %}
+		{% for item in site.data.industries %}
 			<div class="item{% if forloop.first %} active{% endif %}">
-				<img src="/images/banners/banner_bg_blue.gif" class="img-responsive" alt="{{ item.title | escape }}">
+				<img src="/images/banners/banner_bg_photocs.jpg" class="img-responsive" alt="{{ item.title | escape }}">
 				<div class="container">
 					<div class="carousel-caption{% if item.carouselAlign %} {{ item.carouselAlign }}{% endif %}">
 						<div class="animation">
@@ -54,7 +54,7 @@
 	<hr class="featurette-divider">
 
 	<div class="row featurette">
-	{% if forloop.index == 2 or forloop.index == 4 or forloop == 6 %}
+	{% if forloop.index == 2 or forloop.index == 4 or forloop.index == 6 or forloop.index == 8 or forloop.index == 10 %}
 		<div class="col-sm-5">
 			<img class="featurette-image img-responsive" src="{{ item.image }}" alt="{{ item.title }}">
 		</div>
@@ -66,7 +66,7 @@
 				<a href="{{ item.link.url }}" class="btn btn-primary btn-blue btn-lg"><i class="icon bold-arrow-right"></i>{{ item.link.text }}</a>
 			</div>
 		</div>
-	{% if forloop.index == 1 or forloop.index == 3 or forloop == 5 %}
+	{% if forloop.index == 1 or forloop.index == 3 or forloop.index == 5 or forloop.index == 7 or forloop.index == 9 %}
 		<div class="col-sm-5">
 			<img class="featurette-image img-responsive" src="{{ item.image }}" alt="{{ item.title }}">
 		</div>
