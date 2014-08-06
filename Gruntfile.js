@@ -96,12 +96,17 @@ module.exports = function(grunt) {
     // Run Jekyll commands
     jekyll: {
       server: {
-        server : true,
-        // Add the --watch flag, i.e. rebuild on file changes
-        watch: true
+          options: {
+              serve : true,
+//              server_port: 4444,
+              // Add the --watch flag, i.e. rebuild on file changes
+              watch: true
+          }
       },
       build: {
-        server: false
+          options: {
+              serve: false
+          }
       }
     }
 
