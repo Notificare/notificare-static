@@ -1,0 +1,38 @@
+- title: Mobile Marketing Platform 2
+  description: |
+    Send out Rich and Interactive Push Notifications for iOS, Android and Web. Enhance your apps with location based messages.
+  link: 
+    text: Find out how 
+    url: /location-based-messaging
+  carouselAlign: right
+  carouselImage: /images/banners/banner_home_rcd.png
+  carouselDescription: Rich and interactive push notifications for iOS, Android and Web. Enhance your apps with location based messages that really work. 
+  carouselLink: 
+    text: Learn more
+    url: /location-based-messaging
+- title: Unified Push Messaging
+  description: |
+    Deliver engaging cross platform push notifications. Make the most out of the channels you are already using right now. One push for all.
+  link:
+    text: Show me how
+    url: /features/unified-push-messaging
+  carouselAlign: right
+  carouselImage: /images/banners/banner_home_unified_push.png
+  featurepageImage: /images/features/features01.png
+  carouselDescription: Deliver engaging cross platform push notifications. Make the most out of the channels you are already using right now. One push for all.
+  carouselLink:
+    text: Show me how
+    url: /features/unified-push-messaging
+- title: Location based Messaging
+  description: Categorize users by location... the places where they live, shop or work. Reach new levels of engagement by providing them with what they want, when they want it.
+  link:
+    text: Learn more
+    url: /features/location-based-messaging
+  carouselAlign: right
+  carouselImage: /images/banners/banner_home_locationbased.png
+  featurepageImage: /images/features/locationbased_geofencing.png
+  carouselDescription: Categorize your users by location, interests, purchases, language or even the devices they use. Get to really know your users. Start building a relationship.
+  carouselLink:
+    text: Learn more
+    url: /features/location-based-messaging
+

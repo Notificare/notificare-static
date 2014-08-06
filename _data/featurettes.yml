@@ -1,4 +1,30 @@
-
+- title: Cross-platform push notifications.
+  subtitle: One push for all.
+  image: /images/features/header_unified_push.png
+  featurepageImage: /images/features/features01.png
+  description:
+    Deliver engaging cross platform push notifications. Make the most out of the channels you are already using right now. One push for all.
+  link:
+    text: more info
+    url: /features/unified-push-messaging
+- title: Geo-Target, Geo-Fences & iBeacons.
+  subtitle: That really works.
+  image: /images/features/feature_locationbased.png
+  featurepageImage: /images/features/features07.png
+  description:
+    Step into a world of contextual messages with high relevance. Use iBeacon technology to increase and retain your success.
+  link:
+    text: more info
+    url: /features/location-based-messaging
+- title: Create engaging experiences.
+  subtitle: Notifications just got smarter.
+  image: /images/banners/banner_home_composer.png
+  featurepageImage: /images/features/features03.png
+  description:
+    From simple messages to rich, actionable content. Extend your apps with a powerful way of reaching your users.
+  link:
+    text: show me more
+    url: /features/create-an-engaging-experience
 - title: One simple and powerful dashboard.
   subtitle: See for yourself.
   image: /images/features/feature_dashboard.png
