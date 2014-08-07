@@ -11,12 +11,12 @@ text_kop: Features
     <div class="feature-content">
         <h1>Mobile Marketing Platform</h1>
         <p class="lead">Send out Rich and Interactive Push Notifications for iOS, Android and Web. Enhance your apps with location based messages.</p>
-        <p><a class="btn btn-lg btn-success" href="//notifica.re/sign-up" role="button">Start a 30 day trial</a></p>
+        <p><a class="btn btn-lg btn-success" href="/sign-up" role="button">Start a 30 day trial</a></p>
     </div>
 </div>
 
 
-{% for item in site.data.featurettes %}
+{% for item in site.data.features %}
 {% if forloop.index == 1 or forloop.index == 4 or forloop.index == 7 %}<div class="row feature-row">{% endif %}
 	<div class="col-sm-4">
 		<img class="img-float-left margin-right-15 img-responsive margin-bottom-5" src="{{ item.featurepageImage }}" alt="{{ item.title | escape }}">

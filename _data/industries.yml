@@ -1,38 +1,90 @@
-- title: Mobile Marketing Platform 2
+- title: Agencies
   description: |
-    Send out Rich and Interactive Push Notifications for iOS, Android and Web. Enhance your apps with location based messages.
-  link: 
-    text: Find out how 
-    url: /location-based-messaging
-  carouselAlign: right
-  carouselImage: /images/banners/banner_home_rcd.png
-  carouselDescription: Rich and interactive push notifications for iOS, Android and Web. Enhance your apps with location based messages that really work. 
-  carouselLink: 
-    text: Learn more
-    url: /location-based-messaging
-- title: Unified Push Messaging
-  description: |
-    Deliver engaging cross platform push notifications. Make the most out of the channels you are already using right now. One push for all.
+    Accelerate your development time with our extensive collection of libraries and plugins for all major frameworks. Partner up with an experience team of engineers and let's do amazing things together.
   link:
     text: Show me how
-    url: /features/unified-push-messaging
-  carouselAlign: right
-  carouselImage: /images/banners/banner_home_unified_push.png
-  featurepageImage: /images/features/features01.png
-  carouselDescription: Deliver engaging cross platform push notifications. Make the most out of the channels you are already using right now. One push for all.
-  carouselLink:
+    url: /industries/agencies
+  mainImage: /images/industries/banner_industry_agencies.png
+  detailLink:
     text: Show me how
-    url: /features/unified-push-messaging
-- title: Location based Messaging
-  description: Categorize users by location... the places where they live, shop or work. Reach new levels of engagement by providing them with what they want, when they want it.
+    url: /industries/agencies
+- title: Retail
+  description: |
+    Create a mobile relationship with your customers. Measure how sucessfull your offline and online campaigns are and attract more customers than ever with contextual marketing messages.
   link:
-    text: Learn more
-    url: /features/location-based-messaging
-  carouselAlign: right
-  carouselImage: /images/banners/banner_home_locationbased.png
-  featurepageImage: /images/features/locationbased_geofencing.png
-  carouselDescription: Categorize your users by location, interests, purchases, language or even the devices they use. Get to really know your users. Start building a relationship.
-  carouselLink:
-    text: Learn more
-    url: /features/location-based-messaging
-
+    text: Show me how
+    url: /industries/retail
+  mainImage: /images/industries/banner_industry_retail.png
+  detailLink:
+    text: Show me how
+    url: /industries/retail
+- title: Entertainment
+  description: |
+    Engaging millions of users every day. Keep a community informed or deliver interactive digital campaigns that makes your fans coming back. Retain users, get better ratings and maximize your mobile apps ROI.
+  link:
+    text: Show me how
+    url: /industries/entertainment
+  mainImage: /images/industries/banner_industry_entertainment.png
+  detailLink:
+    text: Show me how
+    url: /industries/entertainment
+- title: Finance & Trading
+  description: |
+    Dynamic and competive sectors deserve a good push. Deliver secure and relevant notifications across all your mobile and web apps. Measure important key-points about your application's usage and customer behaviour.
+  link:
+    text: Show me how
+    url: /industries/finance-trading
+  mainImage: /images/industries/banner_industry_finance-trading.png
+  detailLink:
+    text: Show me how
+    url: /industries/finance-trading
+- title: Food & Restaurants
+  description: |
+    Acquire more customers, accelarate reservations and payments and get better ratings and increase customer satisfaction.
+  link:
+    text: Show me how
+    url: /industries/food-restaurants
+  mainImage: /images/industries/banner_industry_retail.png
+  detailLink:
+    text: Show me how
+    url: /industries/travel-hospitality
+- title: Travel & Hospitality
+  description: |
+    Offer an exclusive and interactive treatment to your guests. Reward & Loyalty programs that maximize your sales.
+  link:
+    text: Show me how
+    url: /industries/travel-hospitality
+  mainImage: /images/industries/banner_industry_travel-hospitality.png
+  detailLink:
+    text: Show me how
+    url: /industries/travel-hospitality
+- title: Health & Fitness
+  description: |
+    Health data & Smart push messaging... the perfect marriage. From Health Care institutions to fitness oriented mobile applications we can also help you make the most out of your valuable data.
+  link:
+    text: Show me how
+    url: /industries/health-fitness
+  mainImage: /images/industries/banner_industry_health-fitness.png
+  detailLink:
+    text: Show me how
+    url: /industries/health-fitness
+- title: Lifestyle
+  description: |
+    Create beautiful mobile experiences and engage your crowd
+  link:
+    text: Show me how
+    url: /industries/lifestyle
+  mainImage: /images/industries/banner_industry_lifestyle.png
+  detailLink:
+    text: Show me how
+    url: /industries/lifestyle
+- title: Social Networks
+  description: |
+    Bring relevant
+  link:
+    text: Show me how
+    url: /industries/lifestyle
+  mainImage: /images/industries/banner_industry_lifestyle.png
+  detailLink:
+    text: Show me how
+    url: /industries/lifestyle

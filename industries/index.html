@@ -7,25 +7,25 @@ keywords: Overview of Notificare's main features.
 text_kop: Industries
 ---
 
-<div class="jumbotron features-list">
-    <img class="feature-image img-float-right margin-left-15 img-responsive" src="/images/industries/header_industries_intro.png" alt="Notifications just got smarter">
+<div class="jumbotron features-list industries-header">
+    <img class="feature-image img-float-right margin-left-15 img-responsive" src="/images/features/header_features_intro.png" alt="Notifications just got smarter">
     <div class="feature-content">
         <h1>Working with the best</h1>
-        <p class="lead">Many industries already joined the mobile revolution.<br />Let our team of experts bring any of your mobile projects to life.</p>
-        <p><a class="btn btn-lg btn-success" href="//notifica.re/sign-up" role="button">Start a 30 day trial</a></p>
+        <p class="lead">Many industries already joined the mobile revolution.<br />We've partner up with the best creative agencies around<br /> to help you create cost-effective mobile experiences.</p>
+        <p><a class="btn btn-lg btn-success" href="/forms/info" role="button">Contact us</a></p>
     </div>
 </div>
 
 {% for item in site.data.industries %}
-
-
+{% if forloop.index == 1 or forloop.index == 4 or forloop.index == 7 %}<div class="row feature-row">{% endif %}
     <div class="col-sm-4">
         <img class="img-float-left margin-right-15 img-responsive margin-bottom-5" src="{{ item.featurepageImage }}" alt="{{ item.title | escape }}">
         <h3>{{ item.title }}</h3>
         <p>{{ item.description }}</p>
         <p><a class="btn btn-primary" href="{{ item.link.url }}" role="button">{{ item.link.text | escape }}</a></p>
     </div>
-    <div class="row feature-row"></div>
+
+    {% if forloop.index == 3 or forloop.index == 6 or forloop.index == 9 %}</div>{% endif %}
 
 {% endfor %}
-
+</div>

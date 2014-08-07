@@ -6,38 +6,33 @@
 	{% include menu.html %}
 
 
+    <div class="home-main-caption">
+        <h1>Mobile Marketing Platform</h1>
+        <p>Rich and interactive push notifications for iOS, Android and Web. Enhance your apps with location based messages that really work.</p>
+        <p>
+            <a class="btn btn-lg btn-primary btn-blue-dark" href="/features" role="button">All Features</a>
+            <a class="btn btn-lg btn-primary btn-green-dark" href="/sign-up" role="button">Try for free for 30 days</a>
+        </p>
+    </div>
+
 	<!-- Carousel
 	================================================== -->
 	<div id="mainFeatures" class="carousel slide" data-ride="carousel">
-		<!-- Indicators -->
-		<ol class="carousel-indicators">
-		{% for item in site.data.industries %}
-			<li data-target="#mainFeatures" data-slide-to="{{ forloop.index0 }}"{%if forloop.first %} class="active"{% endif %}></li>
-		{% endfor %}
-		</ol>
+
 		<div class="carousel-inner">
-		{% for item in site.data.industries %}
+		{% for item in site.data.carousel %}
 			<div class="item{% if forloop.first %} active{% endif %}">
-				<img src="/images/banners/banner_bg_photocs.jpg" class="img-responsive" alt="{{ item.title | escape }}">
+				<img src="{{ item.carouselBackground }}" class="img-responsive" alt="{{ item.title | escape }}">
 				<div class="container">
 					<div class="carousel-caption{% if item.carouselAlign %} {{ item.carouselAlign }}{% endif %}">
 						<div class="animation">
 							<img class="img-responsive" src="{{ item.carouselImage}}" alt="{{ item.title | escape }}">
-						</div>
-						<div class="carousel-caption-content">
-							<h1>{{ item.title | escape }}</h1>
-							<p>{{ item.carouselDescription | newline_to_br }}</p>
-							<p>
-								<a class="btn btn-lg btn-primary btn-blue-dark" href="{{ item.carouselLink.url }}" role="button">{{ item.carouselLink.text }}</a>
-							</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		{% endfor %}
 		</div>
-		<a class="left carousel-control" href="#mainFeatures" data-slide="prev"><span class="icon big-arrow-left"></span></a>
-		<a class="right carousel-control" href="#mainFeatures" data-slide="next"><span class="icon big-arrow-right"></span></a>
 	</div><!-- /.carousel -->
 
 
@@ -49,7 +44,7 @@
 	<div class="container home-content">
 	
 	<!-- START THE FEATURETTES -->
-	{% for item in site.data.featurettes %}
+	{% for item in site.data.features %}
 	
 	<hr class="featurette-divider">
 
