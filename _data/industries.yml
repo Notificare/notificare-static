@@ -50,7 +50,7 @@
     url: /industries/travel-hospitality
 - title: Travel & Hospitality
   description: |
-    Offer an exclusive and interactive treatment to your guests. Reward & Loyalty programs that maximize your sales.
+    Offer an exclusive and interactive treatment to your guests. Integrate with your existing online booking systems, room keys, guest services, etc. Reward & Loyalty programs that maximize your sales.
   link:
     text: Show me how
     url: /industries/travel-hospitality
@@ -68,23 +68,23 @@
   detailLink:
     text: Show me how
     url: /industries/health-fitness
-- title: Lifestyle
+- title: Sports & Events
   description: |
-    Create beautiful mobile experiences and engage your crowd
+    Create mobile apps that make your venue stand out. From digital mashups to ticket reservations or badge pick-ups, your app can be a great channel to measure, engage and interact with your attendants.
   link:
     text: Show me how
-    url: /industries/lifestyle
-  mainImage: /images/industries/banner_industry_lifestyle.png
+    url: /industries/sports-events
+  mainImage: /images/industries/banner_industry_sport-events.png
   detailLink:
     text: Show me how
-    url: /industries/lifestyle
+    url: /industries/sports-events
 - title: Social Networks
   description: |
-    Bring relevant
+    Connect the dots between your users with remote push notifications. Automate how users receive alerts, how you market your ads and products or measure their engagement. We got you covered.
   link:
     text: Show me how
-    url: /industries/lifestyle
-  mainImage: /images/industries/banner_industry_lifestyle.png
+    url: /industries/social-networks
+  mainImage: /images/industries/banner_industry_social-networks.png
   detailLink:
     text: Show me how
-    url: /industries/lifestyle
+    url: /industries/social-networks

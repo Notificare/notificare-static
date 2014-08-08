@@ -1,16 +1,12 @@
-- title: Mobile Marketing Platform 1
+- title: Retail
   carouselAlign: right
-  carouselImage: /images/banners/banner_home_rcd.png
-  carouselBackground: /images/banners/banner_bg_photocs.jpg
-- title: Mobile Marketing Platform 2
+  carouselImage: /images/carousel/retail/helper-image.png
+  carouselBackground: /images/carousel/retail/bg.jpg
+- title: Food & Restaurants
   carouselAlign: right
-  carouselImage: /images/banners/banner_home_rcd.png
-  carouselBackground: /images/banners/banner_bg_photocs.jpg
-- title: Mobile Marketing Platform 3
+  carouselImage: /images/carousel/food-restaurants/helper-image.png
+  carouselBackground: /images/carousel/food-restaurants/bg.jpg
+- title: Travel & Hospitality
   carouselAlign: right
-  carouselImage: /images/banners/banner_home_rcd.png
-  carouselBackground: /images/banners/banner_bg_photocs.jpg
-- title: Mobile Marketing Platform 4
-  carouselAlign: right
-  carouselImage: /images/banners/banner_home_rcd.png
-  carouselBackground: /images/banners/banner_bg_photocs.jpg
+  carouselImage: /images/carousel/travel-hospitality/helper-image.png
+  carouselBackground: /images/carousel/travel-hospitality/bg.jpg
