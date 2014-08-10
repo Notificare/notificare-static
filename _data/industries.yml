@@ -4,7 +4,7 @@
   link:
     text: Show me how
     url: /industries/agencies
-  mainImage: /images/industries/banner_industry_agencies.png
+  mainImage: /images/industries/image-agencies.png
   detailLink:
     text: Show me how
     url: /industries/agencies
@@ -14,7 +14,7 @@
   link:
     text: Show me how
     url: /industries/retail
-  mainImage: /images/industries/banner_industry_retail.png
+  mainImage: /images/industries/image-retail.png
   detailLink:
     text: Show me how
     url: /industries/retail
@@ -24,7 +24,7 @@
   link:
     text: Show me how
     url: /industries/entertainment
-  mainImage: /images/industries/banner_industry_entertainment.png
+  mainImage: /images/industries/image-entertainment.png
   detailLink:
     text: Show me how
     url: /industries/entertainment
@@ -34,7 +34,7 @@
   link:
     text: Show me how
     url: /industries/finance-trading
-  mainImage: /images/industries/banner_industry_finance-trading.png
+  mainImage: /images/industries/image-finance-trading.png
   detailLink:
     text: Show me how
     url: /industries/finance-trading
@@ -44,7 +44,7 @@
   link:
     text: Show me how
     url: /industries/food-restaurants
-  mainImage: /images/industries/banner_industry_retail.png
+  mainImage: /images/industries/image-food-restaurants.png
   detailLink:
     text: Show me how
     url: /industries/travel-hospitality
@@ -54,7 +54,7 @@
   link:
     text: Show me how
     url: /industries/travel-hospitality
-  mainImage: /images/industries/banner_industry_travel-hospitality.png
+  mainImage: /images/industries/image-travel-hospitality.png
   detailLink:
     text: Show me how
     url: /industries/travel-hospitality
@@ -64,7 +64,7 @@
   link:
     text: Show me how
     url: /industries/health-fitness
-  mainImage: /images/industries/banner_industry_health-fitness.png
+  mainImage: /images/industries/image-health-fitness.png
   detailLink:
     text: Show me how
     url: /industries/health-fitness
@@ -74,7 +74,7 @@
   link:
     text: Show me how
     url: /industries/sports-events
-  mainImage: /images/industries/banner_industry_sport-events.png
+  mainImage: /images/industries/image-sports-events.png
   detailLink:
     text: Show me how
     url: /industries/sports-events
@@ -84,7 +84,7 @@
   link:
     text: Show me how
     url: /industries/social-networks
-  mainImage: /images/industries/banner_industry_social-networks.png
+  mainImage: /images/industries/image-social-networks.png
   detailLink:
     text: Show me how
     url: /industries/social-networks
