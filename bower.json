@@ -1,0 +1,20 @@
+{
+  "name": "notificare-static",
+  "version": "1.0.0",
+  "homepage": "http://notifica.re",
+  "authors": [
+    "Joel Oliveira <joel@notifica.re>",
+    "Joris Verbogt <joris@notifica.re>"
+  ],
+  "description": "Notificare static website",
+  "main": "index.html",
+  "license": "Notificare B.V.",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

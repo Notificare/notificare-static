@@ -39,13 +39,13 @@ module.exports = function(grunt) {
       debug: {
         files: {        	
         	'debug/lib.js': ['js/libs/modernizr.js', 'js/libs/jquery.js', 'js/libs/bootstrap.js', 'js/libs/holder.js'],
-            'debug/classes.js': ['js/classes/app.js' ]    
+            'debug/classes.js': ['js/classes/config-development.js', 'js/classes/form.js', 'js/classes/app.js' ]
         }
       },
       build: {
         files: {
             'build/lib.js': ['js/libs/modernizr.js', 'js/libs/jquery.js', 'js/libs/bootstrap.js', 'js/libs/holder.js'],
-            'build/classes.js': ['js/classes/app.js' ]
+            'build/classes.js': ['js/classes/config-production.js', 'js/classes/form.js', 'js/classes/app.js' ]
         }
       }
     },

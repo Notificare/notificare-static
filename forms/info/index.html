@@ -22,37 +22,7 @@ text_kop: Request a demo
 	<div class="row">
 		<div class="col-sm-8">
 			<h3>See what mobile marketing can do for your business.</h3>
-			<form action="http://getsimpleform.com/messages?form_api_token=763c21ce0dcf0c6869fa1cf2f0fb6ece" method="post">
-				<!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
-				<input type='hidden' name='redirect_to' value='http://notifica.re/forms/request-demo/thankyou' />
-				<!-- all your input fields here.... -->
-				<label>
-					First name
-					<input type='text' name='firstname' />
-				</label>
-				<label>
-					Last name
-					<input type='text' name='lastname' />
-				</label>
-				<label>
-					Company
-					<input type='text' name='company' />
-				</label>
-				<label>
-					Company's email address
-					<input type='email' name='email' />
-				</label>
-				<label>
-					Telephone (optional)
-					<input type='text' name='telephone' />
-				</label>
-				<label>
-					Tell us about your business
-					<textarea name="content"></textarea>
-				</label>
-				<input type='hidden' name='type' value="Request a demo" />
-				<input type='submit' class="btn btn-blue btn-large" value='Send' />
-			</form>
+            <form class="notificare-form" data-type="info" data-redirect="thankyou"></form>
 		</div>
 		<div class="col-sm-4  hidden-xs">
 			

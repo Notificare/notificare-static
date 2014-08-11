@@ -155,6 +155,13 @@ $( document ).ready(function() {
         }
     });
 
+    $('.notificare-form').each(function() {
+        new NotificareForm(this, {
+            type: $(this).data('type'),
+            redirect: $(this).data('redirect')
+        });
+    });
+
     $('.signup-form-button').click(function(e) {
         e.preventDefault();
         // Get some values from elements on the page:
