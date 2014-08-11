@@ -19,7 +19,7 @@ text_kop: Industries
 {% for item in site.data.industries %}
 {% if forloop.index == 1 or forloop.index == 4 or forloop.index == 7 %}<div class="row feature-row">{% endif %}
     <div class="col-sm-4">
-        <img class="img-float-left margin-right-15 img-responsive margin-bottom-5" src="{{ item.featurepageImage }}" alt="{{ item.title | escape }}">
+        <a href="{{ item.link.url }}"><img class="img-float-left margin-right-15 img-responsive margin-bottom-5" src="{{ item.mainImage }}" alt="{{ item.title | escape }}"></a>
         <h3>{{ item.title }}</h3>
         <p>{{ item.description }}</p>
         <p><a class="btn btn-primary" href="{{ item.link.url }}" role="button">{{ item.link.text | escape }}</a></p>
