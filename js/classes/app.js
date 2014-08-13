@@ -134,9 +134,9 @@ $( document ).ready(function() {
         href = $(this).attr("href");
 		url_components = href.split("/"),
 		planname = url_components[url_components.length - 1],
-		$('.modal-title').html('Your choice: <strong>' + plan + '</strong>');
+		$('.modal-title').html('Your choice: <strong>' + planname + '</strong>');
         var $form = $( '#signup' );
-        $form.find( "input[name='plan']" ).val(planname);
+        $form.find( "input[name='plan']" ).val(plan);
         //reset any values
         $form.find( "input[name='firstname'], input[name='lastname'], input[name='telephone'], input[name='pass1'], input[name='pass2'], input[name='email'], input[name='company']" ).val('');
         $( "#signup-alert-error").hide();

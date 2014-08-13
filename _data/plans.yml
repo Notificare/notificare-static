@@ -1,4 +1,5 @@
 - name: Rich Push
+  plan: Rich
   url: richpush
   description: Our lowest entry point! Get started with smart push notifications.
   price: 29
@@ -25,6 +26,7 @@
   support: no
   emailsupport: yes
 - name: Geo Push
+  plan: Geo
   url: geopush
   description: Start with location based messaging and iBeacon technology.
   price: 79
@@ -51,6 +53,7 @@
   support: no
   emailsupport: yes
 - name: Start Push
+  plan: Awesome
   url: startpush
   description: An entry plan with premium support. Get started with smarter notifications. 
   price: 199
@@ -77,6 +80,7 @@
   support: yes
   emailsupport: yes
 - name: More Push
+  plan: Brutal
   url: morepush
   description: Suitable for small/medium apps. More push, more functionality. 
   price: 399
@@ -103,6 +107,7 @@
   support: yes
   emailsupport: yes
 - name: Force Push
+  plan: Cool
   url: forcepush
   description: Our full featured plan. May the force of push be with you! 
   price: 599
