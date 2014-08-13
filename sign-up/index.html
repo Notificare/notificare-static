@@ -309,7 +309,7 @@ text_kop: Sign up
                         Your account has been created.
                     </div>
 
-                    <form id="signup" action="//localhost:4000/api/accounts" method="post">
+                    <form id="signup" action="{% if site.env == 'production' %}https://dashboard.notifica.re/api/accounts{% else %}http://localhost:4000/api/accounts{% endif %}" method="post">
                         <input type='hidden' name='plan' />
                         <div class="row">
                         <div class="col-xs-12">
