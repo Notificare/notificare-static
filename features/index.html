@@ -19,8 +19,10 @@ text_kop: Features
 {% for item in site.data.features %}
 {% if forloop.index == 1 or forloop.index == 4 or forloop.index == 7 %}<div class="row feature-row">{% endif %}
 	<div class="col-sm-4">
-		<img class="img-float-left margin-right-15 img-responsive margin-bottom-5" src="{{ item.featurepageImage }}" alt="{{ item.title | escape }}">
-		<h3>{{ item.title }} {{ item.subtitle }}</h3>
+        <a href="{{ item.link.url }}">
+            <img class="img-float-left margin-right-15 img-responsive margin-bottom-5" src="{{ item.featurepageImage }}" alt="{{ item.title | escape }}">
+		</a>
+        <h3>{{ item.title }} {{ item.subtitle }}</h3>
 		<p>{{ item.description | newline_to_br }}</p>
 		<p><a class="btn btn-primary" href="{{ item.link.url }}" role="button">{{ item.link.text }}</a></p>
 	</div>
