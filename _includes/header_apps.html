@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Article" data-site-version="{{ site.site_version }}" data-facebookappid="{{ site.facebook.app_id }}" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:fb="https://www.facebook.com/2008/fbml">
+
+<head>
+	<!--
+	Copyright (c) Notificare 2013 All rights reserved
+	Developed by : notifica.re
+	Contact      : info@notifica.re
+	
+	Oh you like to view the source! Y u no contact us if you think you can do better?
+	We're always looking for wizards, ninjas and other gifted people.
+	
+	 -->
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="google-site-verification" content="{{ site.api.google.webmaster }}" />
+	<title>{{ page.title | escape }}{% if page.categories %} | {{ page.categories | first | capitalize }}{% endif %} | Notificare</title>
+	<meta name="description" content="{{ page.description | escape }}" />
+	<meta name="keywords" content="{{ page.keywords | escape }}" />
+	<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1.0, user-scalable=0">
+
+	<!-- Google Authorship and Publisher Markup -->
+	<link rel="author" href="https://plus.google.com/115713736533304956393/posts"/>
+	<link rel="publisher" href="https://plus.google.com/115713736533304956393"/>
+	
+	<!-- Schema.org markup for Google+ -->
+	<meta itemprop="name" content="{{ page.title | escape }}">
+	<meta itemprop="description" content="{{ page.description | escape }}">
+	<meta itemprop="image" content="{{ site.url }}/images/notificare_dashboard_logo2x.png">
+	
+	<!-- Twitter Card data -->
+	<meta name="twitter:card" content="{{ site.url }}/images/notificare_dashboard_logo2x.png">
+	<meta name="twitter:site" content="@notificare">
+	<meta name="twitter:title" content="{{ page.title | escape }}">
+	<meta name="twitter:description" content="{{ page.description | escape }}">
+	<meta name="twitter:creator" content="@notificare">
+	<!-- Twitter summary card with large image must be at least 280x150px -->
+	<meta name="twitter:image:src" content="{{ site.url }}/images/notificare_dashboard_logo2x.png">
+	
+	<!-- Open Graph data -->
+	<meta property="og:title" content="{{ page.title | escape }}" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+	<meta property="og:image" content="/images/notificare_dashboard_logo2x.png" />
+	<meta property="og:description" content="{{ page.description | escape }}" />
+	<meta property="og:site_name" content="Notificare" />
+{% if page.date %}
+	<meta property="article:published_time" content="{{ page.date}}" />
+	<meta property="article:modified_time" content="{{ page.date }}" />
+{% else %}
+	<meta property="article:published_time" content="{{ site.time }}" />
+	<meta property="article:modified_time" content="{{ site.time }}" />
+{% endif %}
+	<meta property="fb:admins" content="100001012701188,581718042" />
+	
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.css" media="screen" />
+{% if site.env == 'production' %}
+	<link rel="stylesheet" type="text/css" href="/build/default.min.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="/build/print.min.css" media="print" />
+{% else %}
+	<link rel="stylesheet" type="text/css" href="/debug/default.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="/debug/print.css" media="print" />
+{% endif %}
+	<link rel="stylesheet" type="text/css" href="/css/animate.css" media="screen" />
+	<link href="//fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic" rel="stylesheet" type="text/css">
+	<link rel="shortcut icon" href="/favicon.ico" type="image/ico" />
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-539dfce4737964fc"></script>
+	<!-- Start of Async HubSpot Analytics Code -->
+ <script type="text/javascript">
+   (function(d,s,i,r) {
+     if (d.getElementById(i)){return;}
+     var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+     n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/413704.js';
+     e.parentNode.insertBefore(n, e);
+   })(document,"script","hs-analytics",300000);
+ </script>
+<!-- End of Async HubSpot Analytics Code -->
