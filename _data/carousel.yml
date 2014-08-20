@@ -2,10 +2,10 @@
   carouselAlign: right
   carouselImage: /images/carousel/retail/helper-image.png
   carouselBackground: /images/carousel/retail/bg.jpg
-- title: Food & Restaurants
+- title: Lifestyle
   carouselAlign: right
-  carouselImage: /images/carousel/food-restaurants/helper-image.png
-  carouselBackground: /images/carousel/food-restaurants/bg.jpg
+  carouselImage: /images/carousel/lifestyle/helper-image.png
+  carouselBackground: /images/carousel/lifestyle/bg.jpg
 - title: Travel & Hospitality
   carouselAlign: right
   carouselImage: /images/carousel/travel-hospitality/helper-image.png
