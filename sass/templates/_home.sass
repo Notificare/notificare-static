@@ -11,11 +11,15 @@
 			color: white
 			font-size: 40px
 			font-weight: 500
+			@include single-text-shadow(black, 1px, 1px, 0)
 		p
 			color: white
-			font-size: 19px
+			font-size: 20px
 			line-height: 23px
+			font-weight: 300
+			@include single-text-shadow(black, 1px, 1px, 0)
 		a
+			@include single-text-shadow(none)
 			margin-right: 10px
 	.navbar-nav
 		li
@@ -54,13 +58,19 @@
 				h1
 					font-size: 38px
 					font-weight: 500
+					@include single-text-shadow(black, 1px, 1px, 0)
 				p	
 					font-size: 24px
 			.animation
 				position: absolute
 				margin: 0
 				z-index: 1
-				
+				-webkit-animation: fadein 2s /* Safari, Chrome and Opera > 12.1 */
+				-moz-animation: fadein 2s /* Firefox < 16 */
+				-ms-animation: fadein 2s /* Internet Explorer */
+				-o-animation: fadein 2s /* Opera < 12.1 */
+				animation: fadein 2s
+
 		&.right
 			.carousel-caption-content
 				position: absolute
@@ -71,13 +81,19 @@
 				h1
 					font-size: 38px
 					font-weight: 500
+
 				p	
 					font-size: 24px
 			.animation
 				position: absolute
 				margin: -320px -100px
 				z-index: 1
-		
+				-webkit-animation: fadein 4s /* Safari, Chrome and Opera > 12.1 */
+				-moz-animation: fadein 4s /* Firefox < 16 */
+				-ms-animation: fadein 4s /* Internet Explorer */
+				-o-animation: fadein 4s /* Opera < 12.1 */
+				animation: fadein 4s
+
 		
 	
 	/* Declare heights because of positioning of img element */
@@ -172,4 +188,29 @@
 		font-weight: 300
 		line-height: 1
 		letter-spacing: -1px
-	
+
+@keyframes fadein
+	from
+		opacity: 0
+	to
+		opacity: 1
+@-moz-keyframes fadein
+	from
+		opacity: 0
+	to
+		opacity: 1
+@-webkit-keyframes fadein
+	from
+		opacity: 0
+	to
+		opacity: 1
+@-ms-keyframes fadein
+	from
+		opacity: 0
+	to
+		opacity: 1
+@-o-keyframes fadein
+	from
+		opacity: 0
+	to
+		opacity: 1

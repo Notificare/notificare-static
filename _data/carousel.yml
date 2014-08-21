@@ -6,7 +6,7 @@
   carouselAlign: right
   carouselImage: /images/carousel/lifestyle/helper-image.png
   carouselBackground: /images/carousel/lifestyle/bg.jpg
-- title: Travel & Hospitality
+- title: Sports & Events
   carouselAlign: right
-  carouselImage: /images/carousel/travel-hospitality/helper-image.png
-  carouselBackground: /images/carousel/travel-hospitality/bg.jpg
+  carouselImage: /images/carousel/sports-events/helper-image.png
+  carouselBackground: /images/carousel/sports-events/bg.jpg
