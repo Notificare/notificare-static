@@ -144,7 +144,6 @@ $( document ).ready(function() {
         return false;
 	});
 
-
     $('.currency-change').change(function(e) {
         if($(this).val() == 'EUR'){
             $('.dollar').hide();

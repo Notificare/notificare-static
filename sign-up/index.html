@@ -12,7 +12,7 @@ text_kop: Sign up
         <div class="pull-right currency-selector hidden-xs">
             <select name="country" class="currency-change">
                 <option value="USD">USD</option>
-                <option value="EUR">EUR</option>
+                <option selected="" value="EUR">EUR</option>
             </select>
         </div>
     </div>
@@ -20,7 +20,7 @@ text_kop: Sign up
         <div class="currency-selector-mobile">
             <select name="country" class="currency-change">
                 <option value="USD">USD</option>
-                <option value="EUR">EUR</option>
+                <option selected="" value="EUR">EUR</option>
             </select>
         </div>
     </div>
@@ -103,8 +103,8 @@ text_kop: Sign up
 				<h2 class="plan-name">{{ plan.name | escape }}</h2>
 				<div class="plan-price">
 					<p>
-                        <span class="euro" style="display: none;"><span class="currency">&euro;</span><span class="price">{{ plan.eurprice }}</span></span>
-                        <span class="dollar"><span class="currency">$</span><span class="price">{{ plan.price }}</span></span><span class="month">/mo</span>
+                        <span class="euro"><span class="currency">&euro;</span><span class="price">{{ plan.eurprice }}</span></span>
+                        <span class="dollar" style="display: none;"><span class="currency">$</span><span class="price">{{ plan.price }}</span></span><span class="month">/mo</span>
 					</p>
 				</div>
 
@@ -495,7 +495,7 @@ text_kop: Sign up
                                     <option value="NA">Namibia</option>
                                     <option value="NR">Nauru</option>
                                     <option value="NP">Nepal</option>
-                                    <option value="NL">Netherlands</option>
+                                    <option selected="" value="NL">Netherlands</option>
                                     <option value="NC">New Caledonia</option>
                                     <option value="NZ">New Zealand</option>
                                     <option value="NI">Nicaragua</option>
