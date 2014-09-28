@@ -25,6 +25,15 @@
   link:
     text: show me more
     url: /features/create-an-engaging-experience
+- title: Discover your audience.
+  subtitle: Build a relationship.
+  image: /images/features/feature_discoveryouraudience.png
+  featurepageImage: /images/features/features02.png
+  description:
+    We let you create personal, user-centered and user-driven experiences. Building a relationship is all about communication.
+  link:
+    text: find out how
+    url: /features/discover-your-audience
 - title: One simple and powerful dashboard.
   subtitle: See for yourself.
   image: /images/features/feature_dashboard.png

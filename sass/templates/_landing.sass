@@ -1,26 +1,8 @@
-/* Home */
-.home
+/* Landing Pages */
+.landing
 
-	.home-main-caption
-		position: absolute
-		z-index: 2
-		width: 35%
-		top: 180px
-		left: 51%
-		h1
-			color: white
-			font-size: 40px
-			font-weight: 500
-			@include single-text-shadow(black, 1px, 1px, 0)
-		p
-			color: white
-			font-size: 20px
-			line-height: 23px
-			font-weight: 300
-			@include single-text-shadow(black, 1px, 1px, 0)
-		a
-			@include single-text-shadow(none)
-			margin-right: 10px
+	.main-container
+		margin-top: 40px
 	.navbar-nav
 		li
 			a
@@ -45,56 +27,30 @@
 	
 	
 	/* Since positioning the image, we need to help out the caption */
-	.carousel-caption 
+
+	.carousel-caption
 		z-index: 10
 		text-shadow: none
 
-		&.left
+		&.center
 			.carousel-caption-content
 				position: absolute
-				width: 600px
-				text-align: right
+				width: 68%
+				text-align: center
+				margin: -330px 12%
 				z-index: 2
 				h1
-					font-size: 38px
+					font-size: 48px
 					font-weight: 500
 					@include single-text-shadow(black, 1px, 1px, 0)
-				p	
+				p
 					font-size: 24px
-			.animation
-				position: absolute
-				margin: 0
-				z-index: 1
-				-webkit-animation: fadein 2s /* Safari, Chrome and Opera > 12.1 */
-				-moz-animation: fadein 2s /* Firefox < 16 */
-				-ms-animation: fadein 2s /* Internet Explorer */
-				-o-animation: fadein 2s /* Opera < 12.1 */
-				animation: fadein 2s
+					@include single-text-shadow(gray, 1px, 1px, 0)
+				.animation
+					position: absolute
+					margin: -430px -145px
+					z-index: 1
 
-		&.right
-			.carousel-caption-content
-				position: absolute
-				width: 63%
-				text-align: left
-				margin: -300px 470px
-				z-index: 2
-				h1
-					font-size: 38px
-					font-weight: 500
-
-				p	
-					font-size: 24px
-			.animation
-				position: absolute
-				margin: -320px -100px
-				z-index: 1
-				-webkit-animation: fadein 4s /* Safari, Chrome and Opera > 12.1 */
-				-moz-animation: fadein 4s /* Firefox < 16 */
-				-ms-animation: fadein 4s /* Internet Explorer */
-				-o-animation: fadein 4s /* Opera < 12.1 */
-				animation: fadein 4s
-
-		
 	
 	/* Declare heights because of positioning of img element */
 	.carousel .item 
@@ -134,10 +90,7 @@
 		margin-top: 40px
 		padding-left: 15px
 		padding-right: 15px
-	.img-logos
-		@include filter(grayscale(100%))
-		&:hover
-			@include filter(grayscale(10%))
+	
 	
 	/* Center align the text within the three columns below the carousel */
 	.marketing .blocks 
@@ -154,7 +107,7 @@
 			display: block
 			font-size: 14px
 			font-weight: 500
-
+	
 	.marketing .whos-using
 		text-align: center
 		margin: 20px 0 20px 0
@@ -191,6 +144,22 @@
 		font-weight: 300
 		line-height: 1
 		letter-spacing: -1px
+		margin-top: 80px
+	.features-divider
+		border-top: 1px solid transparent
+		height: 2px
+
+	.feature-row
+		margin-bottom: 60px
+
+	.call-for-action
+		width: 100%
+		font-size: 30px
+		margin: 20px 0 0 0
+		padding: 15px
+		.action
+			display: block
+			font-weight: 500
 
 @keyframes fadein
 	from

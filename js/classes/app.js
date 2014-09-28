@@ -61,19 +61,19 @@ $( document ).ready(function() {
 		});
 	}
 
-	if($('body').hasClass('home')){
-		var blocks = $('.marketing .row').find('.blocks');
-		var objs = [];
-		$.each( blocks, function(k , v){
-			objs.push(k);
-		});
-		
-		var rands = array_rand(objs, (blocks.length - 3));
-		
-		$.each( rands, function(k , v){
-			blocks[v].remove();
-		});
-	}
+//	if($('body').hasClass('home')){
+//		var blocks = $('.marketing .row').find('.blocks');
+//		var objs = [];
+//		$.each( blocks, function(k , v){
+//			objs.push(k);
+//		});
+//
+//		var rands = array_rand(objs, (blocks.length - 3));
+//
+//		$.each( rands, function(k , v){
+//			blocks[v].remove();
+//		});
+//	}
 	
 
 	

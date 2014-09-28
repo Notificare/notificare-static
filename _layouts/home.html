@@ -43,31 +43,7 @@
 
 	<div class="container home-content">
 	
-	<!-- START THE FEATURETTES -->
-	{% for item in site.data.features %}
-	
-	<hr class="featurette-divider">
 
-	<div class="row featurette">
-	{% if forloop.index == 2 or forloop.index == 4 or forloop.index == 6 or forloop.index == 8 or forloop.index == 10 %}
-		<div class="col-sm-5">
-			<img class="featurette-image img-responsive" src="{{ item.image }}" alt="{{ item.title }}">
-		</div>
-	{% endif %}
-		<div class="col-sm-7">
-			<h2 class="featurette-heading">{{ item.title }} <span class="text-muted">{{ item.subtitle }}</span></h2>
-			<p class="lead">{{ item.description | newline_to_br }}</p>
-			<div class="find-out-more">
-				<a href="{{ item.link.url }}" class="btn btn-primary btn-blue btn-lg"><i class="icon bold-arrow-right"></i>{{ item.link.text }}</a>
-			</div>
-		</div>
-	{% if forloop.index == 1 or forloop.index == 3 or forloop.index == 5 or forloop.index == 7 or forloop.index == 9 %}
-		<div class="col-sm-5">
-			<img class="featurette-image img-responsive" src="{{ item.image }}" alt="{{ item.title }}">
-		</div>
-	{% endif %}
-	</div>
-	{% endfor %}
 
 	<hr class="featurette-divider-footer">
 
@@ -76,18 +52,13 @@
 	
 	<div class="row marketing">
 		<div class="row whos-using">
-			<h3>Our customers</h3>
+			<h3>Who's using it</h3>
 		</div>
 		<div class="row">
-		{% for item in site.data.testimonials %}
-		{% if item.showOnHome %}
-			<div class="col-sm-4 blocks">
-				<img class="img-circle" src="{{ item.image }}" alt="{{ item.name }}">
-				<h2>{{ item.name }}</h2>
-				<p><span class="quote">"{{ item.text }}"</span><span class="signature">{{ item.signature }}</span><span class="job">{{ item.job }}</span></p>
-			<!-- 	<p><a class="btn btn-default " href="{{ item.case }}" role="button"><i class="icon bold-arrow-right"></i>see the case</a></p> -->
-			</div><!-- /.col-lg-4 -->
-		{% endif %}
+		{% for logo in site.data.logos %}
+			<div class="col-xs-2">
+				<img class="img-logos img-responsive" src="{{ logo.logo }}" alt="{{ logo.title }}">
+            </div>
 		{% endfor %}
 		</div>
 	</div><!-- /row marketing -->

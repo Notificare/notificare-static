@@ -1,30 +1,71 @@
 ---
-layout: features
+layout: landing
 path: /features
 title: Features
 description: Overview of Notificare's main features. Browse our highlighted features and learn how you can have push notifications in no time.
 keywords: Overview of Notificare's main features. 
 text_kop: Features
 ---
-<div class="jumbotron features-list">
-    <img class="feature-image img-float-right margin-left-15 img-responsive" src="/images/features/header_features_intro.png" alt="Notifications just got smarter">
-    <div class="feature-content">
-        <h1>Mobile Marketing Platform</h1>
-        <p class="lead">Send out Rich and Interactive Push Notifications for iOS, Android and Web. Enhance your apps with location based messages & iBeacon technology.</p>
-        <p><a class="btn btn-lg btn-primary btn-green-dark" href="/sign-up" role="button">Start a 30 day trial</a></p>
+
+<!-- Carousel
+	================================================== -->
+<div id="mainFeatures" class="carousel slide" data-ride="carousel">
+
+
+    <div class="carousel-inner">
+
+        <div class="item active">
+            <img src="/images/carousel/features/intro/bg.jpg" class="img-responsive" alt="Mobile Marketing Platform">
+            <div class="container">
+                <div class="carousel-caption center">
+                    <div class="carousel-caption-content">
+                        <h1>Mobile Marketing Platform</h1>
+                        <p>Rich and interactive push notifications for iOS, Android and Web. Enhance your apps with location based messages and iBeacon technology that really works.</p>
+                        <p>
+                            <a class="btn btn-lg btn-primary btn-green-dark" href="/sign-up" role="button">Try for free for 30 days</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
+</div><!-- /.carousel -->
+
+
+
+<!-- Marketing messaging and featurettes
+================================================== -->
+<!-- Wrap the rest of the page in another container to center all the content. -->
+
+<div class="container  main-container">
+
+    <!-- START THE FEATURETTES -->
+    {% for item in site.data.features %}
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        {% if forloop.index == 2 or forloop.index == 4 or forloop.index == 6 or forloop.index == 8 or forloop.index == 10 %}
+        <div class="col-sm-5">
+            <img class="featurette-image img-responsive" src="{{ item.image }}" alt="{{ item.title }}">
+        </div>
+        {% endif %}
+        <div class="col-sm-7">
+            <h2 class="featurette-heading">{{ item.title }} <span class="text-muted">{{ item.subtitle }}</span></h2>
+            <p class="lead">{{ item.description | newline_to_br }}</p>
+            <div class="find-out-more">
+                <a href="{{ item.link.url }}" class="btn btn-primary btn-blue btn-lg"><i class="icon bold-arrow-right"></i>{{ item.link.text }}</a>
+            </div>
+        </div>
+        {% if forloop.index == 1 or forloop.index == 3 or forloop.index == 5 or forloop.index == 7 or forloop.index == 9 %}
+        <div class="col-sm-5">
+            <img class="featurette-image img-responsive" src="{{ item.image }}" alt="{{ item.title }}">
+        </div>
+        {% endif %}
+    </div>
+    {% endfor %}
+
+
+
 </div>
-
-
-{% for item in site.data.features %}
-{% if forloop.index == 1 or forloop.index == 4 or forloop.index == 7 %}<div class="row feature-row">{% endif %}
-	<div class="col-sm-4">
-        <a href="{{ item.link.url }}">
-            <img class="img-float-left margin-right-15 img-responsive margin-bottom-5" src="{{ item.featurepageImage }}" alt="{{ item.title | escape }}">
-		</a>
-        <h3>{{ item.title }} {{ item.subtitle }}</h3>
-		<p>{{ item.description | newline_to_br }}</p>
-		<p><a class="btn btn-primary" href="{{ item.link.url }}" role="button">{{ item.link.text }}</a></p>
-	</div>
-{% if forloop.index == 3 or forloop.index == 6 or forloop.index == 9 %}</div>{% endif %}
-{% endfor %}
