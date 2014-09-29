@@ -19,7 +19,7 @@
 	/* Carousel base class */
 	.carousel 
 		background: $color-blue-light
-		height: 500px
+		height: 409px
 
 	
 	.carousel-inner
@@ -31,21 +31,19 @@
 	.carousel-caption
 		z-index: 10
 		text-shadow: none
-
+		top: 420px
 		&.center
 			.carousel-caption-content
-				position: absolute
-				width: 68%
 				text-align: center
-				margin: -330px 12%
+				margin: -305px 0 0 0
 				z-index: 2
 				h1
-					font-size: 48px
+					font-size: 36px
 					font-weight: 500
 					@include single-text-shadow(black, 1px, 1px, 0)
 				p
 					font-size: 24px
-					@include single-text-shadow(gray, 1px, 1px, 0)
+					@include single-text-shadow(black, 1px, 1px, 0)
 				.animation
 					position: absolute
 					margin: -430px -145px
@@ -54,7 +52,7 @@
 	
 	/* Declare heights because of positioning of img element */
 	.carousel .item 
-		height: 500px
+		height: 409px
 		background-color: $color-blue-light
 	
 	.carousel-inner > .item > img 
@@ -62,7 +60,7 @@
 		top: 0
 		left: 0
 		min-width: 100%
-		height: 500px
+		height: 409px
 	
 	.carousel-control
 		z-index: 11

@@ -2,11 +2,14 @@
   carouselAlign: right
   carouselImage: /images/carousel/retail/helper-image.png
   carouselBackground: /images/carousel/retail/bg.jpg
+  carouselBackgroundExtraSmall: /images/carousel/retail/bg_small.jpg
 - title: Lifestyle
   carouselAlign: right
   carouselImage: /images/carousel/lifestyle/helper-image.png
   carouselBackground: /images/carousel/lifestyle/bg.jpg
+  carouselBackgroundExtraSmall: /images/carousel/lifestyle/bg_small.jpg
 - title: Sports & Events
   carouselAlign: right
   carouselImage: /images/carousel/sports-events/helper-image.png
   carouselBackground: /images/carousel/sports-events/bg.jpg
+  carouselBackgroundExtraSmall: /images/carousel/sports-events/bg_small.jpg
