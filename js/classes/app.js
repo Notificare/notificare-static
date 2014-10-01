@@ -27,7 +27,8 @@ $( document ).ready(function() {
 	
 	if(isHandheld){
 		$('body').on('touchmove', function(e) {
-			if($('body').scrollTop() < 80){
+            var scrollTop = $("html").scrollTop() || $("body").scrollTop()
+			if(scrollTop < 80){
 				$('#header').removeClass('headroom--pinned');
 			}else{
 				$('#header').addClass('headroom--pinned');
@@ -36,7 +37,8 @@ $( document ).ready(function() {
 	
 	} else {
 		$(window).on('scroll', function(e) {
-			if($('body').scrollTop() < 80){
+            var scrollTop = $("html").scrollTop() || $("body").scrollTop()
+			if(scrollTop < 80){
 				$('#header').removeClass('headroom--pinned');
 			}else{
 				$('#header').addClass('headroom--pinned');
