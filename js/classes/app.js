@@ -36,12 +36,14 @@ $( document ).ready(function() {
 	
 	} else {
 		$(window).on('scroll', function(e) {
-			if($('body').scrollTop() < 80){
+
+			if($(window).scrollTop() < 70){
 				$('#header').removeClass('headroom--pinned');
 			}else{
 				$('#header').addClass('headroom--pinned');
 			}
 		});
+
 	}
 	
 	
