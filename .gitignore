@@ -9,3 +9,7 @@ _site/
 /debug
 /node_modules
 /Gemfile.lock
+
+images/banners/banner_bg_photocs.jpg
+
+images/banners/banner_home_rcd.png
