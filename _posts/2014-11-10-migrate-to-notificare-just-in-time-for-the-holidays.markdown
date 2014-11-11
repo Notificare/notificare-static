@@ -7,7 +7,7 @@ categories: blog
 image:  migrate-intro.jpg
 image-detail:  migrate-detail-intro.jpg
 ---
-Holidays are coming and we know this is an important time of the year for all our clients in the Retail industry. We know that more than ever, during these days, it's important to maximize sales revenue from your foot-traffic or mobile audience in every possible way. Changing to Notificare can help you with all that but for companies already running mobile apps that might sound a whole lot of work and investment. Well what if we told you that your organization can know migrate today to a superior mobile marketing platform?
+Holidays are coming and we know this is an important time of the year for all our clients in the Retail industry. We know that more than ever, during these days, it's important to maximize sales revenue from your foot-traffic or mobile audience in every possible way. Changing to Notificare can help you with all that but for companies already running mobile apps that might sound a whole lot of work and investment. Well what if we told you that your organization can migrate today to a superior mobile marketing platform?
 
 
 <img src="/images/posts/migrate-detail-dashboard.png" class="img-responsive" style="float: left;margin: 20px 20px 0px 0px;">
