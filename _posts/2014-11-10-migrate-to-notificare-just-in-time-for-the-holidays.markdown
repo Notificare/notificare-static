@@ -19,7 +19,7 @@ Our new incredibly easy to use **Data Importer** will let you use tools like *Ex
 <img src="/images/posts/migrate-detail-segments.png" class="img-responsive" style="float: right;margin: 20px 0px 0px 20px;">
 
 ### Users & Segmentation
-Complete your migration by importing your existing user profiles and categories. Associate devices to your existing user profiles and easily populate segments using our dead simple **Data Importer** that will help you along the way. We will make sure your existing data is accessible right away and it does not go to waste or it is lost in the process.
+Complete your migration by importing your existing user profiles and categories. Associate devices to your existing user profiles and easily populate segments using our dead simple **Data Importer** that will help you along the way. We will make sure your existing data is accessible right away and it does not go to waste or it is lost in the migration process.
 
 
 <img src="/images/posts/migrate-detail-api.png" class="img-responsive" style="float: left;margin: 20px 20px 0px 0px;">
