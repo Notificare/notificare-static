@@ -7,13 +7,13 @@ categories: blog
 image:  migrate-intro.jpg
 image-detail:  migrate-detail-intro.jpg
 ---
-Holidays are coming! We know this is an important time of the year for you. We know that more than ever, during these days, it's important to maximize sales revenue from your foot-traffic or your mobile audience in every possible way. Changing to Notificare can help you with all that. But for companies already running mobile apps that might sound a whole lot of work and investment. Well what if we told you that your organization can migrate today to a superior mobile marketing platform?
+Holidays are coming! We know this is an important time of the year for you. We know that more than ever, during these days, it's important to maximize sales revenue from your foot-traffic or your mobile audience in every possible way. Changing to Notificare can help you with all that. But for companies that already have mobile apps that might sound a whole lot of time and investment. Well what if we told you that your organization can migrate today to a superior mobile marketing platform?
 
 
 <img src="/images/posts/migrate-detail-dashboard.png" class="img-responsive" style="float: left;margin: 20px 20px 0px 0px;">
 
 ### Up and running today
-Our new incredibly easy to use **Data Importer** will let you use tools like *Excel*, *Numbers* or *Calc* to create the necessary import files. Import devices, user profiles or even your current user segmentation directly from your browser. Just you take a look into [our guide][docs-importer-dashboard-url] to help you get started. Our [SDK][sdk-page] will give you all you need to send discounts, up-sell products through your mobile app or simply maximize your users' visits to your physical store. Step into a new world of contextual marketing based on location, users' preferences and behaviour.
+Our new incredibly easy to use **Data Importer** will let you use tools like *Excel*, *Numbers* or *Calc* to create the necessary import files. Import devices, user profiles or even your current user segmentation directly from your browser. Just take a look into [our guide][docs-importer-dashboard-url] to help you get started. Our [SDK][sdk-page] will give you all you need to send discounts, up-sell products through mobile platforms or simply maximize your users' visits to your physical store. Step into a new world of contextual marketing based on location, users' preferences and behaviour.
 
 
 <img src="/images/posts/migrate-detail-segments.png" class="img-responsive" style="float: right;margin: 20px 0px 0px 20px;">
