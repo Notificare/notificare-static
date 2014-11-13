@@ -135,6 +135,7 @@ $( document ).ready(function() {
 
     $('.btn-order').click(function(e) {
 		$('#modal-signup').modal('show');
+
 		var plan = $(this).attr("rel"),
         href = $(this).attr("href");
 		url_components = href.split("/"),
@@ -143,6 +144,22 @@ $( document ).ready(function() {
         var $form = $( '#signup' );
         $form.find( "input[name='plan']" ).val(plan);
         //reset any values
+        var pass = $form.find( "input[name='pass1']");
+
+        $(".pwstrength-progress").html('');
+        pass.pwstrength("forceUpdate");
+
+        var options = {};
+        options.ui = {
+            container: "#pwd-container",
+            showVerdictsInsideProgressBar: true,
+            viewports: {
+                progress: ".pwstrength-progress"
+            }
+        };
+
+        pass.pwstrength(options);
+
         $form.find( "input[name='firstname'], input[name='lastname'], input[name='telephone'], input[name='pass1'], input[name='pass2'], input[name='email'], input[name='company']" ).val('');
         $( "#signup-alert-error").hide();
         $( "#signup-alert-success").hide();
@@ -187,6 +204,10 @@ $( document ).ready(function() {
 
             if (pass1 != pass2) {
                 $( "#signup-alert-error" ).html( 'Error: Passwords don\'t match' );
+                $( "#signup-alert-error").show();
+                $( ".icon-spinner").hide();
+            } else if (pass1.length < 8) {
+                $( "#signup-alert-error" ).html( 'Error: Password is too small. Insert at least 8 chars.' );
                 $( "#signup-alert-error").show();
                 $( ".icon-spinner").hide();
             } else if (!validateEmail(email)) {
