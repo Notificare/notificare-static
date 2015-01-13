@@ -210,6 +210,10 @@ $( document ).ready(function() {
                 $( "#signup-alert-error" ).html( 'Error: Password is too small. Insert at least 8 chars.' );
                 $( "#signup-alert-error").show();
                 $( ".icon-spinner").hide();
+            } else if (pass1.match(':')) {
+                $( "#signup-alert-error" ).html( 'Error: Use of illegal character colon. Please remove any ":" from your password.' );
+                $( "#signup-alert-error").show();
+                $( ".icon-spinner").hide();
             } else if (!validateEmail(email)) {
                 $( "#signup-alert-error" ).html( 'Error: Not a valid email address' );
                 $( "#signup-alert-error").show();
