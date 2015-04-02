@@ -43,9 +43,8 @@ text_kop: Plans & Pricing
                 </div>
                 <div class="row">
                     <div class="col-xs-12">
-                        <label>Devices</label>
+                        <label>Apps</label>
                     </div>
-
                 </div>
                 <div class="row">
                     <div class="col-xs-12">
@@ -73,9 +72,13 @@ text_kop: Plans & Pricing
                 </div>
                 <div class="row">
                     <div class="col-xs-12">
-                        <label>Geo-fences</label>
+                        <label>Geofences</label>
                     </div>
-
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <label>iBeacons</label>
+                    </div>
                 </div>
                 <div class="row">
                     <div class="col-xs-12">
@@ -92,7 +95,6 @@ text_kop: Plans & Pricing
                     <div class="col-xs-12">
                         <label>iBeacon hardware</label>
                     </div>
-
                 </div>
             </div>
 
@@ -131,14 +133,15 @@ text_kop: Plans & Pricing
 							<div class="values users">{{ plan.users }}</div>
 						</div>
 					</div>
-					<div class="row">
-						<div class="col-xs-6 visible-xs col-sm-6 visible-sm">
-							<label>Devices</label>
-						</div>
-						<div class="col-xs-6 col-md-12 col-sm-6">
-							<div class="values">unlimited</div>
-						</div>
-					</div>
+                    <div class="row">
+                        <div class="col-xs-6 visible-xs col-sm-6 visible-sm">
+                            <label>Apps</label>
+                        </div>
+                        <div class="col-xs-6 col-md-12 col-sm-6">
+                            <div class="values">unlimited</div>
+                        </div>
+                    </div>
+
 					<div class="row">
 						<div class="col-xs-6 visible-xs col-sm-6 visible-sm">
 							<label>Notifications</label>
@@ -173,12 +176,20 @@ text_kop: Plans & Pricing
 					</div>
 					<div class="row">
 						<div class="col-xs-6 visible-xs col-sm-6 visible-sm">
-							<label>Geo-fences</label>
+							<label>Geofences</label>
 						</div>
 						<div class="col-xs-6 col-md-12 col-sm-6">
 							<div class="values">{{ plan.geotriggers }}</div>
 						</div>
 					</div>
+                    <div class="row">
+                        <div class="col-xs-6 visible-xs col-sm-6 visible-sm">
+                            <label>iBeacons</label>
+                        </div>
+                        <div class="col-xs-6 col-md-12 col-sm-6">
+                            <div class="values">unlimited</div>
+                        </div>
+                    </div>
 					<div class="row">
 						<div class="col-xs-6 visible-xs col-sm-6 visible-sm">
 							<label>Email support</label>

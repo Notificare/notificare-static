@@ -8,6 +8,7 @@
   geotriggers: none
   beacons: none
   notifications: unlimited
+  applications: unlimited
   smartness:
     - name: HTML Push
       icon: compass
@@ -35,6 +36,7 @@
   geotriggers: 10
   beacons: none
   notifications: unlimited
+  applications: unlimited
   smartness:
     - name: HTML Push
       icon: compass
@@ -62,6 +64,7 @@
   geotriggers: 20
   beacons: 1 included
   notifications: unlimited
+  applications: unlimited
   smartness: 
     - name: HTML Push
       icon: compass
@@ -89,6 +92,7 @@
   geotriggers: 50
   beacons: 2 included
   notifications: unlimited
+  applications: unlimited
   smartness: 
     - name: HTML Push
       icon: compass
@@ -116,6 +120,7 @@
   geotriggers: unlimited
   beacons: 3 included
   notifications: unlimited
+  applications: unlimited
   smartness: 
     - name: HTML Push
       icon: compass
