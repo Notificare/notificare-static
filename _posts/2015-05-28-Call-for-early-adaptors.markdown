@@ -13,6 +13,7 @@ We're pretty excited to announce one of many projects we have been working on fo
 But first, let us provide you with some background info about this project. Already some time ago, we realized that some functionality was missing from the Dashboard that our current web app simply would never be able to deliver. At that precise moment we also figured that all those capabilities you required were actually natively supported by both iOS and Android.
 
 That's why we've decided to complement our current web app with a native version (we're starting with iOS but eventually Android will follow) which allows us to deliver some awesome extra functionalities:
+
 - Region and iBeacon management. Quickly manage regions or configure your BTLE beacons with minimal effort.
 - Advertise as a beacon in any of your venues or stores. Use your device as a beacon without having to purchase any additional hardware.
 - Scan and redeem any Passbook pass that was created and distributed via Notificare.
