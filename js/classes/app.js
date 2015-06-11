@@ -243,6 +243,7 @@ $( document ).ready(function() {
                 });
 
                 request.done(function( msg ) {
+                    goog_report_conversion();
                     $( "#signup-alert-success" ).html( 'Account created successfully. Please check your mail box. We have sent you an activation link to confirm your interest in this account and start your free 30 day trial.'  );
                     $( "#signup-alert-error").hide();
                     $( "#signup-alert-success").show();

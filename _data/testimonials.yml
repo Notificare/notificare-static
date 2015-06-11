@@ -5,13 +5,6 @@
   job: Manager Online Marketing
   showOnHome: yes
   case: /cases/redcross
-- name: Cookoo Watch
-  text: Working with Notificare has been very positive. The team is capable, professional, and each team-member brings a unique and complimentary skillset to the table.  I look forward to accomplishing great things together through our collaboration.
-  signature: Peter Hauser
-  job: Chief Technology Officer
-  image: /images/logos/logo_cookoo.png
-  showOnHome: yes
-  case: /cases/cookoo
 - name: Target McConnells
   text: The Notificare team knows exactly what our agency needs. By offering direct contact with our development team, they quickly understood our needs and best practices leading to great results. The dashboard is both easy for our clients to work with and still allows us to delve into comprehensive and manageable reports.
   signature: Alicia Coyle

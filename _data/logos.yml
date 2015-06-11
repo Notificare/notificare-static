@@ -8,12 +8,12 @@
   logo: /images/logos/small/tesco.png
 - title: Bijenkorf
   logo: /images/logos/small/bijenkorf.png
-- title: Cookoo
-  logo: /images/logos/small/cookoo.png
+- title: Interactive Studios
+  logo: /images/logos/small/interactivestudios.png
 - title: ABN-AMRO
   logo: /images/logos/small/abn-amro.png
-- title: Scoupy
-  logo: /images/logos/small/scoupy.png
+- title: Fanly
+  logo: /images/logos/small/fanly.png
 - title: Oxxio
   logo: /images/logos/small/oxxio.png
 - title: Agro-Energy
@@ -22,8 +22,8 @@
   logo: /images/logos/small/afrogleap.png
 - title: Mangrove
   logo: /images/logos/small/mangrove.png
-- title: Target McConnells
-  logo: /images/logos/small/tmcc.png
+- title: 538
+  logo: /images/logos/small/538.png
 - title: Eurojackpot
   logo: /images/logos/small/eurojackpot.png
 - title: Lotto
@@ -34,4 +34,17 @@
   logo: /images/logos/small/rcd.png
 - title: Vara
   logo: /images/logos/small/vara.png
+- title: ADFO Groep
+  logo: /images/logos/small/adfogroep.png
+- title: Upclose
+  logo: /images/logos/small/upclose.png
+- title: Tam Tam
+  logo: /images/logos/small/tamtam.png
+- title: Staatsloterij
+  logo: /images/logos/small/staatsloterij.png
+- title: BOL
+  logo: /images/logos/small/bol.png
+- title: PWC
+  logo: /images/logos/small/pwc.png
+
 
